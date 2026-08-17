@@ -1,0 +1,6355 @@
+[
+	{
+		"AlternateConfigurations": [],
+		"AntiAffinityUIDs": [],
+		"ApiVersion": "2.17.0.1",
+		"Device": {
+			"Template": {
+				"ApiVersion": "2.17.0.1",
+				"Custom": true,
+				"FormatConfigurations": [
+					{
+						"TSMuxer": {
+							"Conformance": "DVB",
+							"ConformanceDependent": {
+								"ATSC": {
+									"ChannelMajorNumber": 0,
+									"ChannelMinorNumber": 0,
+									"ChannelName": "",
+									"Delivery": "Cable",
+									"EIT": {
+										"EITMaxBitrate": 150000,
+										"FollowInputForEIT": false
+									},
+									"MGTPeriod": 0,
+									"Modulation": "Analog",
+									"STTPeriod": 0,
+									"VCTPeriod": 0
+								},
+								"DVB": {
+									"EIT": {
+										"EITMaxBitrate": 150000,
+										"FollowInputForEIT": false
+									},
+									"NITPeriod": 0,
+									"NetworkID": 0,
+									"NetworkName": "",
+									"SDTPeriod": 0,
+									"ServiceName": "",
+									"ServiceProvider": "",
+									"TDTPeriod": 0
+								}
+							},
+							"Descriptors": {},
+							"EBP": {
+								"EnableOnChunkBoundary": true,
+								"EnableOnSplicePoint": false,
+								"EnableOnVideoOnly": false,
+								"EnablePeriodicChunking": false,
+								"PartitionId": 1
+							},
+							"MPEGTSParameters": {
+								"AlignAudioOnPES": true,
+								"AudioFramesPerPESPacket": 9,
+								"InsertAudioESRateOnPES": false,
+								"InsertAudioRAIOnPES": false,
+								"InsertDVBAUPackets": false,
+								"InsertDataESRateOnPES": false,
+								"InsertPCRonPES": false,
+								"InsertVideoESRateOnPES": false,
+								"PATPeriod": 0,
+								"PCRPeriod": 25,
+								"PCRPid": "Auto",
+								"PCRPidValue": 0,
+								"PMTPID": 0,
+								"PMTPeriod": 0,
+								"ProgramNumber": 0,
+								"RemoveConformanceTables": false,
+								"RemoveEmtpyAdaptationFields": false,
+								"RemovePadding": false,
+								"RemovePaddingMinBitrate": 0,
+								"RemovePaddingSmpte20224": true,
+								"TransportID": 0,
+								"UseUnconstrainedPES": false
+							},
+							"Profiles": [
+								{
+									"Disabled": false,
+									"HLSLayout": {
+										"MediaFilesExtension": "",
+										"MediaFilesName": "",
+										"SubDirectoryPath": ""
+									},
+									"ProgramNumber": 0,
+									"TSBitrate": {
+										"Enable": false,
+										"NullPacketMinBitrate": 0,
+										"TSBitrateValue": 0
+									},
+									"TracksMapping": {
+										"AudioTrackList": [
+											{
+												"TrackIdx": 0,
+												"VariantIdx": 0
+											}
+										],
+										"DataTrackList": [],
+										"VideoTrackList": [
+											{
+												"TrackIdx": 0,
+												"VariantIdx": 0
+											}
+										]
+									}
+								},
+								{
+									"Disabled": false,
+									"HLSLayout": {
+										"MediaFilesExtension": "",
+										"MediaFilesName": "",
+										"SubDirectoryPath": ""
+									},
+									"ProgramNumber": 0,
+									"TSBitrate": {
+										"Enable": false,
+										"NullPacketMinBitrate": 0,
+										"TSBitrateValue": 0
+									},
+									"TracksMapping": {
+										"AudioTrackList": [],
+										"DataTrackList": [],
+										"VideoTrackList": [
+											{
+												"TrackIdx": 0,
+												"VariantIdx": 1
+											}
+										]
+									}
+								},
+								{
+									"Disabled": false,
+									"HLSLayout": {
+										"MediaFilesExtension": "",
+										"MediaFilesName": "",
+										"SubDirectoryPath": ""
+									},
+									"ProgramNumber": 0,
+									"TSBitrate": {
+										"Enable": false,
+										"NullPacketMinBitrate": 0,
+										"TSBitrateValue": 0
+									},
+									"TracksMapping": {
+										"AudioTrackList": [],
+										"DataTrackList": [],
+										"VideoTrackList": [
+											{
+												"TrackIdx": 0,
+												"VariantIdx": 2
+											}
+										]
+									}
+								},
+								{
+									"Disabled": false,
+									"HLSLayout": {
+										"MediaFilesExtension": "",
+										"MediaFilesName": "",
+										"SubDirectoryPath": ""
+									},
+									"ProgramNumber": 0,
+									"TSBitrate": {
+										"Enable": false,
+										"NullPacketMinBitrate": 0,
+										"TSBitrateValue": 0
+									},
+									"TracksMapping": {
+										"AudioTrackList": [],
+										"DataTrackList": [],
+										"VideoTrackList": [
+											{
+												"TrackIdx": 0,
+												"VariantIdx": 3
+											}
+										]
+									}
+								},
+								{
+									"Disabled": false,
+									"HLSLayout": {
+										"MediaFilesExtension": "",
+										"MediaFilesName": "",
+										"SubDirectoryPath": ""
+									},
+									"ProgramNumber": 0,
+									"TSBitrate": {
+										"Enable": false,
+										"NullPacketMinBitrate": 0,
+										"TSBitrateValue": 0
+									},
+									"TracksMapping": {
+										"AudioTrackList": [],
+										"DataTrackList": [],
+										"VideoTrackList": [
+											{
+												"TrackIdx": 0,
+												"VariantIdx": 4
+											}
+										]
+									}
+								},
+								{
+									"Disabled": false,
+									"HLSLayout": {
+										"MediaFilesExtension": "",
+										"MediaFilesName": "",
+										"SubDirectoryPath": ""
+									},
+									"ProgramNumber": 0,
+									"TSBitrate": {
+										"Enable": false,
+										"NullPacketMinBitrate": 0,
+										"TSBitrateValue": 0
+									},
+									"TracksMapping": {
+										"AudioTrackList": [
+											{
+												"TrackIdx": 0,
+												"VariantIdx": 0
+											}
+										],
+										"DataTrackList": [],
+										"VideoTrackList": [
+											{
+												"TrackIdx": 0,
+												"VariantIdx": 7
+											}
+										]
+									}
+								},
+								{
+									"Disabled": false,
+									"HLSLayout": {
+										"MediaFilesExtension": "",
+										"MediaFilesName": "",
+										"SubDirectoryPath": ""
+									},
+									"ProgramNumber": 0,
+									"TSBitrate": {
+										"Enable": false,
+										"NullPacketMinBitrate": 0,
+										"TSBitrateValue": 0
+									},
+									"TracksMapping": {
+										"AudioTrackList": [],
+										"DataTrackList": [],
+										"VideoTrackList": [
+											{
+												"TrackIdx": 0,
+												"VariantIdx": 8
+											}
+										]
+									}
+								},
+								{
+									"Disabled": false,
+									"HLSLayout": {
+										"MediaFilesExtension": "",
+										"MediaFilesName": "",
+										"SubDirectoryPath": ""
+									},
+									"ProgramNumber": 0,
+									"TSBitrate": {
+										"Enable": false,
+										"NullPacketMinBitrate": 0,
+										"TSBitrateValue": 0
+									},
+									"TracksMapping": {
+										"AudioTrackList": [],
+										"DataTrackList": [],
+										"VideoTrackList": [
+											{
+												"TrackIdx": 0,
+												"VariantIdx": 9
+											}
+										]
+									}
+								},
+								{
+									"Disabled": false,
+									"HLSLayout": {
+										"MediaFilesExtension": "",
+										"MediaFilesName": "",
+										"SubDirectoryPath": ""
+									},
+									"ProgramNumber": 0,
+									"TSBitrate": {
+										"Enable": false,
+										"NullPacketMinBitrate": 0,
+										"TSBitrateValue": 0
+									},
+									"TracksMapping": {
+										"AudioTrackList": [],
+										"DataTrackList": [],
+										"VideoTrackList": [
+											{
+												"TrackIdx": 0,
+												"VariantIdx": 10
+											}
+										]
+									}
+								},
+								{
+									"Disabled": false,
+									"HLSLayout": {
+										"MediaFilesExtension": "",
+										"MediaFilesName": "",
+										"SubDirectoryPath": ""
+									},
+									"ProgramNumber": 0,
+									"TSBitrate": {
+										"Enable": false,
+										"NullPacketMinBitrate": 0,
+										"TSBitrateValue": 0
+									},
+									"TracksMapping": {
+										"AudioTrackList": [],
+										"DataTrackList": [],
+										"VideoTrackList": [
+											{
+												"TrackIdx": 0,
+												"VariantIdx": 11
+											}
+										]
+									}
+								},
+								{
+									"Disabled": false,
+									"HLSLayout": {
+										"MediaFilesExtension": "",
+										"MediaFilesName": "",
+										"SubDirectoryPath": ""
+									},
+									"ProgramNumber": 0,
+									"TSBitrate": {
+										"Enable": false,
+										"NullPacketMinBitrate": 0,
+										"TSBitrateValue": 0
+									},
+									"TracksMapping": {
+										"AudioTrackList": [],
+										"DataTrackList": [],
+										"VideoTrackList": [
+											{
+												"TrackIdx": 0,
+												"VariantIdx": 12
+											}
+										]
+									}
+								},
+								{
+									"Disabled": false,
+									"HLSLayout": {
+										"MediaFilesExtension": "",
+										"MediaFilesName": "",
+										"SubDirectoryPath": ""
+									},
+									"ProgramNumber": 0,
+									"TSBitrate": {
+										"Enable": false,
+										"NullPacketMinBitrate": 0,
+										"TSBitrateValue": 0
+									},
+									"TracksMapping": {
+										"AudioTrackList": [],
+										"DataTrackList": [],
+										"VideoTrackList": [
+											{
+												"TrackIdx": 0,
+												"VariantIdx": 13
+											}
+										]
+									}
+								},
+								{
+									"Disabled": false,
+									"HLSLayout": {
+										"MediaFilesExtension": "",
+										"MediaFilesName": "",
+										"SubDirectoryPath": ""
+									},
+									"ProgramNumber": 0,
+									"TSBitrate": {
+										"Enable": false,
+										"NullPacketMinBitrate": 0,
+										"TSBitrateValue": 0
+									},
+									"TracksMapping": {
+										"AudioTrackList": [
+											{
+												"TrackIdx": 0,
+												"VariantIdx": 0
+											}
+										],
+										"DataTrackList": [],
+										"VideoTrackList": [
+											{
+												"TrackIdx": 0,
+												"VariantIdx": 6
+											}
+										]
+									}
+								},
+								{
+									"Disabled": false,
+									"HLSLayout": {
+										"MediaFilesExtension": "",
+										"MediaFilesName": "",
+										"SubDirectoryPath": ""
+									},
+									"ProgramNumber": 0,
+									"TSBitrate": {
+										"Enable": false,
+										"NullPacketMinBitrate": 0,
+										"TSBitrateValue": 0
+									},
+									"TracksMapping": {
+										"AudioTrackList": [
+											{
+												"TrackIdx": 0,
+												"VariantIdx": 0
+											}
+										],
+										"DataTrackList": [],
+										"VideoTrackList": [
+											{
+												"TrackIdx": 0,
+												"VariantIdx": 5
+											}
+										]
+									}
+								},
+								{
+									"Disabled": false,
+									"HLSLayout": {
+										"MediaFilesExtension": "",
+										"MediaFilesName": "",
+										"SubDirectoryPath": ""
+									},
+									"ProgramNumber": 0,
+									"TSBitrate": {
+										"Enable": false,
+										"NullPacketMinBitrate": 0,
+										"TSBitrateValue": 0
+									},
+									"TracksMapping": {
+										"AudioTrackList": [
+											{
+												"TrackIdx": 0,
+												"VariantIdx": 0
+											}
+										],
+										"DataTrackList": [],
+										"VideoTrackList": [
+											{
+												"TrackIdx": 0,
+												"VariantIdx": 14
+											}
+										]
+									}
+								},
+								{
+									"Disabled": false,
+									"HLSLayout": {
+										"MediaFilesExtension": "",
+										"MediaFilesName": "",
+										"SubDirectoryPath": ""
+									},
+									"ProgramNumber": 0,
+									"TSBitrate": {
+										"Enable": false,
+										"NullPacketMinBitrate": 0,
+										"TSBitrateValue": 0
+									},
+									"TracksMapping": {
+										"AudioTrackList": [
+											{
+												"TrackIdx": 0,
+												"VariantIdx": 0
+											}
+										],
+										"DataTrackList": [],
+										"VideoTrackList": [
+											{
+												"TrackIdx": 0,
+												"VariantIdx": 15
+											}
+										]
+									}
+								}
+							],
+							"VBRReservation": false
+						},
+						"Type": "Multi TS"
+					}
+				],
+				"GlobalConfiguration": {
+					"APIBlackout": {
+						"LocalFilename": "Chuongtrinh_Start.png",
+						"MuteAudio": true,
+						"MuteData": false,
+						"UrlFilename": ""
+					},
+					"CAWMParameters": {
+						"Enabled": false
+					},
+					"Chunking": {
+						"AllowIDRBetweenChunkBoundaries": false,
+						"ChunkDuration": 1920,
+						"ChunkPeriod": 10000,
+						"ChunkingMode": "Duration",
+						"DisableDashDriftManagement": false,
+						"EnableMaximumPriority": false,
+						"MaximumChunkDuration": 10000,
+						"MinimumChunkDuration": 1920
+					},
+					"ClockOffset": 0,
+					"DolbyDecoderErrorConcealement": "Auto",
+					"EnableStartTime": false,
+					"GAVPLowerLatency": false,
+					"HighUhdQuality": false,
+					"InputFrameRateRestriction": {
+						"Denominator": 1,
+						"FrameRate": "None",
+						"Numerator": 25
+					},
+					"InputOutputSwitchingMode": "Automatic with current settings",
+					"LatencyMode": "High Quality",
+					"LowerDecoderLatency": false,
+					"ManualAST": false,
+					"MasterClock": "Local clock",
+					"MusicChannel": false,
+					"ProgramDelay": 0,
+					"RelaxedLipSync": false,
+					"UseLegacyAACEncoder": true,
+					"UseLegacyDecoder": false,
+					"UseLegacyHEVCDecoder": false,
+					"UseLegacyHEVCEncoder": true
+				},
+				"Name": "Event_01_18_4K_IP19_1 Audio V13",
+				"Static": false,
+				"Tracks": {
+					"AudioTracks": [
+						{
+							"AudioDescription": false,
+							"AudioEmulationMode": {
+								"Mode": "Silence",
+								"Tone": 1
+							},
+							"AudioWatermarkings": [],
+							"Descriptors": {
+								"AudioType": "Undefined",
+								"ComponentDescriptor": {
+									"ComponentTag": 0,
+									"ComponentType": 0,
+									"Enable": false,
+									"Language": "",
+									"StreamContent": 0
+								},
+								"EnableLanguageDescriptor": true,
+								"MaxBitrateDescriptor": true,
+								"SupplementaryAudioDescriptor": {
+									"EditorialClassification": "Main audio",
+									"Language": "",
+									"MixType": "BroadcastMixed",
+									"UseControlTrack": false
+								}
+							},
+							"DualMonoChannel": {
+								"Channel": "MONO_A"
+							},
+							"Encoding": {
+								"AACParameters": {
+									"AACMetadata": {
+										"DialogNormalization": -27,
+										"DolbyParameters": {
+											"DCHighPassFilter": true,
+											"DownMix": {
+												"MixLevels": {
+													"CenterLORO": "Auto",
+													"CenterRTLT": "Auto",
+													"SurroundLORO": "Auto",
+													"SurroundLTRT": "Auto"
+												},
+												"PreferredDownMix": "Not indicated"
+											},
+											"LFELowPassFilter": true,
+											"SurroundChannelProcessing": {
+												"Attenuation": false,
+												"PhaseShift": "Auto"
+											}
+										},
+										"DynamicRangeCompression": {
+											"LineMode": "Auto",
+											"RFMode": "Auto"
+										},
+										"Mode": "Fallback",
+										"Override": false
+									},
+									"Descriptors": {
+										"AACAudioDescriptor": true,
+										"MPEG2AACAudioDescriptor": true
+									},
+									"Format": "Auto",
+									"Layout": "Stereo",
+									"MetaDataAudio": "MPEG",
+									"MidSizeStereo": true,
+									"Profile": "Low Complexity",
+									"TemporalNoiseShaping": true
+								},
+								"AutoDetectLayout": false,
+								"Codec": "MPEG AAC",
+								"DolbyParameters": {
+									"Advanced": {
+										"DynamicRangeCompression": {
+											"LineMode": "Auto",
+											"RFMode": "Auto"
+										},
+										"MixLevels": {
+											"CenterLORO": "Auto",
+											"CenterRTLT": "Auto",
+											"StereoDownMix": "Auto",
+											"SurroundLORO": "Auto",
+											"SurroundLTRT": "Auto"
+										},
+										"SurroundChannelProcessing": {
+											"PhaseShift": "Auto"
+										}
+									},
+									"AudioCodingMode": "2.0",
+									"Descriptors": {
+										"AC3Descriptor": true,
+										"EnhancedAC3Descriptor": true
+									},
+									"DialogNormalization": -24
+								},
+								"MPEGL2Parameters": {
+									"CopyrightFlag": true,
+									"Descriptors": {
+										"AudioStreamDescriptor": true
+									},
+									"Layout": "Stereo",
+									"OriginalFlag": true
+								},
+								"Passthrough": false
+							},
+							"FollowInputPid": false,
+							"FollowLanguage": false,
+							"Gain": 0,
+							"Language": "vie",
+							"LoudnessControl": {
+								"DialogueIntelligence": false,
+								"Enable": true,
+								"LevelerMode": "Enable",
+								"MaxPeakLevel": -1,
+								"RegulationType": "CUSTOM",
+								"Target": -20
+							},
+							"MixingConfiguration": false,
+							"Offset": 0,
+							"Pid": 2001,
+							"S302MChannelMapping": {
+								"AudioType": "PCM Stereo",
+								"Channels": [
+									"Pair1 Ch1"
+								],
+								"Enable": false
+							},
+							"StreamIdentifier": {
+								"ComponentTag": 0,
+								"Enable": false
+							},
+							"StreamType": {
+								"Enable": false
+							},
+							"Variants": [
+								{
+									"AACParameters": {
+										"BitRate": 192000,
+										"SampleRate": "48 kHz"
+									},
+									"DolbyParameters": {
+										"BitRate": "128 kbit/s",
+										"SampleRate": "48 kHz"
+									},
+									"DropPidParameters": {
+										"DropOnAudioDescriptor": false,
+										"DropOnFade": false,
+										"DropOnSilence": false,
+										"KeepAlive": {
+											"Enable": false,
+											"Period": 1000
+										},
+										"Timeout": 0
+									},
+									"MPEGL2Parameters": {
+										"BitRate": "128 kbit/s",
+										"SampleRate": "48 kHz"
+									},
+									"S302MParameters": {
+										"BitsPerSample": "16",
+										"ChannelIdentification": 0,
+										"Channels": [
+											"Front (L,R)"
+										],
+										"EnableEvertzCompatibility": false,
+										"Framerate": "Auto"
+									},
+									"S302MPassthroughParameters": {
+										"BitsPerSample": "24",
+										"ChannelIdentification": 0,
+										"FrameRate": "25",
+										"NbPairs": 1,
+										"OverrideChannelIdentification": false,
+										"PairsFiltering": false,
+										"PairsSelection": [
+											true,
+											false,
+											false,
+											false
+										]
+									}
+								}
+							]
+						}
+					],
+					"DataTracks": [],
+					"ReshuffledAudioTracks": [],
+					"VideoTracks": [
+						{
+							"BitrateMode": "ES",
+							"BlazingMode": false,
+							"Cropping": {
+								"Enable": false,
+								"Height": 0,
+								"Left": 0,
+								"Top": 0,
+								"Width": 0
+							},
+							"Deblocking": "None",
+							"Deinterlacer": "Adaptive",
+							"Denoiser": {
+								"DenoiserType": "None"
+							},
+							"Descriptors": {
+								"ComponentDescriptor": {
+									"ComponentTag": 0,
+									"ComponentType": 0,
+									"Enable": false,
+									"Language": "",
+									"StreamContent": 0
+								},
+								"MaxBitrateDescriptor": true
+							},
+							"DolbyVisionParameters": {
+								"ContentType": "0: Default (no selection based on content type)",
+								"IntendedWhitePoint": "0: Default",
+								"Mode": "Disabled",
+								"Profile": "Profile 5"
+							},
+							"EmulationMode": {
+								"FreezeDuration": 15,
+								"Mode": "Freeze",
+								"PatternName": "default.png",
+								"Urls": [
+									""
+								]
+							},
+							"Encoding": {
+								"AdvancedParameters": {
+									"Afd": false,
+									"DisableBordersOptimization": true,
+									"DisableDefaultDisplayWindow": false,
+									"EnableAdaptiveInterlacedSignaling": false,
+									"EnableOpenGop": false,
+									"Entropy": "CABAC",
+									"ExtendDPBArea": false,
+									"FcodeLimitCompatibility": false,
+									"Hrd": true,
+									"Improved422Interoperability": false,
+									"IntraDcPrecision": 8,
+									"MotionEstimationMode": "Auto",
+									"MultiReferences": true,
+									"NumberOfSlices": "Auto",
+									"OverscanAppropriateFlag": "No information",
+									"PictureDefinition": "Auto",
+									"PreserveBlackBorders": "Auto",
+									"Telecine": false,
+									"UseCustomMatrix": true,
+									"UseSinglePpsSps": true,
+									"VideoErrorConcealment": true,
+									"WaveFrontParallelProcessing": false,
+									"WeightedPrediction": true
+								},
+								"BFrameConfiguration": {
+									"EnableHierarchical": true,
+									"Max": 7,
+									"Min": 0
+								},
+								"Codec": "MPEG-4",
+								"Cpb": {
+									"BufferUnit": "ms",
+									"Size": 1000
+								},
+								"Deblocking": {
+									"Enable": true,
+									"Offset": -6
+								},
+								"VideoOptimization": "Visual Quality"
+							},
+							"FollowInputPid": false,
+							"FramerateConvMode": "Frame duplication/drop",
+							"InputAspectRatio": {
+								"AFDMode": "Preserve",
+								"AspectRatioMode": "Preserve"
+							},
+							"InputColorimetryParameters": {
+								"DynamicRange": "None",
+								"InputColorimetryMode": "Preserve"
+							},
+							"InputFrameType": "Preserve",
+							"InputOverscan": "Auto",
+							"InterdigitalParameters": {
+								"Mode": "Disabled"
+							},
+							"LUTName": "NBCU LUT",
+							"LogoInsertions": [
+								{
+									"AspectRatio": {
+										"AspectRatio": "Use original",
+										"Denominator": 9,
+										"Numerator": 16
+									},
+									"Enable": false,
+									"FileName": "Chuongtrinh_End.png",
+									"Left": 0,
+									"LogoSizeReference": "Width",
+									"PositionUnit": "Permillage",
+									"ScheduledInsertion": {
+										"Duration": 60,
+										"Enable": false,
+										"Frequency": 1800,
+										"RepeatConfig": "Indefinitely",
+										"RepeatCount": 1
+									},
+									"Size": 1000,
+									"Speed": "1",
+									"Top": 0,
+									"Type": "Video logo",
+									"UrlFilename": "",
+									"Urls": [
+										""
+									]
+								},
+								{
+									"AspectRatio": {
+										"AspectRatio": "Use original",
+										"Denominator": 9,
+										"Numerator": 16
+									},
+									"Enable": false,
+									"FileName": "EPL.png",
+									"Left": 800,
+									"LogoSizeReference": "Width",
+									"PositionUnit": "Permillage",
+									"ScheduledInsertion": {
+										"Duration": 60,
+										"Enable": false,
+										"Frequency": 1800,
+										"RepeatConfig": "Indefinitely",
+										"RepeatCount": 1
+									},
+									"Size": 160,
+									"Speed": "1",
+									"Top": 30,
+									"Type": "Video logo",
+									"UrlFilename": "",
+									"Urls": [
+										""
+									]
+								},
+								{
+									"AspectRatio": {
+										"AspectRatio": "Use original",
+										"Denominator": 9,
+										"Numerator": 16
+									},
+									"Enable": false,
+									"FileName": "name",
+									"Left": 0,
+									"LogoSizeReference": "Width",
+									"Size": 100,
+									"Speed": "1",
+									"Top": 0,
+									"Urls": [
+										""
+									]
+								},
+								{
+									"AspectRatio": {
+										"AspectRatio": "Use original",
+										"Denominator": 9,
+										"Numerator": 16
+									},
+									"Enable": false,
+									"FileName": "JAS-DID-01-JAS-25-08-01.png",
+									"Left": 0,
+									"LogoSizeReference": "Width",
+									"PositionUnit": "Permillage",
+									"ScheduledInsertion": {
+										"Duration": 60,
+										"Enable": false,
+										"Frequency": 1800,
+										"RepeatConfig": "Indefinitely",
+										"RepeatCount": 1
+									},
+									"Size": 1000,
+									"Speed": "1",
+									"Top": 0,
+									"Type": "Video logo",
+									"UrlFilename": "",
+									"Urls": [
+										""
+									]
+								}
+							],
+							"MultiVariantPid": false,
+							"OutputColorimetryParameters": {
+								"DynamicRange": "Pass-through",
+								"HdrParameters": {
+									"Hdr10Plus": {
+										"Enable": "Disabled"
+									}
+								}
+							},
+							"PerformColorimetryConversion": false,
+							"Pid": 2000,
+							"Rotation": "None",
+							"ScrollingTexts": [],
+							"Sharpener": "Auto",
+							"Simplifier": {
+								"SimplifierType": "None"
+							},
+							"StreamIdentifier": {
+								"ComponentTag": 0,
+								"Enable": false
+							},
+							"Variants": [
+								{
+									"BFrameConfiguration": {
+										"EnableHierarchical": true,
+										"Max": 7,
+										"Min": 0
+									},
+									"DisplayAspectRatio": {
+										"AspectRatio": "16:9",
+										"Denominator": 9,
+										"Numerator": 16
+									},
+									"Encoding": {
+										"AVCParameters": {
+											"Descriptors": {
+												"AVCVideoDescriptor": true
+											},
+											"Entropy": "CABAC",
+											"Level": "Auto",
+											"Profile": "High"
+										},
+										"Bitrate": 5600000,
+										"Codec": "MPEG-4",
+										"ContentAdaptative": {
+											"CQRMode": "None"
+										},
+										"FieldOrder": "Top field first",
+										"FrameType": "Progressive",
+										"GopParameters": {
+											"Fixed": true,
+											"GopSize": 96
+										},
+										"HEVCParameters": {
+											"Descriptors": {
+												"HEVCVideoDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main"
+										},
+										"MPEG2Parameters": {
+											"Descriptors": {
+												"VideoStreamDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main"
+										},
+										"Mode": "Frame",
+										"TrickPlay": false
+									},
+									"FrameRateParameters": {
+										"Denominator": 1,
+										"FrameRate": "50",
+										"Numerator": 25
+									},
+									"FrameSizeParameters": {
+										"Height": 480,
+										"Resolution": "1920x1080",
+										"Width": 854
+									},
+									"LogoInsertions": [
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": true,
+											"FileName": "Fplay_4K_TT.png",
+											"Left": 830,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 122,
+											"Speed": "1",
+											"Top": 60,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "A_OTT_HD.png",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 1000,
+											"Speed": "1",
+											"Top": 0,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										}
+									],
+									"StillPicture": false,
+									"StillPictureDetection": {
+										"StillPictureBitrate": 500000,
+										"StillPictureDelay": 60,
+										"StillPictureDetectionMode": "None"
+									},
+									"StillPictureFilename": "default.png",
+									"VariantPid": 0,
+									"VideoQuality": {
+										"PremiumVideoQuality": "Quality boost"
+									},
+									"VideoSqueezeBack": {
+										"Enable": false
+									},
+									"Watermarking": {
+										"Apply": false,
+										"IrdetoSettings": {
+											"Banner": "Off",
+											"DirectID": 0,
+											"FirstFrame": 0,
+											"LastBit": 511,
+											"LastFrame": 0,
+											"Mode": "A",
+											"Profile": "default",
+											"ScdFactor": 4
+										},
+										"NagraSettings": {
+											"CustomerID": 0,
+											"Mode": "A",
+											"Strength": "Default",
+											"Test": false
+										}
+									}
+								},
+								{
+									"BFrameConfiguration": {
+										"EnableHierarchical": true,
+										"Max": 7,
+										"Min": 0
+									},
+									"DisplayAspectRatio": {
+										"AspectRatio": "16:9",
+										"Denominator": 9,
+										"Numerator": 16
+									},
+									"Encoding": {
+										"AVCParameters": {
+											"Descriptors": {
+												"AVCVideoDescriptor": true
+											},
+											"Entropy": "CABAC",
+											"Level": "Auto",
+											"Profile": "High"
+										},
+										"Bitrate": 2800000,
+										"Codec": "MPEG-4",
+										"ContentAdaptative": {
+											"CQRMode": "None"
+										},
+										"FieldOrder": "Top field first",
+										"FrameType": "Progressive",
+										"GopParameters": {
+											"Fixed": true,
+											"GopSize": 48
+										},
+										"HEVCParameters": {
+											"Descriptors": {
+												"HEVCVideoDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main"
+										},
+										"MPEG2Parameters": {
+											"Descriptors": {
+												"VideoStreamDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main"
+										},
+										"Mode": "Frame",
+										"TrickPlay": false
+									},
+									"FrameRateParameters": {
+										"Denominator": 1,
+										"FrameRate": "25",
+										"Numerator": 25
+									},
+									"FrameSizeParameters": {
+										"Height": 260,
+										"Resolution": "1920x1080",
+										"Width": 464
+									},
+									"LogoInsertions": [
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": true,
+											"FileName": "Fplay_4K_TT.png",
+											"Left": 830,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 122,
+											"Speed": "1",
+											"Top": 60,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "A_OTT_HD.png",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 1000,
+											"Speed": "1",
+											"Top": 0,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										}
+									],
+									"StillPicture": false,
+									"StillPictureDetection": {
+										"StillPictureBitrate": 500000,
+										"StillPictureDelay": 60,
+										"StillPictureDetectionMode": "None"
+									},
+									"StillPictureFilename": "default.png",
+									"VariantPid": 0,
+									"VideoQuality": {
+										"PremiumVideoQuality": "Quality boost"
+									},
+									"VideoSqueezeBack": {
+										"Enable": false
+									},
+									"Watermarking": {
+										"Apply": false,
+										"IrdetoSettings": {
+											"Banner": "Off",
+											"DirectID": 0,
+											"FirstFrame": 0,
+											"LastBit": 511,
+											"LastFrame": 0,
+											"Mode": "A",
+											"Profile": "default",
+											"ScdFactor": 4
+										},
+										"NagraSettings": {
+											"CustomerID": 0,
+											"Mode": "A",
+											"Strength": "Default",
+											"Test": false
+										}
+									}
+								},
+								{
+									"BFrameConfiguration": {
+										"EnableHierarchical": true,
+										"Max": 7,
+										"Min": 0
+									},
+									"DisplayAspectRatio": {
+										"AspectRatio": "16:9",
+										"Denominator": 9,
+										"Numerator": 16
+									},
+									"Encoding": {
+										"AVCParameters": {
+											"Descriptors": {
+												"AVCVideoDescriptor": true
+											},
+											"Entropy": "CABAC",
+											"Level": "Auto",
+											"Profile": "High"
+										},
+										"Bitrate": 1800000,
+										"Codec": "MPEG-4",
+										"ContentAdaptative": {
+											"CQRMode": "None"
+										},
+										"FieldOrder": "Top field first",
+										"FrameType": "Progressive",
+										"GopParameters": {
+											"Fixed": true,
+											"GopSize": 48
+										},
+										"HEVCParameters": {
+											"Descriptors": {
+												"HEVCVideoDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main"
+										},
+										"MPEG2Parameters": {
+											"Descriptors": {
+												"VideoStreamDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main"
+										},
+										"Mode": "Frame",
+										"TrickPlay": false
+									},
+									"FrameRateParameters": {
+										"Denominator": 1,
+										"FrameRate": "25",
+										"Numerator": 25
+									},
+									"FrameSizeParameters": {
+										"Height": 480,
+										"Resolution": "1280x720",
+										"Width": 854
+									},
+									"LogoInsertions": [
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": true,
+											"FileName": "Fplay_4K_TT.png",
+											"Left": 830,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 122,
+											"Speed": "1",
+											"Top": 60,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "A_OTT_HD.png",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 1000,
+											"Speed": "1",
+											"Top": 0,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										}
+									],
+									"StillPicture": false,
+									"StillPictureDetection": {
+										"StillPictureBitrate": 500000,
+										"StillPictureDelay": 60,
+										"StillPictureDetectionMode": "None"
+									},
+									"StillPictureFilename": "default.png",
+									"VariantPid": 0,
+									"VideoQuality": {
+										"PremiumVideoQuality": "Default"
+									},
+									"VideoSqueezeBack": {
+										"Enable": false
+									},
+									"Watermarking": {
+										"Apply": true,
+										"IrdetoSettings": {
+											"Banner": "Off",
+											"DirectID": 0,
+											"FirstFrame": 0,
+											"LastBit": 511,
+											"LastFrame": 0,
+											"Mode": "A",
+											"Profile": "default",
+											"ScdFactor": 4
+										},
+										"NagraSettings": {
+											"CustomerID": 0,
+											"Mode": "A",
+											"Strength": "Default",
+											"Test": false
+										}
+									}
+								},
+								{
+									"BFrameConfiguration": {
+										"EnableHierarchical": true,
+										"Max": 7,
+										"Min": 0
+									},
+									"DisplayAspectRatio": {
+										"AspectRatio": "16:9",
+										"Denominator": 9,
+										"Numerator": 16
+									},
+									"Encoding": {
+										"AVCParameters": {
+											"Descriptors": {
+												"AVCVideoDescriptor": true
+											},
+											"Entropy": "CABAC",
+											"Level": "Auto",
+											"Profile": "Main"
+										},
+										"Bitrate": 1000000,
+										"Codec": "MPEG-4",
+										"ContentAdaptative": {
+											"CQRMode": "None"
+										},
+										"FieldOrder": "Top field first",
+										"FrameType": "Progressive",
+										"GopParameters": {
+											"Fixed": true,
+											"GopSize": 48
+										},
+										"HEVCParameters": {
+											"Descriptors": {
+												"HEVCVideoDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main"
+										},
+										"MPEG2Parameters": {
+											"Descriptors": {
+												"VideoStreamDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main"
+										},
+										"Mode": "Frame",
+										"TrickPlay": false
+									},
+									"FrameRateParameters": {
+										"Denominator": 1,
+										"FrameRate": "25",
+										"Numerator": 25
+									},
+									"FrameSizeParameters": {
+										"Height": 260,
+										"Resolution": "1280x720",
+										"Width": 464
+									},
+									"LogoInsertions": [
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": true,
+											"FileName": "Fplay_4K_TT.png",
+											"Left": 830,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 122,
+											"Speed": "1",
+											"Top": 60,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "A_OTT_HD.png",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 1000,
+											"Speed": "1",
+											"Top": 0,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										}
+									],
+									"StillPicture": false,
+									"StillPictureDetection": {
+										"StillPictureBitrate": 500000,
+										"StillPictureDelay": 60,
+										"StillPictureDetectionMode": "None"
+									},
+									"StillPictureFilename": "default.png",
+									"VariantPid": 0,
+									"VideoQuality": {
+										"PremiumVideoQuality": "Default"
+									},
+									"VideoSqueezeBack": {
+										"Enable": false
+									},
+									"Watermarking": {
+										"Apply": true,
+										"IrdetoSettings": {
+											"Banner": "Off",
+											"DirectID": 0,
+											"FirstFrame": 0,
+											"LastBit": 511,
+											"LastFrame": 0,
+											"Mode": "A",
+											"Profile": "default",
+											"ScdFactor": 4
+										},
+										"NagraSettings": {
+											"CustomerID": 0,
+											"Mode": "A",
+											"Strength": "Default",
+											"Test": false
+										}
+									}
+								},
+								{
+									"BFrameConfiguration": {
+										"EnableHierarchical": true,
+										"Max": 7,
+										"Min": 0
+									},
+									"DisplayAspectRatio": {
+										"AspectRatio": "16:9",
+										"Denominator": 9,
+										"Numerator": 16
+									},
+									"Encoding": {
+										"AVCParameters": {
+											"Descriptors": {
+												"AVCVideoDescriptor": true
+											},
+											"Entropy": "CABAC",
+											"Level": "Auto",
+											"Profile": "Main"
+										},
+										"Bitrate": 400000,
+										"Codec": "MPEG-4",
+										"ContentAdaptative": {
+											"CQRMode": "None"
+										},
+										"FieldOrder": "Top field first",
+										"FrameType": "Progressive",
+										"GopParameters": {
+											"Fixed": true,
+											"GopSize": 48
+										},
+										"HEVCParameters": {
+											"Descriptors": {
+												"HEVCVideoDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main"
+										},
+										"MPEG2Parameters": {
+											"Descriptors": {
+												"VideoStreamDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main"
+										},
+										"Mode": "Frame"
+									},
+									"FrameRateParameters": {
+										"Denominator": 1,
+										"FrameRate": "25",
+										"Numerator": 25
+									},
+									"FrameSizeParameters": {
+										"Height": 480,
+										"Resolution": "Custom",
+										"Width": 854
+									},
+									"LogoInsertions": [
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": true,
+											"FileName": "Fplay_4K_TT.png",
+											"Left": 830,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 122,
+											"Speed": "1",
+											"Top": 60,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "A_OTT_HD.png",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 1000,
+											"Speed": "1",
+											"Top": 0,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										}
+									],
+									"StillPictureDetection": {
+										"StillPictureBitrate": 500000,
+										"StillPictureDelay": 60,
+										"StillPictureDetectionMode": "None"
+									},
+									"StillPictureFilename": "default.png",
+									"VariantPid": 0,
+									"VideoQuality": {
+										"PremiumVideoQuality": "Default"
+									},
+									"VideoSqueezeBack": {},
+									"Watermarking": {
+										"Apply": true,
+										"IrdetoSettings": {
+											"Banner": "Off",
+											"DirectID": 0,
+											"FirstFrame": 0,
+											"LastBit": 511,
+											"LastFrame": 0,
+											"Mode": "A",
+											"Profile": "default",
+											"ScdFactor": 4
+										},
+										"NagraSettings": {
+											"CustomerID": 0,
+											"Mode": "A",
+											"Strength": "Default"
+										}
+									}
+								},
+								{
+									"BFrameConfiguration": {
+										"EnableHierarchical": true,
+										"Max": 15,
+										"Min": 3
+									},
+									"DisplayAspectRatio": {
+										"AspectRatio": "16:9",
+										"Denominator": 9,
+										"Numerator": 16
+									},
+									"Encoding": {
+										"AVCParameters": {
+											"Descriptors": {
+												"AVCVideoDescriptor": true
+											},
+											"Entropy": "CABAC",
+											"Level": "Auto",
+											"Profile": "High"
+										},
+										"Bitrate": 11700000,
+										"Codec": "MPEG-4",
+										"ContentAdaptative": {
+											"CQRMode": "None"
+										},
+										"FieldOrder": "Top field first",
+										"FrameType": "Progressive",
+										"GopParameters": {
+											"Fixed": true,
+											"GopSize": 50
+										},
+										"HEVCParameters": {
+											"Descriptors": {
+												"HEVCVideoDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main 10"
+										},
+										"MPEG2Parameters": {
+											"Descriptors": {
+												"VideoStreamDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main"
+										},
+										"Mode": "Auto",
+										"TrickPlay": false
+									},
+									"FrameRateParameters": {
+										"Denominator": 1,
+										"FrameRate": "25",
+										"Numerator": 25
+									},
+									"FrameSizeParameters": {
+										"Height": 480,
+										"Resolution": "1920x1080",
+										"Width": 854
+									},
+									"LogoInsertions": [
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "Fplay_TT.png",
+											"Left": 830,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 122,
+											"Speed": "1",
+											"Top": 60,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "AB_IPTV_FPTPLAY_HD.png",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 1000,
+											"Speed": "1",
+											"Top": 0,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										}
+									],
+									"StillPicture": false,
+									"StillPictureDetection": {
+										"StillPictureBitrate": 500000,
+										"StillPictureDelay": 60,
+										"StillPictureDetectionMode": "None"
+									},
+									"StillPictureFilename": "default.png",
+									"VariantPid": 0,
+									"VideoQuality": {
+										"PremiumVideoQuality": "Default"
+									},
+									"VideoSqueezeBack": {
+										"Enable": false
+									},
+									"Watermarking": {
+										"Apply": true,
+										"IrdetoSettings": {
+											"Banner": "Off",
+											"DirectID": 0,
+											"FirstFrame": 0,
+											"LastBit": 511,
+											"LastFrame": 0,
+											"Mode": "A",
+											"Profile": "default",
+											"ScdFactor": 4
+										},
+										"NagraSettings": {
+											"CustomerID": 0,
+											"Mode": "A",
+											"Strength": "Default",
+											"Test": false
+										}
+									}
+								},
+								{
+									"BFrameConfiguration": {
+										"EnableHierarchical": true,
+										"Max": 7,
+										"Min": 0
+									},
+									"DisplayAspectRatio": {
+										"AspectRatio": "16:9",
+										"Denominator": 9,
+										"Numerator": 16
+									},
+									"Encoding": {
+										"AVCParameters": {
+											"Descriptors": {
+												"AVCVideoDescriptor": true
+											},
+											"Entropy": "CABAC",
+											"Level": "Auto",
+											"Profile": "High"
+										},
+										"Bitrate": 11500000,
+										"Codec": "MPEG-4",
+										"ContentAdaptative": {
+											"CQRMode": "None"
+										},
+										"FieldOrder": "Top field first",
+										"FrameType": "Interlaced",
+										"GopParameters": {
+											"Fixed": true,
+											"GopSize": 50
+										},
+										"HEVCParameters": {
+											"Descriptors": {
+												"HEVCVideoDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main 10"
+										},
+										"MPEG2Parameters": {
+											"Descriptors": {
+												"VideoStreamDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main"
+										},
+										"Mode": "Frame",
+										"TrickPlay": false
+									},
+									"FrameRateParameters": {
+										"Denominator": 1,
+										"FrameRate": "25",
+										"Numerator": 25
+									},
+									"FrameSizeParameters": {
+										"Height": 480,
+										"Resolution": "1920x1080",
+										"Width": 854
+									},
+									"LogoInsertions": [
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": true,
+											"FileName": "Fplay_4K_TT.png",
+											"Left": 830,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 122,
+											"Speed": "1",
+											"Top": 60,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "IPTV_FPTPLAY_HD.png",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 1000,
+											"Speed": "1",
+											"Top": 0,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										}
+									],
+									"StillPicture": false,
+									"StillPictureDetection": {
+										"StillPictureBitrate": 500000,
+										"StillPictureDelay": 60,
+										"StillPictureDetectionMode": "None"
+									},
+									"StillPictureFilename": "default.png",
+									"VariantPid": 0,
+									"VideoQuality": {
+										"PremiumVideoQuality": "Quality boost"
+									},
+									"VideoSqueezeBack": {
+										"Enable": false
+									},
+									"Watermarking": {
+										"Apply": true,
+										"IrdetoSettings": {
+											"Banner": "Off",
+											"DirectID": 0,
+											"FirstFrame": 0,
+											"LastBit": 511,
+											"LastFrame": 0,
+											"Mode": "A",
+											"Profile": "default",
+											"ScdFactor": 4
+										},
+										"NagraSettings": {
+											"CustomerID": 0,
+											"Mode": "A",
+											"Strength": "Default",
+											"Test": false
+										}
+									}
+								},
+								{
+									"BFrameConfiguration": {
+										"EnableHierarchical": true,
+										"Max": 15,
+										"Min": 0
+									},
+									"DisplayAspectRatio": {
+										"AspectRatio": "16:9",
+										"Denominator": 9,
+										"Numerator": 16
+									},
+									"Encoding": {
+										"AVCParameters": {
+											"Descriptors": {
+												"AVCVideoDescriptor": true
+											},
+											"Entropy": "CABAC",
+											"Level": "Auto",
+											"Profile": "High"
+										},
+										"Bitrate": 12600000,
+										"Codec": "HEVC",
+										"ContentAdaptative": {
+											"CQRMode": "None"
+										},
+										"FieldOrder": "Top field first",
+										"FrameType": "Progressive",
+										"GopParameters": {
+											"Fixed": true,
+											"GopSize": 96
+										},
+										"HEVCParameters": {
+											"Descriptors": {
+												"HEVCVideoDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main 10"
+										},
+										"MPEG2Parameters": {
+											"Descriptors": {
+												"VideoStreamDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main"
+										},
+										"Mode": "Frame",
+										"TrickPlay": false
+									},
+									"FrameRateParameters": {
+										"Denominator": 1,
+										"FrameRate": "50",
+										"Numerator": 25
+									},
+									"FrameSizeParameters": {
+										"Height": 480,
+										"Resolution": "3840x2160",
+										"Width": 854
+									},
+									"LogoInsertions": [
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": true,
+											"FileName": "Fplay_4K_TT.png",
+											"Left": 830,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 122,
+											"Speed": "1",
+											"Top": 60,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "A_OTT_HD.png",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 1000,
+											"Speed": "1",
+											"Top": 0,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										}
+									],
+									"StillPicture": false,
+									"StillPictureDetection": {
+										"StillPictureBitrate": 500000,
+										"StillPictureDelay": 60,
+										"StillPictureDetectionMode": "None"
+									},
+									"StillPictureFilename": "default.png",
+									"VariantPid": 0,
+									"VideoQuality": {
+										"PremiumVideoQuality": "Default"
+									},
+									"VideoSqueezeBack": {
+										"Enable": false
+									},
+									"Watermarking": {
+										"Apply": false,
+										"IrdetoSettings": {
+											"Banner": "Off",
+											"DirectID": 0,
+											"FirstFrame": 0,
+											"LastBit": 511,
+											"LastFrame": 0,
+											"Mode": "A",
+											"Profile": "default",
+											"ScdFactor": 4
+										},
+										"NagraSettings": {
+											"CustomerID": 0,
+											"Mode": "A",
+											"Strength": "Default",
+											"Test": false
+										}
+									}
+								},
+								{
+									"BFrameConfiguration": {
+										"EnableHierarchical": true,
+										"Max": 15,
+										"Min": 0
+									},
+									"DisplayAspectRatio": {
+										"AspectRatio": "16:9",
+										"Denominator": 9,
+										"Numerator": 16
+									},
+									"Encoding": {
+										"AVCParameters": {
+											"Descriptors": {
+												"AVCVideoDescriptor": true
+											},
+											"Entropy": "CABAC",
+											"Level": "Auto",
+											"Profile": "High"
+										},
+										"Bitrate": 10600000,
+										"Codec": "HEVC",
+										"ContentAdaptative": {
+											"CQRMode": "None"
+										},
+										"FieldOrder": "Top field first",
+										"FrameType": "Progressive",
+										"GopParameters": {
+											"Fixed": true,
+											"GopSize": 96
+										},
+										"HEVCParameters": {
+											"Descriptors": {
+												"HEVCVideoDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main 10"
+										},
+										"MPEG2Parameters": {
+											"Descriptors": {
+												"VideoStreamDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main"
+										},
+										"Mode": "Frame",
+										"TrickPlay": false
+									},
+									"FrameRateParameters": {
+										"Denominator": 1,
+										"FrameRate": "50",
+										"Numerator": 25
+									},
+									"FrameSizeParameters": {
+										"Height": 480,
+										"Resolution": "2560x1440",
+										"Width": 854
+									},
+									"LogoInsertions": [
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": true,
+											"FileName": "Fplay_4K_TT.png",
+											"Left": 830,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 122,
+											"Speed": "1",
+											"Top": 60,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "A_OTT_HD.png",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 1000,
+											"Speed": "1",
+											"Top": 0,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										}
+									],
+									"StillPicture": false,
+									"StillPictureDetection": {
+										"StillPictureBitrate": 500000,
+										"StillPictureDelay": 60,
+										"StillPictureDetectionMode": "None"
+									},
+									"StillPictureFilename": "default.png",
+									"VariantPid": 0,
+									"VideoQuality": {
+										"PremiumVideoQuality": "Default"
+									},
+									"VideoSqueezeBack": {
+										"Enable": false
+									},
+									"Watermarking": {
+										"Apply": false,
+										"IrdetoSettings": {
+											"Banner": "Off",
+											"DirectID": 0,
+											"FirstFrame": 0,
+											"LastBit": 511,
+											"LastFrame": 0,
+											"Mode": "A",
+											"Profile": "default",
+											"ScdFactor": 4
+										},
+										"NagraSettings": {
+											"CustomerID": 0,
+											"Mode": "A",
+											"Strength": "Default",
+											"Test": false
+										}
+									}
+								},
+								{
+									"BFrameConfiguration": {
+										"EnableHierarchical": true,
+										"Max": 15,
+										"Min": 0
+									},
+									"DisplayAspectRatio": {
+										"AspectRatio": "16:9",
+										"Denominator": 9,
+										"Numerator": 16
+									},
+									"Encoding": {
+										"AVCParameters": {
+											"Descriptors": {
+												"AVCVideoDescriptor": true
+											},
+											"Entropy": "CABAC",
+											"Level": "Auto",
+											"Profile": "High"
+										},
+										"Bitrate": 7600000,
+										"Codec": "HEVC",
+										"ContentAdaptative": {
+											"CQRMode": "None"
+										},
+										"FieldOrder": "Top field first",
+										"FrameType": "Progressive",
+										"GopParameters": {
+											"Fixed": true,
+											"GopSize": 96
+										},
+										"HEVCParameters": {
+											"Descriptors": {
+												"HEVCVideoDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main 10"
+										},
+										"MPEG2Parameters": {
+											"Descriptors": {
+												"VideoStreamDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main"
+										},
+										"Mode": "Frame",
+										"TrickPlay": false
+									},
+									"FrameRateParameters": {
+										"Denominator": 1,
+										"FrameRate": "50",
+										"Numerator": 25
+									},
+									"FrameSizeParameters": {
+										"Height": 480,
+										"Resolution": "1920x1080",
+										"Width": 854
+									},
+									"LogoInsertions": [
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": true,
+											"FileName": "Fplay_4K_TT.png",
+											"Left": 830,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 122,
+											"Speed": "1",
+											"Top": 60,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "A_OTT_HD.png",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 1000,
+											"Speed": "1",
+											"Top": 0,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										}
+									],
+									"StillPicture": false,
+									"StillPictureDetection": {
+										"StillPictureBitrate": 500000,
+										"StillPictureDelay": 60,
+										"StillPictureDetectionMode": "None"
+									},
+									"StillPictureFilename": "default.png",
+									"VariantPid": 0,
+									"VideoQuality": {
+										"PremiumVideoQuality": "Default"
+									},
+									"VideoSqueezeBack": {
+										"Enable": false
+									},
+									"Watermarking": {
+										"Apply": false,
+										"IrdetoSettings": {
+											"Banner": "Off",
+											"DirectID": 0,
+											"FirstFrame": 0,
+											"LastBit": 511,
+											"LastFrame": 0,
+											"Mode": "A",
+											"Profile": "default",
+											"ScdFactor": 4
+										},
+										"NagraSettings": {
+											"CustomerID": 0,
+											"Mode": "A",
+											"Strength": "Default",
+											"Test": false
+										}
+									}
+								},
+								{
+									"BFrameConfiguration": {
+										"EnableHierarchical": true,
+										"Max": 15,
+										"Min": 0
+									},
+									"DisplayAspectRatio": {
+										"AspectRatio": "16:9",
+										"Denominator": 9,
+										"Numerator": 16
+									},
+									"Encoding": {
+										"AVCParameters": {
+											"Descriptors": {
+												"AVCVideoDescriptor": true
+											},
+											"Entropy": "CABAC",
+											"Level": "Auto",
+											"Profile": "High"
+										},
+										"Bitrate": 3800000,
+										"Codec": "HEVC",
+										"ContentAdaptative": {
+											"CQRMode": "None"
+										},
+										"FieldOrder": "Top field first",
+										"FrameType": "Progressive",
+										"GopParameters": {
+											"Fixed": true,
+											"GopSize": 48
+										},
+										"HEVCParameters": {
+											"Descriptors": {
+												"HEVCVideoDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main 10"
+										},
+										"MPEG2Parameters": {
+											"Descriptors": {
+												"VideoStreamDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main"
+										},
+										"Mode": "Frame",
+										"TrickPlay": false
+									},
+									"FrameRateParameters": {
+										"Denominator": 1,
+										"FrameRate": "25",
+										"Numerator": 25
+									},
+									"FrameSizeParameters": {
+										"Height": 480,
+										"Resolution": "1920x1080",
+										"Width": 854
+									},
+									"LogoInsertions": [
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": true,
+											"FileName": "Fplay_4K_TT.png",
+											"Left": 830,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 122,
+											"Speed": "1",
+											"Top": 60,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "A_OTT_HD.png",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 1000,
+											"Speed": "1",
+											"Top": 0,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										}
+									],
+									"StillPicture": false,
+									"StillPictureDetection": {
+										"StillPictureBitrate": 500000,
+										"StillPictureDelay": 60,
+										"StillPictureDetectionMode": "None"
+									},
+									"StillPictureFilename": "default.png",
+									"VariantPid": 0,
+									"VideoQuality": {
+										"PremiumVideoQuality": "Default"
+									},
+									"VideoSqueezeBack": {
+										"Enable": false
+									},
+									"Watermarking": {
+										"Apply": false,
+										"IrdetoSettings": {
+											"Banner": "Off",
+											"DirectID": 0,
+											"FirstFrame": 0,
+											"LastBit": 511,
+											"LastFrame": 0,
+											"Mode": "A",
+											"Profile": "default",
+											"ScdFactor": 4
+										},
+										"NagraSettings": {
+											"CustomerID": 0,
+											"Mode": "A",
+											"Strength": "Default",
+											"Test": false
+										}
+									}
+								},
+								{
+									"BFrameConfiguration": {
+										"EnableHierarchical": true,
+										"Max": 15,
+										"Min": 0
+									},
+									"DisplayAspectRatio": {
+										"AspectRatio": "16:9",
+										"Denominator": 9,
+										"Numerator": 16
+									},
+									"Encoding": {
+										"AVCParameters": {
+											"Descriptors": {
+												"AVCVideoDescriptor": true
+											},
+											"Entropy": "CABAC",
+											"Level": "Auto",
+											"Profile": "High"
+										},
+										"Bitrate": 2600000,
+										"Codec": "HEVC",
+										"ContentAdaptative": {
+											"CQRMode": "None"
+										},
+										"FieldOrder": "Top field first",
+										"FrameType": "Progressive",
+										"GopParameters": {
+											"Fixed": true,
+											"GopSize": 48
+										},
+										"HEVCParameters": {
+											"Descriptors": {
+												"HEVCVideoDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main 10"
+										},
+										"MPEG2Parameters": {
+											"Descriptors": {
+												"VideoStreamDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main"
+										},
+										"Mode": "Frame",
+										"TrickPlay": false
+									},
+									"FrameRateParameters": {
+										"Denominator": 1,
+										"FrameRate": "25",
+										"Numerator": 25
+									},
+									"FrameSizeParameters": {
+										"Height": 480,
+										"Resolution": "1280x720",
+										"Width": 854
+									},
+									"LogoInsertions": [
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": true,
+											"FileName": "Fplay_4K_TT.png",
+											"Left": 830,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 122,
+											"Speed": "1",
+											"Top": 60,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "A_OTT_HD.png",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 1000,
+											"Speed": "1",
+											"Top": 0,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										}
+									],
+									"StillPicture": false,
+									"StillPictureDetection": {
+										"StillPictureBitrate": 500000,
+										"StillPictureDelay": 60,
+										"StillPictureDetectionMode": "None"
+									},
+									"StillPictureFilename": "default.png",
+									"VariantPid": 0,
+									"VideoQuality": {
+										"PremiumVideoQuality": "Default"
+									},
+									"VideoSqueezeBack": {
+										"Enable": false
+									},
+									"Watermarking": {
+										"Apply": true,
+										"IrdetoSettings": {
+											"Banner": "Off",
+											"DirectID": 0,
+											"FirstFrame": 0,
+											"LastBit": 511,
+											"LastFrame": 0,
+											"Mode": "A",
+											"Profile": "default",
+											"ScdFactor": 4
+										},
+										"NagraSettings": {
+											"CustomerID": 0,
+											"Mode": "A",
+											"Strength": "Default",
+											"Test": false
+										}
+									}
+								},
+								{
+									"BFrameConfiguration": {
+										"EnableHierarchical": true,
+										"Max": 15,
+										"Min": 0
+									},
+									"DisplayAspectRatio": {
+										"AspectRatio": "16:9",
+										"Denominator": 9,
+										"Numerator": 16
+									},
+									"Encoding": {
+										"AVCParameters": {
+											"Descriptors": {
+												"AVCVideoDescriptor": true
+											},
+											"Entropy": "CABAC",
+											"Level": "Auto",
+											"Profile": "Main"
+										},
+										"Bitrate": 1200000,
+										"Codec": "HEVC",
+										"ContentAdaptative": {
+											"CQRMode": "None"
+										},
+										"FieldOrder": "Top field first",
+										"FrameType": "Progressive",
+										"GopParameters": {
+											"Fixed": true,
+											"GopSize": 48
+										},
+										"HEVCParameters": {
+											"Descriptors": {
+												"HEVCVideoDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main 10"
+										},
+										"MPEG2Parameters": {
+											"Descriptors": {
+												"VideoStreamDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main"
+										},
+										"Mode": "Frame",
+										"TrickPlay": false
+									},
+									"FrameRateParameters": {
+										"Denominator": 1,
+										"FrameRate": "25",
+										"Numerator": 25
+									},
+									"FrameSizeParameters": {
+										"Height": 260,
+										"Resolution": "1280x720",
+										"Width": 464
+									},
+									"LogoInsertions": [
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": true,
+											"FileName": "Fplay_4K_TT.png",
+											"Left": 830,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 122,
+											"Speed": "1",
+											"Top": 60,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "A_OTT_HD.png",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 1000,
+											"Speed": "1",
+											"Top": 0,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										}
+									],
+									"StillPicture": false,
+									"StillPictureDetection": {
+										"StillPictureBitrate": 500000,
+										"StillPictureDelay": 60,
+										"StillPictureDetectionMode": "None"
+									},
+									"StillPictureFilename": "default.png",
+									"VariantPid": 0,
+									"VideoQuality": {
+										"PremiumVideoQuality": "Default"
+									},
+									"VideoSqueezeBack": {
+										"Enable": false
+									},
+									"Watermarking": {
+										"Apply": true,
+										"IrdetoSettings": {
+											"Banner": "Off",
+											"DirectID": 0,
+											"FirstFrame": 0,
+											"LastBit": 511,
+											"LastFrame": 0,
+											"Mode": "A",
+											"Profile": "default",
+											"ScdFactor": 4
+										},
+										"NagraSettings": {
+											"CustomerID": 0,
+											"Mode": "A",
+											"Strength": "Default",
+											"Test": false
+										}
+									}
+								},
+								{
+									"BFrameConfiguration": {
+										"EnableHierarchical": true,
+										"Max": 15,
+										"Min": 0
+									},
+									"DisplayAspectRatio": {
+										"AspectRatio": "16:9",
+										"Denominator": 9,
+										"Numerator": 16
+									},
+									"Encoding": {
+										"AVCParameters": {
+											"Descriptors": {
+												"AVCVideoDescriptor": true
+											},
+											"Entropy": "CABAC",
+											"Level": "Auto",
+											"Profile": "Main"
+										},
+										"Bitrate": 400000,
+										"Codec": "HEVC",
+										"ContentAdaptative": {
+											"CQRMode": "None"
+										},
+										"FieldOrder": "Top field first",
+										"FrameType": "Progressive",
+										"GopParameters": {
+											"Fixed": true,
+											"GopSize": 48
+										},
+										"HEVCParameters": {
+											"Descriptors": {
+												"HEVCVideoDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main 10"
+										},
+										"MPEG2Parameters": {
+											"Descriptors": {
+												"VideoStreamDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main"
+										},
+										"Mode": "Frame",
+										"TrickPlay": false
+									},
+									"FrameRateParameters": {
+										"Denominator": 1,
+										"FrameRate": "25",
+										"Numerator": 25
+									},
+									"FrameSizeParameters": {
+										"Height": 480,
+										"Resolution": "Custom",
+										"Width": 854
+									},
+									"LogoInsertions": [
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": true,
+											"FileName": "Fplay_4K_TT.png",
+											"Left": 830,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 122,
+											"Speed": "1",
+											"Top": 60,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "A_OTT_HD.png",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 1000,
+											"Speed": "1",
+											"Top": 0,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										}
+									],
+									"StillPicture": false,
+									"StillPictureDetection": {
+										"StillPictureBitrate": 500000,
+										"StillPictureDelay": 60,
+										"StillPictureDetectionMode": "None"
+									},
+									"StillPictureFilename": "default.png",
+									"VariantPid": 0,
+									"VideoQuality": {
+										"PremiumVideoQuality": "Default"
+									},
+									"VideoSqueezeBack": {
+										"Enable": false
+									},
+									"Watermarking": {
+										"Apply": true,
+										"IrdetoSettings": {
+											"Banner": "Off",
+											"DirectID": 0,
+											"FirstFrame": 0,
+											"LastBit": 511,
+											"LastFrame": 0,
+											"Mode": "A",
+											"Profile": "default",
+											"ScdFactor": 4
+										},
+										"NagraSettings": {
+											"CustomerID": 0,
+											"Mode": "A",
+											"Strength": "Default",
+											"Test": false
+										}
+									}
+								},
+								{
+									"BFrameConfiguration": {
+										"EnableHierarchical": true,
+										"Max": 15,
+										"Min": 3
+									},
+									"DisplayAspectRatio": {
+										"AspectRatio": "16:9",
+										"Denominator": 9,
+										"Numerator": 16
+									},
+									"Encoding": {
+										"AVCParameters": {
+											"Descriptors": {
+												"AVCVideoDescriptor": true
+											},
+											"Entropy": "CABAC",
+											"Level": "Auto",
+											"Profile": "High"
+										},
+										"Bitrate": 14200000,
+										"Codec": "HEVC",
+										"ContentAdaptative": {
+											"CQRMode": "None"
+										},
+										"FieldOrder": "Top field first",
+										"FrameType": "Progressive",
+										"GopParameters": {
+											"Fixed": true,
+											"GopSize": 100
+										},
+										"HEVCParameters": {
+											"Descriptors": {
+												"HEVCVideoDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main 10"
+										},
+										"MPEG2Parameters": {
+											"Descriptors": {
+												"VideoStreamDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main"
+										},
+										"Mode": "Frame",
+										"TrickPlay": false
+									},
+									"FrameRateParameters": {
+										"Denominator": 1,
+										"FrameRate": "50",
+										"Numerator": 25
+									},
+									"FrameSizeParameters": {
+										"Height": 480,
+										"Resolution": "3840x2160",
+										"Width": 854
+									},
+									"LogoInsertions": [
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "Fplay_TT.png",
+											"Left": 830,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 122,
+											"Speed": "1",
+											"Top": 60,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "A_OTT_HD.png",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 1000,
+											"Speed": "1",
+											"Top": 0,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										}
+									],
+									"StillPicture": false,
+									"StillPictureDetection": {
+										"StillPictureBitrate": 500000,
+										"StillPictureDelay": 60,
+										"StillPictureDetectionMode": "None"
+									},
+									"StillPictureFilename": "default.png",
+									"VariantPid": 0,
+									"VideoQuality": {
+										"PremiumVideoQuality": "Default"
+									},
+									"VideoSqueezeBack": {
+										"Enable": false
+									},
+									"Watermarking": {
+										"Apply": false,
+										"IrdetoSettings": {
+											"Banner": "Off",
+											"DirectID": 0,
+											"FirstFrame": 0,
+											"LastBit": 511,
+											"LastFrame": 0,
+											"Mode": "A",
+											"Profile": "default",
+											"ScdFactor": 4
+										},
+										"NagraSettings": {
+											"CustomerID": 0,
+											"Mode": "A",
+											"Strength": "Default",
+											"Test": false
+										}
+									}
+								},
+								{
+									"BFrameConfiguration": {
+										"EnableHierarchical": true,
+										"Max": 15,
+										"Min": 3
+									},
+									"DisplayAspectRatio": {
+										"AspectRatio": "16:9",
+										"Denominator": 9,
+										"Numerator": 16
+									},
+									"Encoding": {
+										"AVCParameters": {
+											"Descriptors": {
+												"AVCVideoDescriptor": true
+											},
+											"Entropy": "CABAC",
+											"Level": "Auto",
+											"Profile": "High"
+										},
+										"Bitrate": 14200000,
+										"Codec": "HEVC",
+										"ContentAdaptative": {
+											"CQRMode": "None"
+										},
+										"FieldOrder": "Top field first",
+										"FrameType": "Progressive",
+										"GopParameters": {
+											"Fixed": true,
+											"GopSize": 100
+										},
+										"HEVCParameters": {
+											"Descriptors": {
+												"HEVCVideoDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main 10"
+										},
+										"MPEG2Parameters": {
+											"Descriptors": {
+												"VideoStreamDescriptor": true
+											},
+											"Level": "Auto",
+											"Profile": "Main"
+										},
+										"Mode": "Frame",
+										"TrickPlay": false
+									},
+									"FrameRateParameters": {
+										"Denominator": 1,
+										"FrameRate": "50",
+										"Numerator": 25
+									},
+									"FrameSizeParameters": {
+										"Height": 480,
+										"Resolution": "3840x2160",
+										"Width": 854
+									},
+									"LogoInsertions": [
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": true,
+											"FileName": "Fplay_4K_TT.png",
+											"Left": 830,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 122,
+											"Speed": "1",
+											"Top": 60,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "A_OTT_HD.png",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"PositionUnit": "Permillage",
+											"ScheduledInsertion": {
+												"Duration": 60,
+												"Enable": false,
+												"Frequency": 1800,
+												"RepeatConfig": "Indefinitely",
+												"RepeatCount": 1
+											},
+											"Size": 1000,
+											"Speed": "1",
+											"Top": 0,
+											"Type": "Video logo",
+											"UrlFilename": "",
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										},
+										{
+											"AspectRatio": {
+												"AspectRatio": "Use original",
+												"Denominator": 9,
+												"Numerator": 16
+											},
+											"Enable": false,
+											"FileName": "name",
+											"Left": 0,
+											"LogoSizeReference": "Width",
+											"Size": 100,
+											"Speed": "1",
+											"Top": 0,
+											"Urls": [
+												""
+											]
+										}
+									],
+									"StillPicture": false,
+									"StillPictureDetection": {
+										"StillPictureBitrate": 500000,
+										"StillPictureDelay": 60,
+										"StillPictureDetectionMode": "None"
+									},
+									"StillPictureFilename": "default.png",
+									"VariantPid": 0,
+									"VideoQuality": {
+										"PremiumVideoQuality": "Default"
+									},
+									"VideoSqueezeBack": {
+										"Enable": false
+									},
+									"Watermarking": {
+										"Apply": false,
+										"IrdetoSettings": {
+											"Banner": "Off",
+											"DirectID": 0,
+											"FirstFrame": 0,
+											"LastBit": 511,
+											"LastFrame": 0,
+											"Mode": "A",
+											"Profile": "default",
+											"ScdFactor": 4
+										},
+										"NagraSettings": {
+											"CustomerID": 0,
+											"Mode": "A",
+											"Strength": "Default",
+											"Test": false
+										}
+									}
+								}
+							],
+							"VideoDelay": 0,
+							"VideoFormat": "None",
+							"Watermarking": "None",
+							"WssBlanking": "Auto",
+							"YUVFullRange": "None"
+						}
+					]
+				},
+				"UID": "399564b1-5324-4096-8612-4ca9704dad99"
+			}
+		},
+		"GlobalConfiguration": {
+			"AlarmProfile": "Default",
+			"AudioSilenceParameters": {
+				"Enable": false,
+				"Threshold": -70
+			},
+			"DesyncRestartDelay": 180,
+			"DisableLogosOverSplices": false,
+			"EASConfiguration": "None",
+			"EASLocations": "",
+			"EmulationAtStart": true,
+			"EnableAllFileOutputs": true,
+			"EnableBlackout": false,
+			"ForceEmulation": false,
+			"InputLossErrorRecoveryParameters": {
+				"Audio": "None",
+				"ETR": "Input Switch",
+				"InputSwitchMode": "Infinite loop",
+				"Video": "None"
+			},
+			"MuteOutputs": false,
+			"OverrideCoresEnabled": false,
+			"OverrideCoresValues": 10,
+			"OverrideMemoryValues": 8192,
+			"RestartOnPersistentDesynchro": false,
+			"VideoQualityLevelThreshold": 0
+		},
+		"HostingPod": {
+			"Host": "New",
+			"UID": ""
+		},
+		"Input": [
+			{
+				"ActiveInputIndex": 0,
+				"BackupInputMonitoring": false,
+				"ChannelName": "",
+				"ETR101290": {
+					"AutoSwitchBack": {
+						"Delay": 30
+					},
+					"ContinuityCountErrors": null,
+					"EnableBackupMonitoring": false,
+					"EnableLevel2": false,
+					"PATErrors": {
+						"MaximumInterval": 500
+					},
+					"PIDErrors": {
+						"Enable": false,
+						"MaximumInterval": 500
+					},
+					"PMTErrors": {
+						"MaximumInterval": 500
+					},
+					"PatCrcErrors": false,
+					"PcrAccuracyErrors": false,
+					"PcrContinuityErrors": false,
+					"PmtCrcErrors": false,
+					"PtsRepetitionErrors": false,
+					"SyncByteErrors": false,
+					"TSSyncLossErrors": null,
+					"TransportErrors": false
+				},
+				"IPInputList": [
+					{
+						"CustomPcrPids": [],
+						"Interface": "vlan62",
+						"Label": "",
+						"MonitoredPids": "",
+						"Source": "0.0.0.0",
+						"Timeout": 250,
+						"Url": "udp://225.1.1.2:30120",
+						"UseFec": false,
+						"UseServiceClockAsPcr": false,
+						"UseSourceFiltering": false
+					}
+				],
+				"InputStreamCharacteristics": {
+					"Bitdepth": "8",
+					"Bitrate": 5000000,
+					"Codec": "MPEG-2",
+					"FrameRateParameters": {
+						"Denominator": 1,
+						"FrameRate": "25",
+						"Numerator": 25
+					},
+					"FrameSizeParameters": {
+						"Height": 576,
+						"Resolution": "720x576",
+						"Width": 720
+					},
+					"FrameType": "Progressive"
+				},
+				"InputStreamCharacteristicsLegacy": {
+					"Bitdepth": "10",
+					"Bitrate": 100000000,
+					"Codec": "Auto",
+					"FrameRateParameters": {
+						"Denominator": 1,
+						"FrameRate": "50",
+						"Numerator": 50
+					},
+					"FrameSizeParameters": {
+						"Height": 2160,
+						"Resolution": "3840x2160",
+						"Width": 3840
+					},
+					"Mode": "Manual"
+				},
+				"InvidiAdChannel": false,
+				"InvidiAdapter": "",
+				"InvidiDualRegistration": false,
+				"InvidiSpliceIDR": {
+					"Enable": false,
+					"EndIDRDuration": 0,
+					"StartIDRDuration": 0
+				},
+				"Label": "",
+				"Redundancy": "None",
+				"RedundancyLatency": 20,
+				"ReshuffledAudioTracks": [],
+				"SCTE30Version": "SCTE30 2009",
+				"SplicerName": "",
+				"SplicerTolerance": 1,
+				"Splicing": false,
+				"SwitchScrambled": false,
+				"TSInputSmoothing": {
+					"Enable": false,
+					"InputSmoothingDelay": 0
+				},
+				"Type": "IP"
+			}
+		],
+		"LoadsMessage": "",
+		"Logos": 1786678654.5485156,
+		"Mapping": {
+			"PidMappingList": [
+				{
+					"AudioDecoder": [],
+					"AudioInputTrack": [
+						{
+							"ID": 111,
+							"InputId": 0
+						}
+					],
+					"DataInputTrack": [],
+					"VideoInputTrack": [
+						{
+							"ID": 110,
+							"InputId": 0
+						}
+					]
+				}
+			],
+			"Programs": [],
+			"Type": "Pid"
+		},
+		"MultiInstancesSynchro": {
+			"Enable": false
+		},
+		"Name": "Event_01_18_4K_IP19_1 Audio V13",
+		"Outputs": [
+			[
+				{
+					"CmafIngestConfig": {
+						"ProfilesIDList": "",
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"DirectoryCreation": false,
+					"KeepBufferDepth": 70000,
+					"MergeMasterPlaylists": false,
+					"Outputs": [
+						{
+							"BackupInterface": "",
+							"BaseUrls": [],
+							"ChunkDuration": 10,
+							"ConnectionTimeout": 0,
+							"CredentialUid": "None",
+							"CustomCacheControls": [],
+							"CustomHttpHeaders": [],
+							"CustomHttpQueryParameters": [],
+							"DASHManifests": [],
+							"DRM": {
+								"InternalKeyGeneration": {
+									"KeyUrl": "",
+									"PlaybackKeyUrl": ""
+								}
+							},
+							"DisableFileChunking": false,
+							"EnableBackupInterface": false,
+							"EnableOutput": true,
+							"FEC": false,
+							"HTTPRequestMethod": "Auto",
+							"IPSpoofing": {
+								"OverrideSourceAddress": false,
+								"SourceAddress": "0.0.0.0"
+							},
+							"Interface": "vlan182",
+							"MasterPlaylists": [],
+							"Mp4": false,
+							"RecordingTriggerSource": "None",
+							"SMPTE20227": {
+								"Enable": false,
+								"IPSpoofing": {
+									"OverrideSourceAddress": false,
+									"SourceAddress": "0.0.0.0"
+								},
+								"Interface": "WAN",
+								"TOS": 0,
+								"TTL": 255,
+								"Url": "rtp://0.0.0.0:0"
+							},
+							"SRT": {
+								"ConnectTimeout": 3000,
+								"Enable": false,
+								"EncryptionMode": "None",
+								"Latency": 120,
+								"LocalPort": 0,
+								"MaxConnections": 1,
+								"PacketDrop": true,
+								"Password": "TitanLive!",
+								"SrtOutputMode": "Caller",
+								"StreamID": "",
+								"Timeout": 0
+							},
+							"SSLParameters": {
+								"ClientCertificate": "certificate",
+								"ExpectSpecificServerCertificate": false,
+								"ExpectedServerCertificate": "certificate",
+								"UseClientCertificate": false,
+								"ValidateServerCertificate": false,
+								"ValidationAuthority": "Default authority"
+							},
+							"StreamName": "",
+							"TOS": 0,
+							"TTL": 255,
+							"Type": "Live",
+							"Url": "udp://225.4.1.19:30124",
+							"UrlStreamB": "",
+							"Zixi": false,
+							"ZixiAdaptive": false,
+							"ZixiChannelName": "",
+							"ZixiDTLS": false,
+							"ZixiEncryption": "None",
+							"ZixiEncryptionKey": "",
+							"ZixiFecOverhead": "Auto",
+							"ZixiMaxLatency": 1000
+						}
+					],
+					"PlaylistsConfig": {
+						"DashPlaylistsConfig": {
+							"AdditionalAvailabilityOffset": 100,
+							"DashProfile": "ISO Base media file format live profile",
+							"DynamicAdInsertion": null,
+							"ManifestUpdatePeriod": 30000,
+							"MinimumBufferTime": 10000,
+							"NothingBelowRepresentations": true,
+							"PeriodPattern": "P$Number$",
+							"StartPeriodAtAst": true,
+							"TimeshiftBufferDepth": 60000,
+							"UTCTiming": {
+								"schemeIdUri": "None",
+								"value": ""
+							}
+						},
+						"EnableDynamicAdInsertion": false,
+						"GzipCompression": false,
+						"HLSPlaylistsConfig": {
+							"AddFrameRate": true,
+							"MasterPlaylistUpdatePeriod": 0,
+							"MediaPlaylistUseRelativeUrl": false,
+							"NoEndlist": false,
+							"PlaylistBufferDepth": 30000,
+							"PlaylistType": "LIVE",
+							"ProgramDateTimeLocation": "Before every segment",
+							"SCTE35ManifestDecoration": "Mode 1",
+							"TagExtXVersion": "Auto",
+							"TagIFramePlaylist": false,
+							"TagProgramDateTime": true
+						},
+						"NumberOfSegmentsInPlaylist": 3,
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"Redundancy": {
+						"ActiveOutputIndex": 0,
+						"AutoSwitchBack": false,
+						"AutoSwitchBackDelay": 1,
+						"Mode": "Active/Active"
+					},
+					"SSL": {
+						"IgnoreServerCertificateError": false
+					},
+					"SegmentAutoDelete": true,
+					"TSPacketsPerIP": {
+						"MaxNumber": "7"
+					}
+				},
+				{
+					"CmafIngestConfig": {
+						"ProfilesIDList": "",
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"DirectoryCreation": false,
+					"KeepBufferDepth": 70000,
+					"MergeMasterPlaylists": false,
+					"Outputs": [
+						{
+							"BackupInterface": "",
+							"BaseUrls": [],
+							"ChunkDuration": 10,
+							"ConnectionTimeout": 0,
+							"CredentialUid": "None",
+							"CustomCacheControls": [],
+							"CustomHttpHeaders": [],
+							"CustomHttpQueryParameters": [],
+							"DASHManifests": [],
+							"DRM": {
+								"InternalKeyGeneration": {
+									"KeyUrl": "",
+									"PlaybackKeyUrl": ""
+								}
+							},
+							"DisableFileChunking": false,
+							"EnableBackupInterface": false,
+							"EnableOutput": true,
+							"FEC": false,
+							"HTTPRequestMethod": "Auto",
+							"IPSpoofing": {
+								"OverrideSourceAddress": false,
+								"SourceAddress": "0.0.0.0"
+							},
+							"Interface": "vlan182",
+							"MasterPlaylists": [],
+							"Mp4": false,
+							"RecordingTriggerSource": "None",
+							"SMPTE20227": {
+								"Enable": false,
+								"IPSpoofing": {
+									"OverrideSourceAddress": false,
+									"SourceAddress": "0.0.0.0"
+								},
+								"Interface": "WAN",
+								"TOS": 0,
+								"TTL": 255,
+								"Url": "rtp://0.0.0.0:0"
+							},
+							"SRT": {
+								"ConnectTimeout": 3000,
+								"Enable": false,
+								"EncryptionMode": "None",
+								"Latency": 120,
+								"LocalPort": 0,
+								"MaxConnections": 1,
+								"PacketDrop": true,
+								"Password": "TitanLive!",
+								"SrtOutputMode": "Caller",
+								"StreamID": "",
+								"Timeout": 0
+							},
+							"SSLParameters": {
+								"ClientCertificate": "certificate",
+								"ExpectSpecificServerCertificate": false,
+								"ExpectedServerCertificate": "certificate",
+								"UseClientCertificate": false,
+								"ValidateServerCertificate": false,
+								"ValidationAuthority": "Default authority"
+							},
+							"StreamName": "",
+							"TOS": 0,
+							"TTL": 255,
+							"Type": "Live",
+							"Url": "udp://225.4.1.19:30125",
+							"UrlStreamB": "",
+							"Zixi": false,
+							"ZixiAdaptive": false,
+							"ZixiChannelName": "",
+							"ZixiDTLS": false,
+							"ZixiEncryption": "None",
+							"ZixiEncryptionKey": "",
+							"ZixiFecOverhead": "Auto",
+							"ZixiMaxLatency": 1000
+						}
+					],
+					"PlaylistsConfig": {
+						"DashPlaylistsConfig": {
+							"AdditionalAvailabilityOffset": 100,
+							"DashProfile": "ISO Base media file format live profile",
+							"DynamicAdInsertion": null,
+							"ManifestUpdatePeriod": 30000,
+							"MinimumBufferTime": 10000,
+							"NothingBelowRepresentations": true,
+							"PeriodPattern": "P$Number$",
+							"StartPeriodAtAst": true,
+							"TimeshiftBufferDepth": 60000,
+							"UTCTiming": {
+								"schemeIdUri": "None",
+								"value": ""
+							}
+						},
+						"EnableDynamicAdInsertion": false,
+						"GzipCompression": false,
+						"HLSPlaylistsConfig": {
+							"AddFrameRate": true,
+							"MasterPlaylistUpdatePeriod": 0,
+							"MediaPlaylistUseRelativeUrl": false,
+							"NoEndlist": false,
+							"PlaylistBufferDepth": 30000,
+							"PlaylistType": "LIVE",
+							"ProgramDateTimeLocation": "Before every segment",
+							"SCTE35ManifestDecoration": "Mode 1",
+							"TagExtXVersion": "Auto",
+							"TagIFramePlaylist": false,
+							"TagProgramDateTime": true
+						},
+						"NumberOfSegmentsInPlaylist": 3,
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"Redundancy": {
+						"ActiveOutputIndex": 0,
+						"AutoSwitchBack": false,
+						"AutoSwitchBackDelay": 1,
+						"Mode": "Active/Active"
+					},
+					"SSL": {
+						"IgnoreServerCertificateError": false
+					},
+					"SegmentAutoDelete": true,
+					"TSPacketsPerIP": {
+						"MaxNumber": "7"
+					}
+				},
+				{
+					"CmafIngestConfig": {
+						"ProfilesIDList": "",
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"DirectoryCreation": false,
+					"KeepBufferDepth": 70000,
+					"MergeMasterPlaylists": false,
+					"Outputs": [
+						{
+							"BackupInterface": "",
+							"BaseUrls": [],
+							"ChunkDuration": 10,
+							"ConnectionTimeout": 0,
+							"CredentialUid": "None",
+							"CustomCacheControls": [],
+							"CustomHttpHeaders": [],
+							"CustomHttpQueryParameters": [],
+							"DASHManifests": [],
+							"DRM": {
+								"InternalKeyGeneration": {
+									"KeyUrl": "",
+									"PlaybackKeyUrl": ""
+								}
+							},
+							"DisableFileChunking": false,
+							"EnableBackupInterface": false,
+							"EnableOutput": true,
+							"FEC": false,
+							"HTTPRequestMethod": "Auto",
+							"IPSpoofing": {
+								"OverrideSourceAddress": false,
+								"SourceAddress": "0.0.0.0"
+							},
+							"Interface": "vlan182",
+							"MasterPlaylists": [],
+							"Mp4": false,
+							"RecordingTriggerSource": "None",
+							"SMPTE20227": {
+								"Enable": false,
+								"IPSpoofing": {
+									"OverrideSourceAddress": false,
+									"SourceAddress": "0.0.0.0"
+								},
+								"Interface": "WAN",
+								"TOS": 0,
+								"TTL": 255,
+								"Url": "rtp://0.0.0.0:0"
+							},
+							"SRT": {
+								"ConnectTimeout": 3000,
+								"Enable": false,
+								"EncryptionMode": "None",
+								"Latency": 120,
+								"LocalPort": 0,
+								"MaxConnections": 1,
+								"PacketDrop": true,
+								"Password": "TitanLive!",
+								"SrtOutputMode": "Caller",
+								"StreamID": "",
+								"Timeout": 0
+							},
+							"SSLParameters": {
+								"ClientCertificate": "certificate",
+								"ExpectSpecificServerCertificate": false,
+								"ExpectedServerCertificate": "certificate",
+								"UseClientCertificate": false,
+								"ValidateServerCertificate": false,
+								"ValidationAuthority": "Default authority"
+							},
+							"StreamName": "",
+							"TOS": 0,
+							"TTL": 255,
+							"Type": "Live",
+							"Url": "udp://225.4.1.19:30126",
+							"UrlStreamB": "",
+							"Zixi": false,
+							"ZixiAdaptive": false,
+							"ZixiChannelName": "",
+							"ZixiDTLS": false,
+							"ZixiEncryption": "None",
+							"ZixiEncryptionKey": "",
+							"ZixiFecOverhead": "Auto",
+							"ZixiMaxLatency": 1000
+						}
+					],
+					"PlaylistsConfig": {
+						"DashPlaylistsConfig": {
+							"AdditionalAvailabilityOffset": 100,
+							"DashProfile": "ISO Base media file format live profile",
+							"DynamicAdInsertion": null,
+							"ManifestUpdatePeriod": 30000,
+							"MinimumBufferTime": 10000,
+							"NothingBelowRepresentations": true,
+							"PeriodPattern": "P$Number$",
+							"StartPeriodAtAst": true,
+							"TimeshiftBufferDepth": 60000,
+							"UTCTiming": {
+								"schemeIdUri": "None",
+								"value": ""
+							}
+						},
+						"EnableDynamicAdInsertion": false,
+						"GzipCompression": false,
+						"HLSPlaylistsConfig": {
+							"AddFrameRate": true,
+							"MasterPlaylistUpdatePeriod": 0,
+							"MediaPlaylistUseRelativeUrl": false,
+							"NoEndlist": false,
+							"PlaylistBufferDepth": 30000,
+							"PlaylistType": "LIVE",
+							"ProgramDateTimeLocation": "Before every segment",
+							"SCTE35ManifestDecoration": "Mode 1",
+							"TagExtXVersion": "Auto",
+							"TagIFramePlaylist": false,
+							"TagProgramDateTime": true
+						},
+						"NumberOfSegmentsInPlaylist": 3,
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"Redundancy": {
+						"ActiveOutputIndex": 0,
+						"AutoSwitchBack": false,
+						"AutoSwitchBackDelay": 1,
+						"Mode": "Active/Active"
+					},
+					"SSL": {
+						"IgnoreServerCertificateError": false
+					},
+					"SegmentAutoDelete": true,
+					"TSPacketsPerIP": {
+						"MaxNumber": "7"
+					}
+				},
+				{
+					"CmafIngestConfig": {
+						"ProfilesIDList": "",
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"DirectoryCreation": false,
+					"KeepBufferDepth": 70000,
+					"MergeMasterPlaylists": false,
+					"Outputs": [
+						{
+							"BackupInterface": "",
+							"BaseUrls": [],
+							"ChunkDuration": 10,
+							"ConnectionTimeout": 0,
+							"CredentialUid": "None",
+							"CustomCacheControls": [],
+							"CustomHttpHeaders": [],
+							"CustomHttpQueryParameters": [],
+							"DASHManifests": [],
+							"DRM": {
+								"InternalKeyGeneration": {
+									"KeyUrl": "",
+									"PlaybackKeyUrl": ""
+								}
+							},
+							"DisableFileChunking": false,
+							"EnableBackupInterface": false,
+							"EnableOutput": true,
+							"FEC": false,
+							"HTTPRequestMethod": "Auto",
+							"IPSpoofing": {
+								"OverrideSourceAddress": false,
+								"SourceAddress": "0.0.0.0"
+							},
+							"Interface": "vlan182",
+							"MasterPlaylists": [],
+							"Mp4": false,
+							"RecordingTriggerSource": "None",
+							"SMPTE20227": {
+								"Enable": false,
+								"IPSpoofing": {
+									"OverrideSourceAddress": false,
+									"SourceAddress": "0.0.0.0"
+								},
+								"Interface": "WAN",
+								"TOS": 0,
+								"TTL": 255,
+								"Url": "rtp://0.0.0.0:0"
+							},
+							"SRT": {
+								"ConnectTimeout": 3000,
+								"Enable": false,
+								"EncryptionMode": "None",
+								"Latency": 120,
+								"LocalPort": 0,
+								"MaxConnections": 1,
+								"PacketDrop": true,
+								"Password": "TitanLive!",
+								"SrtOutputMode": "Caller",
+								"StreamID": "",
+								"Timeout": 0
+							},
+							"SSLParameters": {
+								"ClientCertificate": "certificate",
+								"ExpectSpecificServerCertificate": false,
+								"ExpectedServerCertificate": "certificate",
+								"UseClientCertificate": false,
+								"ValidateServerCertificate": false,
+								"ValidationAuthority": "Default authority"
+							},
+							"StreamName": "",
+							"TOS": 0,
+							"TTL": 255,
+							"Type": "Live",
+							"Url": "udp://225.4.1.19:30127",
+							"UrlStreamB": "",
+							"Zixi": false,
+							"ZixiAdaptive": false,
+							"ZixiChannelName": "",
+							"ZixiDTLS": false,
+							"ZixiEncryption": "None",
+							"ZixiEncryptionKey": "",
+							"ZixiFecOverhead": "Auto",
+							"ZixiMaxLatency": 1000
+						}
+					],
+					"PlaylistsConfig": {
+						"DashPlaylistsConfig": {
+							"AdditionalAvailabilityOffset": 100,
+							"DashProfile": "ISO Base media file format live profile",
+							"DynamicAdInsertion": null,
+							"ManifestUpdatePeriod": 30000,
+							"MinimumBufferTime": 10000,
+							"NothingBelowRepresentations": true,
+							"PeriodPattern": "P$Number$",
+							"StartPeriodAtAst": true,
+							"TimeshiftBufferDepth": 60000,
+							"UTCTiming": {
+								"schemeIdUri": "None",
+								"value": ""
+							}
+						},
+						"EnableDynamicAdInsertion": false,
+						"GzipCompression": false,
+						"HLSPlaylistsConfig": {
+							"AddFrameRate": true,
+							"MasterPlaylistUpdatePeriod": 0,
+							"MediaPlaylistUseRelativeUrl": false,
+							"NoEndlist": false,
+							"PlaylistBufferDepth": 30000,
+							"PlaylistType": "LIVE",
+							"ProgramDateTimeLocation": "Before every segment",
+							"SCTE35ManifestDecoration": "Mode 1",
+							"TagExtXVersion": "Auto",
+							"TagIFramePlaylist": false,
+							"TagProgramDateTime": true
+						},
+						"NumberOfSegmentsInPlaylist": 3,
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"Redundancy": {
+						"ActiveOutputIndex": 0,
+						"AutoSwitchBack": false,
+						"AutoSwitchBackDelay": 1,
+						"Mode": "Active/Active"
+					},
+					"SSL": {
+						"IgnoreServerCertificateError": false
+					},
+					"SegmentAutoDelete": true,
+					"TSPacketsPerIP": {
+						"MaxNumber": "7"
+					}
+				},
+				{
+					"CmafIngestConfig": {
+						"ProfilesIDList": "",
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"DirectoryCreation": false,
+					"KeepBufferDepth": 70000,
+					"MergeMasterPlaylists": false,
+					"Outputs": [
+						{
+							"BackupInterface": "",
+							"BaseUrls": [],
+							"ChunkDuration": 10,
+							"ConnectionTimeout": 0,
+							"CredentialUid": "None",
+							"CustomCacheControls": [],
+							"CustomHttpHeaders": [],
+							"CustomHttpQueryParameters": [],
+							"DASHManifests": [],
+							"DRM": {
+								"InternalKeyGeneration": {
+									"KeyUrl": "",
+									"PlaybackKeyUrl": ""
+								}
+							},
+							"DisableFileChunking": false,
+							"EnableBackupInterface": false,
+							"EnableOutput": true,
+							"FEC": false,
+							"HTTPRequestMethod": "Auto",
+							"IPSpoofing": {
+								"OverrideSourceAddress": false,
+								"SourceAddress": "0.0.0.0"
+							},
+							"Interface": "vlan182",
+							"MasterPlaylists": [],
+							"Mp4": false,
+							"RecordingTriggerSource": "None",
+							"SMPTE20227": {
+								"Enable": false,
+								"IPSpoofing": {
+									"OverrideSourceAddress": false,
+									"SourceAddress": "0.0.0.0"
+								},
+								"Interface": "WAN",
+								"TOS": 0,
+								"TTL": 255,
+								"Url": "rtp://0.0.0.0:0"
+							},
+							"SRT": {
+								"ConnectTimeout": 3000,
+								"Enable": false,
+								"EncryptionMode": "None",
+								"Latency": 120,
+								"LocalPort": 0,
+								"MaxConnections": 1,
+								"PacketDrop": true,
+								"Password": "TitanLive!",
+								"SrtOutputMode": "Caller",
+								"StreamID": "",
+								"Timeout": 0
+							},
+							"SSLParameters": {
+								"ClientCertificate": "certificate",
+								"ExpectSpecificServerCertificate": false,
+								"ExpectedServerCertificate": "certificate",
+								"UseClientCertificate": false,
+								"ValidateServerCertificate": false,
+								"ValidationAuthority": "Default authority"
+							},
+							"StreamName": "",
+							"TOS": 0,
+							"TTL": 255,
+							"Type": "Live",
+							"Url": "udp://225.4.1.19:30128",
+							"UrlStreamB": "",
+							"Zixi": false,
+							"ZixiAdaptive": false,
+							"ZixiChannelName": "",
+							"ZixiDTLS": false,
+							"ZixiEncryption": "None",
+							"ZixiEncryptionKey": "",
+							"ZixiFecOverhead": "Auto",
+							"ZixiMaxLatency": 1000
+						}
+					],
+					"PlaylistsConfig": {
+						"DashPlaylistsConfig": {
+							"AdditionalAvailabilityOffset": 100,
+							"DashProfile": "ISO Base media file format live profile",
+							"DynamicAdInsertion": null,
+							"ManifestUpdatePeriod": 30000,
+							"MinimumBufferTime": 10000,
+							"NothingBelowRepresentations": true,
+							"PeriodPattern": "P$Number$",
+							"StartPeriodAtAst": true,
+							"TimeshiftBufferDepth": 60000,
+							"UTCTiming": {
+								"schemeIdUri": "None",
+								"value": ""
+							}
+						},
+						"EnableDynamicAdInsertion": false,
+						"GzipCompression": false,
+						"HLSPlaylistsConfig": {
+							"AddFrameRate": true,
+							"MasterPlaylistUpdatePeriod": 0,
+							"MediaPlaylistUseRelativeUrl": false,
+							"NoEndlist": false,
+							"PlaylistBufferDepth": 30000,
+							"PlaylistType": "LIVE",
+							"ProgramDateTimeLocation": "Before every segment",
+							"SCTE35ManifestDecoration": "Mode 1",
+							"TagExtXVersion": "Auto",
+							"TagIFramePlaylist": false,
+							"TagProgramDateTime": true
+						},
+						"NumberOfSegmentsInPlaylist": 3,
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"Redundancy": {
+						"ActiveOutputIndex": 0,
+						"AutoSwitchBack": false,
+						"AutoSwitchBackDelay": 1,
+						"Mode": "Active/Active"
+					},
+					"SSL": {
+						"IgnoreServerCertificateError": false
+					},
+					"SegmentAutoDelete": true,
+					"TSPacketsPerIP": {
+						"MaxNumber": "7"
+					}
+				},
+				{
+					"CmafIngestConfig": {
+						"ProfilesIDList": "",
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"DirectoryCreation": false,
+					"KeepBufferDepth": 70000,
+					"MergeMasterPlaylists": false,
+					"Outputs": [
+						{
+							"BackupInterface": "",
+							"BaseUrls": [],
+							"ChunkDuration": 10,
+							"ConnectionTimeout": 0,
+							"CredentialUid": "None",
+							"CustomCacheControls": [],
+							"CustomHttpHeaders": [],
+							"CustomHttpQueryParameters": [],
+							"DASHManifests": [],
+							"DRM": {
+								"InternalKeyGeneration": {
+									"KeyUrl": "",
+									"PlaybackKeyUrl": ""
+								}
+							},
+							"DisableFileChunking": false,
+							"EnableBackupInterface": false,
+							"EnableOutput": true,
+							"FEC": false,
+							"HTTPRequestMethod": "Auto",
+							"IPSpoofing": {
+								"OverrideSourceAddress": false,
+								"SourceAddress": "0.0.0.0"
+							},
+							"Interface": "vlan182",
+							"MasterPlaylists": [],
+							"Mp4": false,
+							"RecordingTriggerSource": "None",
+							"SMPTE20227": {
+								"Enable": false,
+								"IPSpoofing": {
+									"OverrideSourceAddress": false,
+									"SourceAddress": "0.0.0.0"
+								},
+								"Interface": "WAN",
+								"TOS": 0,
+								"TTL": 255,
+								"Url": "rtp://0.0.0.0:0"
+							},
+							"SRT": {
+								"ConnectTimeout": 3000,
+								"Enable": false,
+								"EncryptionMode": "None",
+								"Latency": 120,
+								"LocalPort": 0,
+								"MaxConnections": 1,
+								"PacketDrop": true,
+								"Password": "TitanLive!",
+								"SrtOutputMode": "Caller",
+								"StreamID": "",
+								"Timeout": 0
+							},
+							"SSLParameters": {
+								"ClientCertificate": "certificate",
+								"ExpectSpecificServerCertificate": false,
+								"ExpectedServerCertificate": "certificate",
+								"UseClientCertificate": false,
+								"ValidateServerCertificate": false,
+								"ValidationAuthority": "Default authority"
+							},
+							"StreamName": "",
+							"TOS": 0,
+							"TTL": 255,
+							"Type": "Live",
+							"Url": "udp://225.4.1.19:30129",
+							"UrlStreamB": "",
+							"Zixi": false,
+							"ZixiAdaptive": false,
+							"ZixiChannelName": "",
+							"ZixiDTLS": false,
+							"ZixiEncryption": "None",
+							"ZixiEncryptionKey": "",
+							"ZixiFecOverhead": "Auto",
+							"ZixiMaxLatency": 1000
+						}
+					],
+					"PlaylistsConfig": {
+						"DashPlaylistsConfig": {
+							"AdditionalAvailabilityOffset": 100,
+							"DashProfile": "ISO Base media file format live profile",
+							"DynamicAdInsertion": null,
+							"ManifestUpdatePeriod": 30000,
+							"MinimumBufferTime": 10000,
+							"NothingBelowRepresentations": true,
+							"PeriodPattern": "P$Number$",
+							"StartPeriodAtAst": true,
+							"TimeshiftBufferDepth": 60000,
+							"UTCTiming": {
+								"schemeIdUri": "None",
+								"value": ""
+							}
+						},
+						"EnableDynamicAdInsertion": false,
+						"GzipCompression": false,
+						"HLSPlaylistsConfig": {
+							"AddFrameRate": true,
+							"MasterPlaylistUpdatePeriod": 0,
+							"MediaPlaylistUseRelativeUrl": false,
+							"NoEndlist": false,
+							"PlaylistBufferDepth": 30000,
+							"PlaylistType": "LIVE",
+							"ProgramDateTimeLocation": "Before every segment",
+							"SCTE35ManifestDecoration": "Mode 1",
+							"TagExtXVersion": "Auto",
+							"TagIFramePlaylist": false,
+							"TagProgramDateTime": true
+						},
+						"NumberOfSegmentsInPlaylist": 3,
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"Redundancy": {
+						"ActiveOutputIndex": 0,
+						"AutoSwitchBack": false,
+						"AutoSwitchBackDelay": 1,
+						"Mode": "Active/Active"
+					},
+					"SSL": {
+						"IgnoreServerCertificateError": false
+					},
+					"SegmentAutoDelete": true,
+					"TSPacketsPerIP": {
+						"MaxNumber": "7"
+					}
+				},
+				{
+					"CmafIngestConfig": {
+						"ProfilesIDList": "",
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"DirectoryCreation": false,
+					"KeepBufferDepth": 70000,
+					"MergeMasterPlaylists": false,
+					"Outputs": [
+						{
+							"BackupInterface": "",
+							"BaseUrls": [],
+							"ChunkDuration": 10,
+							"ConnectionTimeout": 0,
+							"CredentialUid": "None",
+							"CustomCacheControls": [],
+							"CustomHttpHeaders": [],
+							"CustomHttpQueryParameters": [],
+							"DASHManifests": [],
+							"DRM": {
+								"InternalKeyGeneration": {
+									"KeyUrl": "",
+									"PlaybackKeyUrl": ""
+								}
+							},
+							"DisableFileChunking": false,
+							"EnableBackupInterface": false,
+							"EnableOutput": true,
+							"FEC": false,
+							"HTTPRequestMethod": "Auto",
+							"IPSpoofing": {
+								"OverrideSourceAddress": false,
+								"SourceAddress": "0.0.0.0"
+							},
+							"Interface": "vlan182",
+							"MasterPlaylists": [],
+							"Mp4": false,
+							"RecordingTriggerSource": "None",
+							"SMPTE20227": {
+								"Enable": false,
+								"IPSpoofing": {
+									"OverrideSourceAddress": false,
+									"SourceAddress": "0.0.0.0"
+								},
+								"Interface": "WAN",
+								"TOS": 0,
+								"TTL": 255,
+								"Url": "rtp://0.0.0.0:0"
+							},
+							"SRT": {
+								"ConnectTimeout": 3000,
+								"Enable": false,
+								"EncryptionMode": "None",
+								"Latency": 120,
+								"LocalPort": 0,
+								"MaxConnections": 1,
+								"PacketDrop": true,
+								"Password": "TitanLive!",
+								"SrtOutputMode": "Caller",
+								"StreamID": "",
+								"Timeout": 0
+							},
+							"SSLParameters": {
+								"ClientCertificate": "certificate",
+								"ExpectSpecificServerCertificate": false,
+								"ExpectedServerCertificate": "certificate",
+								"UseClientCertificate": false,
+								"ValidateServerCertificate": false,
+								"ValidationAuthority": "Default authority"
+							},
+							"StreamName": "",
+							"TOS": 0,
+							"TTL": 255,
+							"Type": "Live",
+							"Url": "udp://225.4.1.19:30130",
+							"UrlStreamB": "",
+							"Zixi": false,
+							"ZixiAdaptive": false,
+							"ZixiChannelName": "",
+							"ZixiDTLS": false,
+							"ZixiEncryption": "None",
+							"ZixiEncryptionKey": "",
+							"ZixiFecOverhead": "Auto",
+							"ZixiMaxLatency": 1000
+						}
+					],
+					"PlaylistsConfig": {
+						"DashPlaylistsConfig": {
+							"AdditionalAvailabilityOffset": 100,
+							"DashProfile": "ISO Base media file format live profile",
+							"DynamicAdInsertion": null,
+							"ManifestUpdatePeriod": 30000,
+							"MinimumBufferTime": 10000,
+							"NothingBelowRepresentations": true,
+							"PeriodPattern": "P$Number$",
+							"StartPeriodAtAst": true,
+							"TimeshiftBufferDepth": 60000,
+							"UTCTiming": {
+								"schemeIdUri": "None",
+								"value": ""
+							}
+						},
+						"EnableDynamicAdInsertion": false,
+						"GzipCompression": false,
+						"HLSPlaylistsConfig": {
+							"AddFrameRate": true,
+							"MasterPlaylistUpdatePeriod": 0,
+							"MediaPlaylistUseRelativeUrl": false,
+							"NoEndlist": false,
+							"PlaylistBufferDepth": 30000,
+							"PlaylistType": "LIVE",
+							"ProgramDateTimeLocation": "Before every segment",
+							"SCTE35ManifestDecoration": "Mode 1",
+							"TagExtXVersion": "Auto",
+							"TagIFramePlaylist": false,
+							"TagProgramDateTime": true
+						},
+						"NumberOfSegmentsInPlaylist": 3,
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"Redundancy": {
+						"ActiveOutputIndex": 0,
+						"AutoSwitchBack": false,
+						"AutoSwitchBackDelay": 1,
+						"Mode": "Active/Active"
+					},
+					"SSL": {
+						"IgnoreServerCertificateError": false
+					},
+					"SegmentAutoDelete": true,
+					"TSPacketsPerIP": {
+						"MaxNumber": "7"
+					}
+				},
+				{
+					"CmafIngestConfig": {
+						"ProfilesIDList": "",
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"DirectoryCreation": false,
+					"KeepBufferDepth": 70000,
+					"MergeMasterPlaylists": false,
+					"Outputs": [
+						{
+							"BackupInterface": "",
+							"BaseUrls": [],
+							"ChunkDuration": 10,
+							"ConnectionTimeout": 0,
+							"CredentialUid": "None",
+							"CustomCacheControls": [],
+							"CustomHttpHeaders": [],
+							"CustomHttpQueryParameters": [],
+							"DASHManifests": [],
+							"DRM": {
+								"InternalKeyGeneration": {
+									"KeyUrl": "",
+									"PlaybackKeyUrl": ""
+								}
+							},
+							"DisableFileChunking": false,
+							"EnableBackupInterface": false,
+							"EnableOutput": true,
+							"FEC": false,
+							"HTTPRequestMethod": "Auto",
+							"IPSpoofing": {
+								"OverrideSourceAddress": false,
+								"SourceAddress": "0.0.0.0"
+							},
+							"Interface": "vlan182",
+							"MasterPlaylists": [],
+							"Mp4": false,
+							"RecordingTriggerSource": "None",
+							"SMPTE20227": {
+								"Enable": false,
+								"IPSpoofing": {
+									"OverrideSourceAddress": false,
+									"SourceAddress": "0.0.0.0"
+								},
+								"Interface": "WAN",
+								"TOS": 0,
+								"TTL": 255,
+								"Url": "rtp://0.0.0.0:0"
+							},
+							"SRT": {
+								"ConnectTimeout": 3000,
+								"Enable": false,
+								"EncryptionMode": "None",
+								"Latency": 120,
+								"LocalPort": 0,
+								"MaxConnections": 1,
+								"PacketDrop": true,
+								"Password": "TitanLive!",
+								"SrtOutputMode": "Caller",
+								"StreamID": "",
+								"Timeout": 0
+							},
+							"SSLParameters": {
+								"ClientCertificate": "certificate",
+								"ExpectSpecificServerCertificate": false,
+								"ExpectedServerCertificate": "certificate",
+								"UseClientCertificate": false,
+								"ValidateServerCertificate": false,
+								"ValidationAuthority": "Default authority"
+							},
+							"StreamName": "",
+							"TOS": 0,
+							"TTL": 255,
+							"Type": "Live",
+							"Url": "udp://225.4.1.19:30131",
+							"UrlStreamB": "",
+							"Zixi": false,
+							"ZixiAdaptive": false,
+							"ZixiChannelName": "",
+							"ZixiDTLS": false,
+							"ZixiEncryption": "None",
+							"ZixiEncryptionKey": "",
+							"ZixiFecOverhead": "Auto",
+							"ZixiMaxLatency": 1000
+						}
+					],
+					"PlaylistsConfig": {
+						"DashPlaylistsConfig": {
+							"AdditionalAvailabilityOffset": 100,
+							"DashProfile": "ISO Base media file format live profile",
+							"DynamicAdInsertion": null,
+							"ManifestUpdatePeriod": 30000,
+							"MinimumBufferTime": 10000,
+							"NothingBelowRepresentations": true,
+							"PeriodPattern": "P$Number$",
+							"StartPeriodAtAst": true,
+							"TimeshiftBufferDepth": 60000,
+							"UTCTiming": {
+								"schemeIdUri": "None",
+								"value": ""
+							}
+						},
+						"EnableDynamicAdInsertion": false,
+						"GzipCompression": false,
+						"HLSPlaylistsConfig": {
+							"AddFrameRate": true,
+							"MasterPlaylistUpdatePeriod": 0,
+							"MediaPlaylistUseRelativeUrl": false,
+							"NoEndlist": false,
+							"PlaylistBufferDepth": 30000,
+							"PlaylistType": "LIVE",
+							"ProgramDateTimeLocation": "Before every segment",
+							"SCTE35ManifestDecoration": "Mode 1",
+							"TagExtXVersion": "Auto",
+							"TagIFramePlaylist": false,
+							"TagProgramDateTime": true
+						},
+						"NumberOfSegmentsInPlaylist": 3,
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"Redundancy": {
+						"ActiveOutputIndex": 0,
+						"AutoSwitchBack": false,
+						"AutoSwitchBackDelay": 1,
+						"Mode": "Active/Active"
+					},
+					"SSL": {
+						"IgnoreServerCertificateError": false
+					},
+					"SegmentAutoDelete": true,
+					"TSPacketsPerIP": {
+						"MaxNumber": "7"
+					}
+				},
+				{
+					"CmafIngestConfig": {
+						"ProfilesIDList": "",
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"DirectoryCreation": false,
+					"KeepBufferDepth": 70000,
+					"MergeMasterPlaylists": false,
+					"Outputs": [
+						{
+							"BackupInterface": "",
+							"BaseUrls": [],
+							"ChunkDuration": 10,
+							"ConnectionTimeout": 0,
+							"CredentialUid": "None",
+							"CustomCacheControls": [],
+							"CustomHttpHeaders": [],
+							"CustomHttpQueryParameters": [],
+							"DASHManifests": [],
+							"DRM": {
+								"InternalKeyGeneration": {
+									"KeyUrl": "",
+									"PlaybackKeyUrl": ""
+								}
+							},
+							"DisableFileChunking": false,
+							"EnableBackupInterface": false,
+							"EnableOutput": true,
+							"FEC": false,
+							"HTTPRequestMethod": "Auto",
+							"IPSpoofing": {
+								"OverrideSourceAddress": false,
+								"SourceAddress": "0.0.0.0"
+							},
+							"Interface": "vlan182",
+							"MasterPlaylists": [],
+							"Mp4": false,
+							"RecordingTriggerSource": "None",
+							"SMPTE20227": {
+								"Enable": false,
+								"IPSpoofing": {
+									"OverrideSourceAddress": false,
+									"SourceAddress": "0.0.0.0"
+								},
+								"Interface": "WAN",
+								"TOS": 0,
+								"TTL": 255,
+								"Url": "rtp://0.0.0.0:0"
+							},
+							"SRT": {
+								"ConnectTimeout": 3000,
+								"Enable": false,
+								"EncryptionMode": "None",
+								"Latency": 120,
+								"LocalPort": 0,
+								"MaxConnections": 1,
+								"PacketDrop": true,
+								"Password": "TitanLive!",
+								"SrtOutputMode": "Caller",
+								"StreamID": "",
+								"Timeout": 0
+							},
+							"SSLParameters": {
+								"ClientCertificate": "certificate",
+								"ExpectSpecificServerCertificate": false,
+								"ExpectedServerCertificate": "certificate",
+								"UseClientCertificate": false,
+								"ValidateServerCertificate": false,
+								"ValidationAuthority": "Default authority"
+							},
+							"StreamName": "",
+							"TOS": 0,
+							"TTL": 255,
+							"Type": "Live",
+							"Url": "udp://225.4.1.19:30132",
+							"UrlStreamB": "",
+							"Zixi": false,
+							"ZixiAdaptive": false,
+							"ZixiChannelName": "",
+							"ZixiDTLS": false,
+							"ZixiEncryption": "None",
+							"ZixiEncryptionKey": "",
+							"ZixiFecOverhead": "Auto",
+							"ZixiMaxLatency": 1000
+						}
+					],
+					"PlaylistsConfig": {
+						"DashPlaylistsConfig": {
+							"AdditionalAvailabilityOffset": 100,
+							"DashProfile": "ISO Base media file format live profile",
+							"DynamicAdInsertion": null,
+							"ManifestUpdatePeriod": 30000,
+							"MinimumBufferTime": 10000,
+							"NothingBelowRepresentations": true,
+							"PeriodPattern": "P$Number$",
+							"StartPeriodAtAst": true,
+							"TimeshiftBufferDepth": 60000,
+							"UTCTiming": {
+								"schemeIdUri": "None",
+								"value": ""
+							}
+						},
+						"EnableDynamicAdInsertion": false,
+						"GzipCompression": false,
+						"HLSPlaylistsConfig": {
+							"AddFrameRate": true,
+							"MasterPlaylistUpdatePeriod": 0,
+							"MediaPlaylistUseRelativeUrl": false,
+							"NoEndlist": false,
+							"PlaylistBufferDepth": 30000,
+							"PlaylistType": "LIVE",
+							"ProgramDateTimeLocation": "Before every segment",
+							"SCTE35ManifestDecoration": "Mode 1",
+							"TagExtXVersion": "Auto",
+							"TagIFramePlaylist": false,
+							"TagProgramDateTime": true
+						},
+						"NumberOfSegmentsInPlaylist": 3,
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"Redundancy": {
+						"ActiveOutputIndex": 0,
+						"AutoSwitchBack": false,
+						"AutoSwitchBackDelay": 1,
+						"Mode": "Active/Active"
+					},
+					"SSL": {
+						"IgnoreServerCertificateError": false
+					},
+					"SegmentAutoDelete": true,
+					"TSPacketsPerIP": {
+						"MaxNumber": "7"
+					}
+				},
+				{
+					"CmafIngestConfig": {
+						"ProfilesIDList": "",
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"DirectoryCreation": false,
+					"KeepBufferDepth": 70000,
+					"MergeMasterPlaylists": false,
+					"Outputs": [
+						{
+							"BackupInterface": "",
+							"BaseUrls": [],
+							"ChunkDuration": 10,
+							"ConnectionTimeout": 0,
+							"CredentialUid": "None",
+							"CustomCacheControls": [],
+							"CustomHttpHeaders": [],
+							"CustomHttpQueryParameters": [],
+							"DASHManifests": [],
+							"DRM": {
+								"InternalKeyGeneration": {
+									"KeyUrl": "",
+									"PlaybackKeyUrl": ""
+								}
+							},
+							"DisableFileChunking": false,
+							"EnableBackupInterface": false,
+							"EnableOutput": true,
+							"FEC": false,
+							"HTTPRequestMethod": "Auto",
+							"IPSpoofing": {
+								"OverrideSourceAddress": false,
+								"SourceAddress": "0.0.0.0"
+							},
+							"Interface": "vlan182",
+							"MasterPlaylists": [],
+							"Mp4": false,
+							"RecordingTriggerSource": "None",
+							"SMPTE20227": {
+								"Enable": false,
+								"IPSpoofing": {
+									"OverrideSourceAddress": false,
+									"SourceAddress": "0.0.0.0"
+								},
+								"Interface": "WAN",
+								"TOS": 0,
+								"TTL": 255,
+								"Url": "rtp://0.0.0.0:0"
+							},
+							"SRT": {
+								"ConnectTimeout": 3000,
+								"Enable": false,
+								"EncryptionMode": "None",
+								"Latency": 120,
+								"LocalPort": 0,
+								"MaxConnections": 1,
+								"PacketDrop": true,
+								"Password": "TitanLive!",
+								"SrtOutputMode": "Caller",
+								"StreamID": "",
+								"Timeout": 0
+							},
+							"SSLParameters": {
+								"ClientCertificate": "certificate",
+								"ExpectSpecificServerCertificate": false,
+								"ExpectedServerCertificate": "certificate",
+								"UseClientCertificate": false,
+								"ValidateServerCertificate": false,
+								"ValidationAuthority": "Default authority"
+							},
+							"StreamName": "",
+							"TOS": 0,
+							"TTL": 255,
+							"Type": "Live",
+							"Url": "udp://225.4.1.19:30133",
+							"UrlStreamB": "",
+							"Zixi": false,
+							"ZixiAdaptive": false,
+							"ZixiChannelName": "",
+							"ZixiDTLS": false,
+							"ZixiEncryption": "None",
+							"ZixiEncryptionKey": "",
+							"ZixiFecOverhead": "Auto",
+							"ZixiMaxLatency": 1000
+						}
+					],
+					"PlaylistsConfig": {
+						"DashPlaylistsConfig": {
+							"AdditionalAvailabilityOffset": 100,
+							"DashProfile": "ISO Base media file format live profile",
+							"DynamicAdInsertion": null,
+							"ManifestUpdatePeriod": 30000,
+							"MinimumBufferTime": 10000,
+							"NothingBelowRepresentations": true,
+							"PeriodPattern": "P$Number$",
+							"StartPeriodAtAst": true,
+							"TimeshiftBufferDepth": 60000,
+							"UTCTiming": {
+								"schemeIdUri": "None",
+								"value": ""
+							}
+						},
+						"EnableDynamicAdInsertion": false,
+						"GzipCompression": false,
+						"HLSPlaylistsConfig": {
+							"AddFrameRate": true,
+							"MasterPlaylistUpdatePeriod": 0,
+							"MediaPlaylistUseRelativeUrl": false,
+							"NoEndlist": false,
+							"PlaylistBufferDepth": 30000,
+							"PlaylistType": "LIVE",
+							"ProgramDateTimeLocation": "Before every segment",
+							"SCTE35ManifestDecoration": "Mode 1",
+							"TagExtXVersion": "Auto",
+							"TagIFramePlaylist": false,
+							"TagProgramDateTime": true
+						},
+						"NumberOfSegmentsInPlaylist": 3,
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"Redundancy": {
+						"ActiveOutputIndex": 0,
+						"AutoSwitchBack": false,
+						"AutoSwitchBackDelay": 1,
+						"Mode": "Active/Active"
+					},
+					"SSL": {
+						"IgnoreServerCertificateError": false
+					},
+					"SegmentAutoDelete": true,
+					"TSPacketsPerIP": {
+						"MaxNumber": "7"
+					}
+				},
+				{
+					"CmafIngestConfig": {
+						"ProfilesIDList": "",
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"DirectoryCreation": false,
+					"KeepBufferDepth": 70000,
+					"MergeMasterPlaylists": false,
+					"Outputs": [
+						{
+							"BackupInterface": "",
+							"BaseUrls": [],
+							"ChunkDuration": 10,
+							"ConnectionTimeout": 0,
+							"CredentialUid": "None",
+							"CustomCacheControls": [],
+							"CustomHttpHeaders": [],
+							"CustomHttpQueryParameters": [],
+							"DASHManifests": [],
+							"DRM": {
+								"InternalKeyGeneration": {
+									"KeyUrl": "",
+									"PlaybackKeyUrl": ""
+								}
+							},
+							"DisableFileChunking": false,
+							"EnableBackupInterface": false,
+							"EnableOutput": true,
+							"FEC": false,
+							"HTTPRequestMethod": "Auto",
+							"IPSpoofing": {
+								"OverrideSourceAddress": false,
+								"SourceAddress": "0.0.0.0"
+							},
+							"Interface": "vlan182",
+							"MasterPlaylists": [],
+							"Mp4": false,
+							"RecordingTriggerSource": "None",
+							"SMPTE20227": {
+								"Enable": false,
+								"IPSpoofing": {
+									"OverrideSourceAddress": false,
+									"SourceAddress": "0.0.0.0"
+								},
+								"Interface": "WAN",
+								"TOS": 0,
+								"TTL": 255,
+								"Url": "rtp://0.0.0.0:0"
+							},
+							"SRT": {
+								"ConnectTimeout": 3000,
+								"Enable": false,
+								"EncryptionMode": "None",
+								"Latency": 120,
+								"LocalPort": 0,
+								"MaxConnections": 1,
+								"PacketDrop": true,
+								"Password": "TitanLive!",
+								"SrtOutputMode": "Caller",
+								"StreamID": "",
+								"Timeout": 0
+							},
+							"SSLParameters": {
+								"ClientCertificate": "certificate",
+								"ExpectSpecificServerCertificate": false,
+								"ExpectedServerCertificate": "certificate",
+								"UseClientCertificate": false,
+								"ValidateServerCertificate": false,
+								"ValidationAuthority": "Default authority"
+							},
+							"StreamName": "",
+							"TOS": 0,
+							"TTL": 255,
+							"Type": "Live",
+							"Url": "udp://225.4.1.19:30134",
+							"UrlStreamB": "",
+							"Zixi": false,
+							"ZixiAdaptive": false,
+							"ZixiChannelName": "",
+							"ZixiDTLS": false,
+							"ZixiEncryption": "None",
+							"ZixiEncryptionKey": "",
+							"ZixiFecOverhead": "Auto",
+							"ZixiMaxLatency": 1000
+						}
+					],
+					"PlaylistsConfig": {
+						"DashPlaylistsConfig": {
+							"AdditionalAvailabilityOffset": 100,
+							"DashProfile": "ISO Base media file format live profile",
+							"DynamicAdInsertion": null,
+							"ManifestUpdatePeriod": 30000,
+							"MinimumBufferTime": 10000,
+							"NothingBelowRepresentations": true,
+							"PeriodPattern": "P$Number$",
+							"StartPeriodAtAst": true,
+							"TimeshiftBufferDepth": 60000,
+							"UTCTiming": {
+								"schemeIdUri": "None",
+								"value": ""
+							}
+						},
+						"EnableDynamicAdInsertion": false,
+						"GzipCompression": false,
+						"HLSPlaylistsConfig": {
+							"AddFrameRate": true,
+							"MasterPlaylistUpdatePeriod": 0,
+							"MediaPlaylistUseRelativeUrl": false,
+							"NoEndlist": false,
+							"PlaylistBufferDepth": 30000,
+							"PlaylistType": "LIVE",
+							"ProgramDateTimeLocation": "Before every segment",
+							"SCTE35ManifestDecoration": "Mode 1",
+							"TagExtXVersion": "Auto",
+							"TagIFramePlaylist": false,
+							"TagProgramDateTime": true
+						},
+						"NumberOfSegmentsInPlaylist": 3,
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"Redundancy": {
+						"ActiveOutputIndex": 0,
+						"AutoSwitchBack": false,
+						"AutoSwitchBackDelay": 1,
+						"Mode": "Active/Active"
+					},
+					"SSL": {
+						"IgnoreServerCertificateError": false
+					},
+					"SegmentAutoDelete": true,
+					"TSPacketsPerIP": {
+						"MaxNumber": "7"
+					}
+				},
+				{
+					"CmafIngestConfig": {
+						"ProfilesIDList": "",
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"DirectoryCreation": false,
+					"KeepBufferDepth": 70000,
+					"MergeMasterPlaylists": false,
+					"Outputs": [
+						{
+							"BackupInterface": "",
+							"BaseUrls": [],
+							"ChunkDuration": 10,
+							"ConnectionTimeout": 0,
+							"CredentialUid": "None",
+							"CustomCacheControls": [],
+							"CustomHttpHeaders": [],
+							"CustomHttpQueryParameters": [],
+							"DASHManifests": [],
+							"DRM": {
+								"InternalKeyGeneration": {
+									"KeyUrl": "",
+									"PlaybackKeyUrl": ""
+								}
+							},
+							"DisableFileChunking": false,
+							"EnableBackupInterface": false,
+							"EnableOutput": true,
+							"FEC": false,
+							"HTTPRequestMethod": "Auto",
+							"IPSpoofing": {
+								"OverrideSourceAddress": false,
+								"SourceAddress": "0.0.0.0"
+							},
+							"Interface": "vlan182",
+							"MasterPlaylists": [],
+							"Mp4": false,
+							"RecordingTriggerSource": "None",
+							"SMPTE20227": {
+								"Enable": false,
+								"IPSpoofing": {
+									"OverrideSourceAddress": false,
+									"SourceAddress": "0.0.0.0"
+								},
+								"Interface": "WAN",
+								"TOS": 0,
+								"TTL": 255,
+								"Url": "rtp://0.0.0.0:0"
+							},
+							"SRT": {
+								"ConnectTimeout": 3000,
+								"Enable": false,
+								"EncryptionMode": "None",
+								"Latency": 120,
+								"LocalPort": 0,
+								"MaxConnections": 1,
+								"PacketDrop": true,
+								"Password": "TitanLive!",
+								"SrtOutputMode": "Caller",
+								"StreamID": "",
+								"Timeout": 0
+							},
+							"SSLParameters": {
+								"ClientCertificate": "certificate",
+								"ExpectSpecificServerCertificate": false,
+								"ExpectedServerCertificate": "certificate",
+								"UseClientCertificate": false,
+								"ValidateServerCertificate": false,
+								"ValidationAuthority": "Default authority"
+							},
+							"StreamName": "",
+							"TOS": 0,
+							"TTL": 255,
+							"Type": "Live",
+							"Url": "udp://225.4.1.19:30135",
+							"UrlStreamB": "",
+							"Zixi": false,
+							"ZixiAdaptive": false,
+							"ZixiChannelName": "",
+							"ZixiDTLS": false,
+							"ZixiEncryption": "None",
+							"ZixiEncryptionKey": "",
+							"ZixiFecOverhead": "Auto",
+							"ZixiMaxLatency": 1000
+						}
+					],
+					"PlaylistsConfig": {
+						"DashPlaylistsConfig": {
+							"AdditionalAvailabilityOffset": 100,
+							"DashProfile": "ISO Base media file format live profile",
+							"DynamicAdInsertion": null,
+							"ManifestUpdatePeriod": 30000,
+							"MinimumBufferTime": 10000,
+							"NothingBelowRepresentations": true,
+							"PeriodPattern": "P$Number$",
+							"StartPeriodAtAst": true,
+							"TimeshiftBufferDepth": 60000,
+							"UTCTiming": {
+								"schemeIdUri": "None",
+								"value": ""
+							}
+						},
+						"EnableDynamicAdInsertion": false,
+						"GzipCompression": false,
+						"HLSPlaylistsConfig": {
+							"AddFrameRate": true,
+							"MasterPlaylistUpdatePeriod": 0,
+							"MediaPlaylistUseRelativeUrl": false,
+							"NoEndlist": false,
+							"PlaylistBufferDepth": 30000,
+							"PlaylistType": "LIVE",
+							"ProgramDateTimeLocation": "Before every segment",
+							"SCTE35ManifestDecoration": "Mode 1",
+							"TagExtXVersion": "Auto",
+							"TagIFramePlaylist": false,
+							"TagProgramDateTime": true
+						},
+						"NumberOfSegmentsInPlaylist": 3,
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"Redundancy": {
+						"ActiveOutputIndex": 0,
+						"AutoSwitchBack": false,
+						"AutoSwitchBackDelay": 1,
+						"Mode": "Active/Active"
+					},
+					"SSL": {
+						"IgnoreServerCertificateError": false
+					},
+					"SegmentAutoDelete": true,
+					"TSPacketsPerIP": {
+						"MaxNumber": "7"
+					}
+				},
+				{
+					"CmafIngestConfig": {
+						"ProfilesIDList": "",
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"DirectoryCreation": false,
+					"KeepBufferDepth": 70000,
+					"MergeMasterPlaylists": false,
+					"Outputs": [
+						{
+							"BackupInterface": "",
+							"BaseUrls": [],
+							"ChunkDuration": 10,
+							"ConnectionTimeout": 0,
+							"CredentialUid": "None",
+							"CustomCacheControls": [],
+							"CustomHttpHeaders": [],
+							"CustomHttpQueryParameters": [],
+							"DASHManifests": [],
+							"DRM": {
+								"InternalKeyGeneration": {
+									"KeyUrl": "",
+									"PlaybackKeyUrl": ""
+								}
+							},
+							"DisableFileChunking": false,
+							"EnableBackupInterface": false,
+							"EnableOutput": true,
+							"FEC": false,
+							"HTTPRequestMethod": "Auto",
+							"IPSpoofing": {
+								"OverrideSourceAddress": false,
+								"SourceAddress": "0.0.0.0"
+							},
+							"Interface": "vlan73",
+							"MasterPlaylists": [],
+							"Mp4": false,
+							"RecordingTriggerSource": "None",
+							"SMPTE20227": {
+								"Enable": false,
+								"IPSpoofing": {
+									"OverrideSourceAddress": false,
+									"SourceAddress": "0.0.0.0"
+								},
+								"Interface": "WAN",
+								"TOS": 0,
+								"TTL": 255,
+								"Url": "rtp://0.0.0.0:0"
+							},
+							"SRT": {
+								"ConnectTimeout": 3000,
+								"Enable": false,
+								"EncryptionMode": "None",
+								"Latency": 120,
+								"LocalPort": 0,
+								"MaxConnections": 1,
+								"PacketDrop": true,
+								"Password": "TitanLive!",
+								"SrtOutputMode": "Caller",
+								"StreamID": "",
+								"Timeout": 0
+							},
+							"SSLParameters": {
+								"ClientCertificate": "certificate",
+								"ExpectSpecificServerCertificate": false,
+								"ExpectedServerCertificate": "certificate",
+								"UseClientCertificate": false,
+								"ValidateServerCertificate": false,
+								"ValidationAuthority": "Default authority"
+							},
+							"StreamName": "",
+							"TOS": 0,
+							"TTL": 255,
+							"Type": "Live",
+							"Url": "udp://225.1.1.19:30120",
+							"UrlStreamB": "",
+							"Zixi": false,
+							"ZixiAdaptive": false,
+							"ZixiChannelName": "",
+							"ZixiDTLS": false,
+							"ZixiEncryption": "None",
+							"ZixiEncryptionKey": "",
+							"ZixiFecOverhead": "Auto",
+							"ZixiMaxLatency": 1000
+						}
+					],
+					"PlaylistsConfig": {
+						"DashPlaylistsConfig": {
+							"AdditionalAvailabilityOffset": 100,
+							"DashProfile": "ISO Base media file format live profile",
+							"DynamicAdInsertion": null,
+							"ManifestUpdatePeriod": 30000,
+							"MinimumBufferTime": 10000,
+							"NothingBelowRepresentations": true,
+							"PeriodPattern": "P$Number$",
+							"StartPeriodAtAst": true,
+							"TimeshiftBufferDepth": 60000,
+							"UTCTiming": {
+								"schemeIdUri": "None",
+								"value": ""
+							}
+						},
+						"EnableDynamicAdInsertion": false,
+						"GzipCompression": false,
+						"HLSPlaylistsConfig": {
+							"AddFrameRate": true,
+							"MasterPlaylistUpdatePeriod": 0,
+							"MediaPlaylistUseRelativeUrl": false,
+							"NoEndlist": false,
+							"PlaylistBufferDepth": 30000,
+							"PlaylistType": "LIVE",
+							"ProgramDateTimeLocation": "Before every segment",
+							"SCTE35ManifestDecoration": "Mode 1",
+							"TagExtXVersion": "Auto",
+							"TagIFramePlaylist": false,
+							"TagProgramDateTime": true
+						},
+						"NumberOfSegmentsInPlaylist": 3,
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"Redundancy": {
+						"ActiveOutputIndex": 0,
+						"AutoSwitchBack": false,
+						"AutoSwitchBackDelay": 1,
+						"Mode": "Active/Active"
+					},
+					"SSL": {
+						"IgnoreServerCertificateError": false
+					},
+					"SegmentAutoDelete": true,
+					"TSPacketsPerIP": {
+						"MaxNumber": "7"
+					}
+				},
+				{
+					"CmafIngestConfig": {
+						"ProfilesIDList": "",
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"DirectoryCreation": false,
+					"KeepBufferDepth": 70000,
+					"MergeMasterPlaylists": false,
+					"Outputs": [
+						{
+							"BackupInterface": "",
+							"BaseUrls": [],
+							"ChunkDuration": 10,
+							"ConnectionTimeout": 0,
+							"CredentialUid": "None",
+							"CustomCacheControls": [],
+							"CustomHttpHeaders": [],
+							"CustomHttpQueryParameters": [],
+							"DASHManifests": [],
+							"DRM": {
+								"InternalKeyGeneration": {
+									"KeyUrl": "",
+									"PlaybackKeyUrl": ""
+								}
+							},
+							"DisableFileChunking": false,
+							"EnableBackupInterface": false,
+							"EnableOutput": true,
+							"FEC": false,
+							"HTTPRequestMethod": "Auto",
+							"IPSpoofing": {
+								"OverrideSourceAddress": false,
+								"SourceAddress": "0.0.0.0"
+							},
+							"Interface": "vlan73",
+							"MasterPlaylists": [],
+							"Mp4": false,
+							"RecordingTriggerSource": "None",
+							"SMPTE20227": {
+								"Enable": false,
+								"IPSpoofing": {
+									"OverrideSourceAddress": false,
+									"SourceAddress": "0.0.0.0"
+								},
+								"Interface": "WAN",
+								"TOS": 0,
+								"TTL": 255,
+								"Url": "rtp://0.0.0.0:0"
+							},
+							"SRT": {
+								"ConnectTimeout": 3000,
+								"Enable": false,
+								"EncryptionMode": "None",
+								"Latency": 120,
+								"LocalPort": 0,
+								"MaxConnections": 1,
+								"PacketDrop": true,
+								"Password": "TitanLive!",
+								"SrtOutputMode": "Caller",
+								"StreamID": "",
+								"Timeout": 0
+							},
+							"SSLParameters": {
+								"ClientCertificate": "certificate",
+								"ExpectSpecificServerCertificate": false,
+								"ExpectedServerCertificate": "certificate",
+								"UseClientCertificate": false,
+								"ValidateServerCertificate": false,
+								"ValidationAuthority": "Default authority"
+							},
+							"StreamName": "",
+							"TOS": 0,
+							"TTL": 255,
+							"Type": "Live",
+							"Url": "udp://225.1.9.47:30120",
+							"UrlStreamB": "",
+							"Zixi": false,
+							"ZixiAdaptive": false,
+							"ZixiChannelName": "",
+							"ZixiDTLS": false,
+							"ZixiEncryption": "None",
+							"ZixiEncryptionKey": "",
+							"ZixiFecOverhead": "Auto",
+							"ZixiMaxLatency": 1000
+						}
+					],
+					"PlaylistsConfig": {
+						"DashPlaylistsConfig": {
+							"AdditionalAvailabilityOffset": 100,
+							"DashProfile": "ISO Base media file format live profile",
+							"DynamicAdInsertion": null,
+							"ManifestUpdatePeriod": 30000,
+							"MinimumBufferTime": 10000,
+							"NothingBelowRepresentations": true,
+							"PeriodPattern": "P$Number$",
+							"StartPeriodAtAst": true,
+							"TimeshiftBufferDepth": 60000,
+							"UTCTiming": {
+								"schemeIdUri": "None",
+								"value": ""
+							}
+						},
+						"EnableDynamicAdInsertion": false,
+						"GzipCompression": false,
+						"HLSPlaylistsConfig": {
+							"AddFrameRate": true,
+							"MasterPlaylistUpdatePeriod": 0,
+							"MediaPlaylistUseRelativeUrl": false,
+							"NoEndlist": false,
+							"PlaylistBufferDepth": 30000,
+							"PlaylistType": "LIVE",
+							"ProgramDateTimeLocation": "Before every segment",
+							"SCTE35ManifestDecoration": "Mode 1",
+							"TagExtXVersion": "Auto",
+							"TagIFramePlaylist": false,
+							"TagProgramDateTime": true
+						},
+						"NumberOfSegmentsInPlaylist": 3,
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"Redundancy": {
+						"ActiveOutputIndex": 0,
+						"AutoSwitchBack": false,
+						"AutoSwitchBackDelay": 1,
+						"Mode": "Active/Active"
+					},
+					"SSL": {
+						"IgnoreServerCertificateError": false
+					},
+					"SegmentAutoDelete": true,
+					"TSPacketsPerIP": {
+						"MaxNumber": "7"
+					}
+				},
+				{
+					"CmafIngestConfig": {
+						"ProfilesIDList": "",
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"DirectoryCreation": false,
+					"KeepBufferDepth": 70000,
+					"MergeMasterPlaylists": false,
+					"Outputs": [
+						{
+							"BackupInterface": "",
+							"BaseUrls": [],
+							"ChunkDuration": 10,
+							"ConnectionTimeout": 0,
+							"CredentialUid": "None",
+							"CustomCacheControls": [],
+							"CustomHttpHeaders": [],
+							"CustomHttpQueryParameters": [],
+							"DASHManifests": [],
+							"DRM": {
+								"InternalKeyGeneration": {
+									"KeyUrl": "",
+									"PlaybackKeyUrl": ""
+								}
+							},
+							"DisableFileChunking": false,
+							"EnableBackupInterface": false,
+							"EnableOutput": true,
+							"FEC": false,
+							"HTTPRequestMethod": "Auto",
+							"IPSpoofing": {
+								"OverrideSourceAddress": false,
+								"SourceAddress": "0.0.0.0"
+							},
+							"Interface": "vlan73",
+							"MasterPlaylists": [],
+							"Mp4": false,
+							"RecordingTriggerSource": "None",
+							"SMPTE20227": {
+								"Enable": false,
+								"IPSpoofing": {
+									"OverrideSourceAddress": false,
+									"SourceAddress": "0.0.0.0"
+								},
+								"Interface": "WAN",
+								"TOS": 0,
+								"TTL": 255,
+								"Url": "rtp://0.0.0.0:0"
+							},
+							"SRT": {
+								"ConnectTimeout": 3000,
+								"Enable": false,
+								"EncryptionMode": "None",
+								"Latency": 120,
+								"LocalPort": 0,
+								"MaxConnections": 1,
+								"PacketDrop": true,
+								"Password": "TitanLive!",
+								"SrtOutputMode": "Caller",
+								"StreamID": "",
+								"Timeout": 0
+							},
+							"SSLParameters": {
+								"ClientCertificate": "certificate",
+								"ExpectSpecificServerCertificate": false,
+								"ExpectedServerCertificate": "certificate",
+								"UseClientCertificate": false,
+								"ValidateServerCertificate": false,
+								"ValidationAuthority": "Default authority"
+							},
+							"StreamName": "",
+							"TOS": 0,
+							"TTL": 255,
+							"Type": "Live",
+							"Url": "udp://225.1.9.47:5000",
+							"UrlStreamB": "",
+							"Zixi": false,
+							"ZixiAdaptive": false,
+							"ZixiChannelName": "",
+							"ZixiDTLS": false,
+							"ZixiEncryption": "None",
+							"ZixiEncryptionKey": "",
+							"ZixiFecOverhead": "Auto",
+							"ZixiMaxLatency": 1000
+						}
+					],
+					"PlaylistsConfig": {
+						"DashPlaylistsConfig": {
+							"AdditionalAvailabilityOffset": 100,
+							"DashProfile": "ISO Base media file format live profile",
+							"DynamicAdInsertion": null,
+							"ManifestUpdatePeriod": 30000,
+							"MinimumBufferTime": 10000,
+							"NothingBelowRepresentations": true,
+							"PeriodPattern": "P$Number$",
+							"StartPeriodAtAst": true,
+							"TimeshiftBufferDepth": 60000,
+							"UTCTiming": {
+								"schemeIdUri": "None",
+								"value": ""
+							}
+						},
+						"EnableDynamicAdInsertion": false,
+						"GzipCompression": false,
+						"HLSPlaylistsConfig": {
+							"AddFrameRate": true,
+							"MasterPlaylistUpdatePeriod": 0,
+							"MediaPlaylistUseRelativeUrl": false,
+							"NoEndlist": false,
+							"PlaylistBufferDepth": 30000,
+							"PlaylistType": "LIVE",
+							"ProgramDateTimeLocation": "Before every segment",
+							"SCTE35ManifestDecoration": "Mode 1",
+							"TagExtXVersion": "Auto",
+							"TagIFramePlaylist": false,
+							"TagProgramDateTime": true
+						},
+						"NumberOfSegmentsInPlaylist": 3,
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"Redundancy": {
+						"ActiveOutputIndex": 0,
+						"AutoSwitchBack": false,
+						"AutoSwitchBackDelay": 1,
+						"Mode": "Active/Active"
+					},
+					"SSL": {
+						"IgnoreServerCertificateError": false
+					},
+					"SegmentAutoDelete": true,
+					"TSPacketsPerIP": {
+						"MaxNumber": "7"
+					}
+				},
+				{
+					"CmafIngestConfig": {
+						"ProfilesIDList": "",
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"DirectoryCreation": false,
+					"KeepBufferDepth": 70000,
+					"MergeMasterPlaylists": false,
+					"Outputs": [
+						{
+							"BackupInterface": "",
+							"BaseUrls": [],
+							"ChunkDuration": 10,
+							"ConnectionTimeout": 0,
+							"CredentialUid": "None",
+							"CustomCacheControls": [],
+							"CustomHttpHeaders": [],
+							"CustomHttpQueryParameters": [],
+							"DASHManifests": [],
+							"DRM": {
+								"InternalKeyGeneration": {
+									"KeyUrl": "",
+									"PlaybackKeyUrl": ""
+								}
+							},
+							"DisableFileChunking": false,
+							"EnableBackupInterface": false,
+							"EnableOutput": true,
+							"FEC": false,
+							"HTTPRequestMethod": "Auto",
+							"IPSpoofing": {
+								"OverrideSourceAddress": false,
+								"SourceAddress": "0.0.0.0"
+							},
+							"Interface": "vlan73",
+							"MasterPlaylists": [],
+							"Mp4": false,
+							"RecordingTriggerSource": "None",
+							"SMPTE20227": {
+								"Enable": false,
+								"IPSpoofing": {
+									"OverrideSourceAddress": false,
+									"SourceAddress": "0.0.0.0"
+								},
+								"Interface": "WAN",
+								"TOS": 0,
+								"TTL": 255,
+								"Url": "rtp://0.0.0.0:0"
+							},
+							"SRT": {
+								"ConnectTimeout": 3000,
+								"Enable": false,
+								"EncryptionMode": "None",
+								"Latency": 120,
+								"LocalPort": 0,
+								"MaxConnections": 1,
+								"PacketDrop": true,
+								"Password": "TitanLive!",
+								"SrtOutputMode": "Caller",
+								"StreamID": "",
+								"Timeout": 0
+							},
+							"SSLParameters": {
+								"ClientCertificate": "certificate",
+								"ExpectSpecificServerCertificate": false,
+								"ExpectedServerCertificate": "certificate",
+								"UseClientCertificate": false,
+								"ValidateServerCertificate": false,
+								"ValidationAuthority": "Default authority"
+							},
+							"StreamName": "",
+							"TOS": 0,
+							"TTL": 255,
+							"Type": "Live",
+							"Url": "udp://225.1.2.152:30120",
+							"UrlStreamB": "",
+							"Zixi": false,
+							"ZixiAdaptive": false,
+							"ZixiChannelName": "",
+							"ZixiDTLS": false,
+							"ZixiEncryption": "None",
+							"ZixiEncryptionKey": "",
+							"ZixiFecOverhead": "Auto",
+							"ZixiMaxLatency": 1000
+						}
+					],
+					"PlaylistsConfig": {
+						"DashPlaylistsConfig": {
+							"AdditionalAvailabilityOffset": 100,
+							"DashProfile": "ISO Base media file format live profile",
+							"DynamicAdInsertion": null,
+							"ManifestUpdatePeriod": 30000,
+							"MinimumBufferTime": 10000,
+							"NothingBelowRepresentations": true,
+							"PeriodPattern": "P$Number$",
+							"StartPeriodAtAst": true,
+							"TimeshiftBufferDepth": 60000,
+							"UTCTiming": {
+								"schemeIdUri": "None",
+								"value": ""
+							}
+						},
+						"EnableDynamicAdInsertion": false,
+						"GzipCompression": false,
+						"HLSPlaylistsConfig": {
+							"AddFrameRate": true,
+							"MasterPlaylistUpdatePeriod": 0,
+							"MediaPlaylistUseRelativeUrl": false,
+							"NoEndlist": false,
+							"PlaylistBufferDepth": 30000,
+							"PlaylistType": "LIVE",
+							"ProgramDateTimeLocation": "Before every segment",
+							"SCTE35ManifestDecoration": "Mode 1",
+							"TagExtXVersion": "Auto",
+							"TagIFramePlaylist": false,
+							"TagProgramDateTime": true
+						},
+						"NumberOfSegmentsInPlaylist": 3,
+						"SessionID": "",
+						"WatermarkPrefix": null
+					},
+					"Redundancy": {
+						"ActiveOutputIndex": 0,
+						"AutoSwitchBack": false,
+						"AutoSwitchBackDelay": 1,
+						"Mode": "Active/Active"
+					},
+					"SSL": {
+						"IgnoreServerCertificateError": false
+					},
+					"SegmentAutoDelete": true,
+					"TSPacketsPerIP": {
+						"MaxNumber": "7"
+					}
+				}
+			]
+		],
+		"State": {
+			"ActiveInputIndex": [
+				0
+			],
+			"ActiveOutputIndexes": [],
+			"AudioLevels": [],
+			"Blackout": false,
+			"EtrStatistics": [
+				[
+					{
+						"ContinuityCountErrors": 0,
+						"ContinuityCountFailover": 0,
+						"PatCRCErrors": 0,
+						"PatMissingErrors": 0,
+						"PcrAccuracyErrors": 0,
+						"PcrContinuityErrors": 0,
+						"PidContinuityCounterErrors": [
+							{
+								"current": 0,
+								"id": 110,
+								"total": 0
+							},
+							{
+								"current": 0,
+								"id": 111,
+								"total": 0
+							}
+						],
+						"PidErrors": [
+							{
+								"errors": 0,
+								"id": 110
+							},
+							{
+								"errors": 0,
+								"id": 111
+							}
+						],
+						"PmtCRCErrors": 0,
+						"PmtMissingErrors": 0,
+						"PtsRepetitionErrors": [
+							{
+								"errors": 0,
+								"id": 110
+							},
+							{
+								"errors": 0,
+								"id": 111
+							}
+						],
+						"SyncByteLossErrors": 0,
+						"TSSyncLossErrors": 0,
+						"TotalContinuityCountErrors": 0,
+						"TransportErrorIndicator": 0
+					}
+				]
+			],
+			"MainInputStatus": [
+				2
+			],
+			"MainOutputStatus": [
+				[
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0,
+					0
+				]
+			],
+			"Messages": [],
+			"Monitoring": "Offline",
+			"Recording": false,
+			"State": "Stopped",
+			"Statistics": {},
+			"StreamInfo": {
+				"Input": [
+					{
+						"Services": [
+							{
+								"AudioESList": [
+									{
+										"Bitrate": 131468,
+										"ChannelList": [
+											"Front Left",
+											"Front Right"
+										],
+										"Codec": "AAC",
+										"DualMono": false,
+										"Language": "und",
+										"PID": 111,
+										"SampleRate": 48000,
+										"Scrambled": false
+									}
+								],
+								"DataESList": [],
+								"ID": 1,
+								"Name": "Program 1",
+								"VideoESList": [
+									{
+										"Bitdepth": 8,
+										"Bitrate": 3215286,
+										"Codec": "MPEG-4 AVC",
+										"DisplayAspectRatio": {
+											"Denominator": 9,
+											"Numerator": 16
+										},
+										"FrameRate": {
+											"Denominator": 2,
+											"Numerator": 50
+										},
+										"FrameSize": {
+											"Height": 1080,
+											"Width": 1920
+										},
+										"FrameType": "Progressive",
+										"PID": 110,
+										"Scrambled": false
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		"Statmux": {
+			"AutoChannelId": true,
+			"Channel": 0,
+			"Communication": true,
+			"StatmuxName": "",
+			"StatmuxUID": ""
+		},
+		"TemplateParametersOverride": {
+			"/FormatConfigurations/0/TSMuxer/ConformanceDependent/DVB/ServiceName": "abr-full-hd-10"
+		},
+		"UID": "ebde0b70-8f08-4345-b192-66ded697cb6e"
+	}
+]

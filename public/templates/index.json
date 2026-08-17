@@ -1,0 +1,21 @@
+{
+    "templates": [
+        "4K_1Audio_Music.json",
+        "4K_1audio.json",
+        "4K_2audio.json",
+        "4K_3Audio.json",
+        "EPL_4KA_1audio.json",
+        "EPL_4KA_2audio.json",
+        "EPL_4KA_3audio.json",
+        "EPL_4KB_1audio.json",
+        "EPL_4KB_2audio.json",
+        "EPL_4KB_3audio.json",
+        "EPL_HD_1audio.json",
+        "EPL_HD_2audio.json",
+        "EPL_HD_3audio.json",
+        "HD_1audio_Music.json",
+        "HD_1audio.json",
+        "HD_2audio.json",
+        "HD_3audio.json"
+    ]
+}

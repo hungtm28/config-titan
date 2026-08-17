@@ -1,0 +1,264 @@
+'use server';
+
+import type { ConfiguratorValues, TitanJson } from './definitions';
+import { headers } from 'next/headers';
+import ipMappingRules from './ip-mapping-rules.json';
+
+// Helper to get base URL
+async function getBaseUrl() {
+  const heads = headers();
+  const protocol = heads.get('x-forwarded-proto') || 'http';
+  const host = heads.get('host');
+  return `${protocol}://${host}`;
+}
+
+export async function getTemplateFileNames(): Promise<string[]> {
+  try {
+    const baseUrl = await getBaseUrl();
+    const response = await fetch(`${baseUrl}/templates/index.json`, { cache: 'no-store' });
+    if (!response.ok) throw new Error(`Failed to fetch template index: ${response.statusText}`);
+    const data = await response.json();
+    return data.templates?.filter((t: string) => !t.toLowerCase().endsWith('index.json')) || [];
+  } catch (error) {
+    console.error('Error fetching template file names:', error);
+    return [];
+  }
+}
+
+async function getTemplateContent(templateName: string): Promise<any> {
+  try {
+    const baseUrl = await getBaseUrl();
+    const response = await fetch(`${baseUrl}/templates/${templateName}`, { cache: 'no-store' });
+    if (!response.ok) throw new Error(`Template file not found: ${templateName}`);
+    return await response.json();
+  } catch (error) {
+    console.error(`Error fetching template content for ${templateName}:`, error);
+    throw new Error(`Failed to load template: ${templateName}`);
+  }
+}
+
+function isCaptureIp(url: string): boolean {
+  if (!url || !url.endsWith(':30120')) return false;
+  const captureIpPrefixes = ['udp://225.1.9.', 'udp://225.11.99.', 'udp://225.1.19.', 'udp://225.11.19.', 'udp://225.11.91.'];
+  return captureIpPrefixes.some(prefix => url.startsWith(prefix));
+}
+
+function processIpData(url: string, values: ConfiguratorValues, specificRule?: string, useAlternativeSite = false): { newUrl: string, newVlan?: string, appliedRule?: string } {
+    if (!url || !url.startsWith('udp://')) return { newUrl: url };
+
+    const urlParts = url.split(':');
+    if (urlParts.length !== 3) return { newUrl: url };
+    
+    const originalPort = urlParts[2];
+    const currentIp = urlParts[1].substring(2);
+    const ipParts = currentIp.split('.');
+    if (ipParts.length !== 4) return { newUrl: url };
+    
+    const rules: any = ipMappingRules;
+
+    if (!useAlternativeSite) { 
+      if (values.ipType === 'DRM' && currentIp.startsWith('225.1.1.') && originalPort === '30120') {
+          const drmRuleConfig = rules.DRM?.rules[0];
+          const lookupKey = String(values.ipOutput);
+          let mappedValue = lookupKey;
+          if (drmRuleConfig && drmRuleConfig.valueMap && (lookupKey in drmRuleConfig.valueMap)) {
+              mappedValue = drmRuleConfig.valueMap[lookupKey];
+          }
+          const newUrl = `udp://225.5.5.${mappedValue}:8989`;
+          return { newUrl, newVlan: '300', appliedRule: 'DRM_Swap' };
+      }
+
+      if (values.ipType === 'NonDRM' && currentIp.startsWith('225.5.5.') && originalPort === '8989') {
+          const iptvRule = rules.IPTV.rules[0];
+          const targetSite = values.site;
+          const siteOutput = iptvRule.site_outputs[targetSite];
+          if (siteOutput) {
+            const newUrl = `udp://${siteOutput.url.replace('{{x}}', values.ipOutput)}`;
+            return { newUrl, newVlan: siteOutput.vlan, appliedRule: 'IPTV_Swap' };
+          } 
+      }
+    }
+    
+    const ruleOrder = specificRule ? [specificRule] : ["IPTV", "OTT", "DRM", "CaptureLogo", "CaptureNoLogo"];
+
+    for (const key of ruleOrder) {
+        if (!rules[key]) continue;
+
+        for (const ruleConfig of rules[key].rules) {
+            const isMatch = (ruleConfig.input_patterns?.some((p: string) => currentIp.startsWith(p))) || 
+                            (ruleConfig.input_pattern && currentIp.startsWith(ruleConfig.input_pattern)) ||
+                            (ruleConfig.input_pattern_prefix && currentIp.startsWith(ruleConfig.input_pattern_prefix));
+
+            const portMatch = ruleConfig.port ? ruleConfig.port === parseInt(originalPort, 10) : true;
+
+            if (isMatch && portMatch) {
+                const targetSite = useAlternativeSite ? (values.site === 'HN' ? 'HCM' : 'HN') : values.site;
+                const siteOutput = ruleConfig.site_outputs[targetSite];
+
+                if (!siteOutput) continue;
+
+                let finalUrlSegment = siteOutput.url;
+                const outputVlan = siteOutput.vlan;
+                
+                if ([ 'IPTV', 'OTT'].includes(key)) {
+                    finalUrlSegment = finalUrlSegment.replace('{{x}}', values.ipOutput);
+                } else if (['DRM', 'CaptureLogo', 'CaptureNoLogo'].includes(key)) {
+                    const valueMap = ruleConfig.valueMap;
+                    const lookupKey = String(values.ipOutput);
+                    let mappedValue = lookupKey;
+
+                    if (valueMap && (lookupKey in valueMap)) {
+                        mappedValue = valueMap[lookupKey];
+                    }
+                    finalUrlSegment = finalUrlSegment.replace('{{mapped_value}}', mappedValue);
+
+                    if (key === 'DRM') {
+                        finalUrlSegment = finalUrlSegment.replace('{{y}}.{{y}}', `${ipParts[1]}.${ipParts[2]}`);
+                    }
+                }
+                
+                const newUrl = finalUrlSegment.includes(':') ? `udp://${finalUrlSegment}` : `udp://${finalUrlSegment}:${originalPort}`;
+
+                return { newUrl, newVlan: outputVlan, appliedRule: key };
+            }
+        }
+    }
+
+    return { newUrl: url };
+}
+
+export async function generateJson(values: ConfiguratorValues): Promise<string> {
+  try {
+    const json: TitanJson = await getTemplateContent(values.template);
+    const templateNameWithoutExt = values.template.replace(/\.json/i, '');
+    const newName = `${values.site}_${templateNameWithoutExt}_${values.ipOutput}`;
+    
+    const seenUrls = new Set<string>();
+
+    if (Array.isArray(json)) {
+      for (const item of json) {
+        if (!item) continue;
+
+        if (item.Name) item.Name = newName;
+
+        const urlToRuleMap = new Map<string, 'CaptureLogo' | 'CaptureNoLogo'>();
+
+        if (values.ipType === 'DRM') {
+          const variantLogoStatus = new Map<number, boolean>();
+          const videoTrack = item?.Device?.Template?.Tracks?.VideoTracks?.[0];
+          if (videoTrack?.Variants && Array.isArray(videoTrack.Variants)) {
+            videoTrack.Variants.forEach((variant: any, index: number) => {
+              const hasLogo = variant?.LogoInsertions?.some((logo: any) => logo?.Enable === true) ?? false;
+              variantLogoStatus.set(index, hasLogo);
+            });
+          }
+
+          const outputToVariantMap = new Map<number, number>();
+          const muxerProfiles = item?.Device?.Template?.FormatConfigurations?.[0]?.TSMuxer?.Profiles;
+          if (muxerProfiles && Array.isArray(muxerProfiles)) {
+            muxerProfiles.forEach((profile: any, index: number) => {
+              const variantIdx = profile?.TracksMapping?.VideoTrackList?.[0]?.VariantIdx;
+              if (variantIdx !== undefined) {
+                outputToVariantMap.set(index, variantIdx);
+              }
+            });
+          }
+
+          const outputsList = item?.Outputs?.[0];
+          if (outputsList && Array.isArray(outputsList)) {
+            outputsList.forEach((outputConfig: any, index: number) => {
+              const url = outputConfig?.Outputs?.[0]?.Url;
+              if (url && typeof url === 'string' && isCaptureIp(url)) {
+                const variantIndex = outputToVariantMap.get(index);
+                if (variantIndex !== undefined) {
+                  const hasLogo = variantLogoStatus.get(variantIndex) ?? false;
+                  urlToRuleMap.set(url, hasLogo ? 'CaptureLogo' : 'CaptureNoLogo');
+                }
+              }
+            });
+          }
+        }
+
+        const processUrlsRecursively = (obj: any) => {
+          if (!obj || typeof obj !== 'object') return;
+
+          if (obj.Url && typeof obj.Url === 'string') {
+            let ruleForProcessing: 'CaptureLogo' | 'CaptureNoLogo' | undefined = undefined;
+
+            if (isCaptureIp(obj.Url)) {
+              if (values.ipType === 'DRM') {
+                ruleForProcessing = urlToRuleMap.get(obj.Url);
+              } else {
+                ruleForProcessing = 'CaptureNoLogo';
+              }
+              
+              if (!ruleForProcessing) {
+                ruleForProcessing = 'CaptureNoLogo';
+              }
+            }
+
+            let { newUrl, newVlan } = processIpData(obj.Url, values, ruleForProcessing, false);
+
+            if (seenUrls.has(newUrl)) {
+              const alternativeResult = processIpData(obj.Url, values, ruleForProcessing, true);
+              newUrl = alternativeResult.newUrl;
+              newVlan = alternativeResult.newVlan;
+            }
+            
+            seenUrls.add(newUrl);
+            obj.Url = newUrl;
+            if (newVlan) obj.Interface = newVlan;
+          }
+
+          if (Array.isArray(obj)) {
+            obj.forEach(processUrlsRecursively);
+          } else {
+            Object.values(obj).forEach(processUrlsRecursively);
+          }
+        };
+        
+        processUrlsRecursively(item);
+
+        if (item.Device?.Template?.Name) item.Device.Template.Name = newName;
+
+        const isAnyLogoEnabledInProfile = item?.Device?.Template?.Tracks?.VideoTracks?.[0]?.Variants?.some((v: any) => v?.LogoInsertions?.some((l: any) => l.Enable === true));
+
+        if (values.logo && isAnyLogoEnabledInProfile) {
+          const getPosition = (logoPosition: string) => {
+            const positions: { [key: string]: { Left: number, Top: number } } = {
+              'top-right': { Left: 830, Top: 60 }, 'bottom-right': { Left: 830, Top: 858 },
+              'top-left': { Left: 72, Top: 60 }, 'bottom-left': { Left: 72, Top: 858 },
+              'epl': { Left: 836, Top: 810 }
+            };
+            return positions[logoPosition] || positions['top-right'];
+          };
+
+          const processLogoInsertions = (logoInsertions: any[]) => {
+            logoInsertions.forEach(logo => {
+              if (logo?.Enable === true && logo.FileName && !['A_OTT', 'B_OTT', 'JAS-DID', 'IPTV'].some(term => logo.FileName.includes(term))) {
+                logo.FileName = values.logo;
+                if (values.logoPosition) {
+                  const { Left, Top } = getPosition(values.logoPosition);
+                  logo.Left = Left;
+                  logo.Top = Top;
+                }
+              }
+            });
+          };
+
+          item.Device?.Template?.Tracks?.VideoTracks?.forEach((videoTrack:any) => {
+            videoTrack?.Variants?.forEach((variant:any) => {
+              if (variant?.LogoInsertions) processLogoInsertions(variant.LogoInsertions);
+            });
+          });
+        }
+      }
+    }
+    
+    return JSON.stringify(json, null, 2);
+
+  } catch (error) {
+    console.error('Error in generateJson:', error);
+    throw new Error(error instanceof Error ? error.message : 'Failed to generate JSON file.');
+  }
+}
