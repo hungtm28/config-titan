@@ -61,7 +61,32 @@ function isMergedTemplate(templateName?: string): boolean {
   return upper.includes('4KA') || upper.includes('4KB');
 }
 
-function processIpData(url: string, values: ConfiguratorValues, templateName?: string, specificRule?: string, useAlternativeSite = false, isMerged = false): { newUrl: string, newVlan?: string, appliedRule?: string } {
+function getIpFromUrl(url: string): string | undefined {
+  if (!url || !url.startsWith('udp://')) return undefined;
+
+  const urlParts = url.split(':');
+  if (urlParts.length !== 3) return undefined;
+
+  const ip = urlParts[1].substring(2);
+  return ip.split('.').length === 4 ? ip : undefined;
+}
+
+function getInputListIps(item: any): Set<string> {
+  const inputListIps = new Set<string>();
+  const inputGroups = Array.isArray(item?.Input) ? item.Input : [];
+
+  inputGroups.forEach((inputGroup: any) => {
+    const inputList = Array.isArray(inputGroup?.IPInputList) ? inputGroup.IPInputList : [];
+    inputList.forEach((input: any) => {
+      const ip = getIpFromUrl(input?.Url);
+      if (ip) inputListIps.add(ip);
+    });
+  });
+
+  return inputListIps;
+}
+
+function processIpData(url: string, values: ConfiguratorValues, templateName?: string, specificRule?: string, useAlternativeSite = false, isMerged = false, inputListIps = new Set<string>()): { newUrl: string, newVlan?: string, appliedRule?: string } {
     if (!url || !url.startsWith('udp://')) return { newUrl: url };
 
     const urlParts = url.split(':');
@@ -71,6 +96,7 @@ function processIpData(url: string, values: ConfiguratorValues, templateName?: s
     const currentIp = urlParts[1].substring(2);
     const ipParts = currentIp.split('.');
     if (ipParts.length !== 4) return { newUrl: url };
+    if (inputListIps.has(currentIp)) return { newUrl: url };
     
     const rules: any = ipMappingRules;
     const templateCodec = resolveCodecFromName(templateName);
@@ -184,6 +210,7 @@ export async function generateJson(values: ConfiguratorValues): Promise<string> 
         if (!item) continue;
 
         const itemName = item?.Name || item?.Device?.Template?.Name || '';
+        const inputListIps = getInputListIps(item);
         const codec = resolveCodecFromName(itemName);
         const newName = `${values.site}_${templateNameWithoutExt}_${values.ipOutput}${codec ? `_${codec}` : ''}`;
 
@@ -244,10 +271,10 @@ export async function generateJson(values: ConfiguratorValues): Promise<string> 
               }
             }
 
-            let { newUrl, newVlan } = processIpData(obj.Url, values, itemName, ruleForProcessing, false, mergedTemplate);
+            let { newUrl, newVlan } = processIpData(obj.Url, values, itemName, ruleForProcessing, false, mergedTemplate, inputListIps);
 
             if (seenUrls.has(newUrl) && values.ipType !== 'DRM') {
-              const alternativeResult = processIpData(obj.Url, values, itemName, ruleForProcessing, true, mergedTemplate);
+              const alternativeResult = processIpData(obj.Url, values, itemName, ruleForProcessing, true, mergedTemplate, inputListIps);
               newUrl = alternativeResult.newUrl;
               newVlan = alternativeResult.newVlan;
             }

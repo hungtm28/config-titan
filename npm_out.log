@@ -1,0 +1,10 @@
+
+> nextn@0.1.0 dev
+> next dev -p 3000
+
+   ▲ Next.js 15.5.9
+   - Local:        http://localhost:3000
+   - Network:      http://26.238.145.235:3000
+
+ ✓ Starting...
+Terminate batch job (Y/N)? Terminate batch job (Y/N)? [?25h

@@ -8565,12 +8565,12 @@
 				"IPInputList": [
 					{
 						"CustomPcrPids": [],
-						"Interface": "vlan50",
+						"Interface": "vlan62",
 						"Label": "",
 						"MonitoredPids": "",
 						"Source": "0.0.0.0",
 						"Timeout": 250,
-						"Url": "udp://225.1.10.246:30120",
+						"Url": "udp://225.1.9.251:30120",
 						"UseFec": false,
 						"UseServiceClockAsPcr": false,
 						"UseSourceFiltering": false
