@@ -43,7 +43,19 @@ function isCaptureIp(url: string): boolean {
   return captureIpPrefixes.some(prefix => url.startsWith(prefix));
 }
 
-function processIpData(url: string, values: ConfiguratorValues, specificRule?: string, useAlternativeSite = false): { newUrl: string, newVlan?: string, appliedRule?: string } {
+function resolveTemplateVariant(templateName?: string): 'A' | 'B' | '' {
+  const candidate = templateName || '';
+  const upper = candidate.toUpperCase();
+  
+  if (upper.includes('_A')) return 'A';
+  if (upper.includes('_B')) return 'B';
+  if (upper.includes('4KA')) return 'A';
+  if (upper.includes('4KB')) return 'B';
+  
+  return '';
+}
+
+function processIpData(url: string, values: ConfiguratorValues, templateName?: string, specificRule?: string, useAlternativeSite = false): { newUrl: string, newVlan?: string, appliedRule?: string } {
     if (!url || !url.startsWith('udp://')) return { newUrl: url };
 
     const urlParts = url.split(':');
@@ -55,6 +67,8 @@ function processIpData(url: string, values: ConfiguratorValues, specificRule?: s
     if (ipParts.length !== 4) return { newUrl: url };
     
     const rules: any = ipMappingRules;
+    const templateCodec = resolveCodecFromName(templateName);
+    const templateVariant = resolveTemplateVariant(templateName);
 
     if (!useAlternativeSite) { 
       if (values.ipType === 'DRM' && currentIp.startsWith('225.1.1.') && originalPort === '30120') {
@@ -91,7 +105,49 @@ function processIpData(url: string, values: ConfiguratorValues, specificRule?: s
 
             const portMatch = ruleConfig.port ? ruleConfig.port === parseInt(originalPort, 10) : true;
 
-            if (isMatch && portMatch) {
+            if (!isMatch || !portMatch) continue;
+
+            // Check site match (for DRM and new structure rules)
+            if (ruleConfig.site) {
+                const targetSite = useAlternativeSite ? (values.site === 'HN' ? 'HCM' : 'HN') : values.site;
+                if (ruleConfig.site !== targetSite) continue;
+            }
+
+            // Check templatePattern match (for DRM)
+            if (ruleConfig.templatePattern) {
+                if (!templateCodec.includes(ruleConfig.templatePattern.replace('H', 'h'))) {
+                    if (templateCodec !== ruleConfig.templatePattern) continue;
+                }
+            }
+
+            // Check templateCodec + templateVariant match (for CaptureLogo, CaptureNoLogo)
+            if (ruleConfig.templateCodec) {
+                if (templateCodec !== ruleConfig.templateCodec) continue;
+            }
+            if (ruleConfig.templateVariant) {
+                if (templateVariant !== ruleConfig.templateVariant) continue;
+            }
+
+            // Handle rules with direct url field (new DRM structure)
+            if (ruleConfig.url && !ruleConfig.site_outputs) {
+                let finalUrlSegment = ruleConfig.url;
+                const outputVlan = ruleConfig.vlan;
+                
+                const valueMap = ruleConfig.valueMap;
+                const lookupKey = String(values.ipOutput);
+                let mappedValue = lookupKey;
+
+                if (valueMap && (lookupKey in valueMap)) {
+                    mappedValue = valueMap[lookupKey];
+                }
+                finalUrlSegment = finalUrlSegment.replace('{{mapped_value}}', mappedValue);
+                
+                const newUrl = `udp://${finalUrlSegment}`;
+                return { newUrl, newVlan: outputVlan, appliedRule: key };
+            }
+
+            // Handle legacy rules with site_outputs
+            if (ruleConfig.site_outputs) {
                 const targetSite = useAlternativeSite ? (values.site === 'HN' ? 'HCM' : 'HN') : values.site;
                 const siteOutput = ruleConfig.site_outputs[targetSite];
 
@@ -102,7 +158,7 @@ function processIpData(url: string, values: ConfiguratorValues, specificRule?: s
                 
                 if ([ 'IPTV', 'OTT'].includes(key)) {
                     finalUrlSegment = finalUrlSegment.replace('{{x}}', values.ipOutput);
-                } else if (['DRM', 'IPTV_4K', 'CaptureLogo', 'CaptureNoLogo'].includes(key)) {
+                } else if (['IPTV_4K', 'CaptureLogo', 'CaptureNoLogo'].includes(key)) {
                     const valueMap = ruleConfig.valueMap;
                     const lookupKey = String(values.ipOutput);
                     let mappedValue = lookupKey;
@@ -111,10 +167,6 @@ function processIpData(url: string, values: ConfiguratorValues, specificRule?: s
                         mappedValue = valueMap[lookupKey];
                     }
                     finalUrlSegment = finalUrlSegment.replace('{{mapped_value}}', mappedValue);
-
-                    if (key === 'DRM') {
-                        finalUrlSegment = finalUrlSegment.replace('{{y}}.{{y}}', `${ipParts[1]}.${ipParts[2]}`);
-                    }
                 }
                 
                 const newUrl = finalUrlSegment.includes(':') ? `udp://${finalUrlSegment}` : `udp://${finalUrlSegment}:${originalPort}`;
@@ -208,10 +260,10 @@ export async function generateJson(values: ConfiguratorValues): Promise<string> 
               }
             }
 
-            let { newUrl, newVlan } = processIpData(obj.Url, values, ruleForProcessing, false);
+            let { newUrl, newVlan } = processIpData(obj.Url, values, templateNameWithoutExt, ruleForProcessing, false);
 
             if (seenUrls.has(newUrl)) {
-              const alternativeResult = processIpData(obj.Url, values, ruleForProcessing, true);
+              const alternativeResult = processIpData(obj.Url, values, templateNameWithoutExt, ruleForProcessing, true);
               newUrl = alternativeResult.newUrl;
               newVlan = alternativeResult.newVlan;
             }
