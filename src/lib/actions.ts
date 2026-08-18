@@ -246,7 +246,7 @@ export async function generateJson(values: ConfiguratorValues): Promise<string> 
 
             let { newUrl, newVlan } = processIpData(obj.Url, values, itemName, ruleForProcessing, false, mergedTemplate);
 
-            if (seenUrls.has(newUrl)) {
+            if (seenUrls.has(newUrl) && values.ipType !== 'DRM') {
               const alternativeResult = processIpData(obj.Url, values, itemName, ruleForProcessing, true, mergedTemplate);
               newUrl = alternativeResult.newUrl;
               newVlan = alternativeResult.newVlan;
