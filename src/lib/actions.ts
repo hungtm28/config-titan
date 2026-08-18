@@ -61,7 +61,7 @@ function isMergedTemplate(templateName?: string): boolean {
   return upper.includes('4KA') || upper.includes('4KB');
 }
 
-function processIpData(url: string, values: ConfiguratorValues, templateName?: string, specificRule?: string, useAlternativeSite = false): { newUrl: string, newVlan?: string, appliedRule?: string } {
+function processIpData(url: string, values: ConfiguratorValues, templateName?: string, specificRule?: string, useAlternativeSite = false, isMerged = false): { newUrl: string, newVlan?: string, appliedRule?: string } {
     if (!url || !url.startsWith('udp://')) return { newUrl: url };
 
     const urlParts = url.split(':');
@@ -75,9 +75,7 @@ function processIpData(url: string, values: ConfiguratorValues, templateName?: s
     const rules: any = ipMappingRules;
     const templateCodec = resolveCodecFromName(templateName);
     const templateVariant = resolveTemplateVariant(templateName);
-    const isMerged = isMergedTemplate(templateName);
-
-    const ruleOrder = specificRule ? [specificRule] : ["IPTV_4K", "IPTV", "OTT", "DRM", "CaptureLogo", "CaptureNoLogo"];
+    const ruleOrder = specificRule ? [specificRule] : ["IPTV_4K", "IPTV", "OTT", "DRM", "CaptureLogo", "CaptureNoLogo", "Mono"];
 
     for (const key of ruleOrder) {
         if (!rules[key]) continue;
@@ -143,7 +141,7 @@ function processIpData(url: string, values: ConfiguratorValues, templateName?: s
                 
                 if ([ 'IPTV', 'OTT'].includes(key)) {
                     finalUrlSegment = finalUrlSegment.replace('{{x}}', values.ipOutput);
-                } else if (['IPTV_4K', 'CaptureLogo', 'CaptureNoLogo'].includes(key)) {
+                } else if (['IPTV_4K', 'CaptureLogo', 'CaptureNoLogo', 'Mono'].includes(key)) {
                     const valueMap = ruleConfig.valueMap;
                     const lookupKey = String(values.ipOutput);
                     let mappedValue = lookupKey;
@@ -156,13 +154,11 @@ function processIpData(url: string, values: ConfiguratorValues, templateName?: s
                 
                 const newUrl = finalUrlSegment.includes(':') ? `udp://${finalUrlSegment}` : `udp://${finalUrlSegment}:${originalPort}`;
 
-                console.log('DEBUG: Applied rule output (legacy):', { newUrl, appliedRule: key });
                 return { newUrl, newVlan: outputVlan, appliedRule: key };
             }
         }
     }
 
-    console.log('DEBUG: No rule matched for URL', { url, templateCodec, templateVariant });
     return { newUrl: url };
 }
 
@@ -180,6 +176,7 @@ export async function generateJson(values: ConfiguratorValues): Promise<string> 
   try {
     const json: TitanJson = await getTemplateContent(values.template);
     const templateNameWithoutExt = values.template.replace(/\.json/i, '');
+    const mergedTemplate = isMergedTemplate(values.template);
     const seenUrls = new Set<string>();
 
     if (Array.isArray(json)) {
@@ -247,10 +244,10 @@ export async function generateJson(values: ConfiguratorValues): Promise<string> 
               }
             }
 
-            let { newUrl, newVlan } = processIpData(obj.Url, values, itemName, ruleForProcessing, false);
+            let { newUrl, newVlan } = processIpData(obj.Url, values, itemName, ruleForProcessing, false, mergedTemplate);
 
             if (seenUrls.has(newUrl)) {
-              const alternativeResult = processIpData(obj.Url, values, itemName, ruleForProcessing, true);
+              const alternativeResult = processIpData(obj.Url, values, itemName, ruleForProcessing, true, mergedTemplate);
               newUrl = alternativeResult.newUrl;
               newVlan = alternativeResult.newVlan;
             }
