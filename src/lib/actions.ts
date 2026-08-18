@@ -100,9 +100,9 @@ function processIpData(url: string, values: ConfiguratorValues, specificRule?: s
                 let finalUrlSegment = siteOutput.url;
                 const outputVlan = siteOutput.vlan;
                 
-                if ([ 'IPTV', 'IPTV_4K', 'OTT'].includes(key)) {
+                if ([ 'IPTV', 'OTT'].includes(key)) {
                     finalUrlSegment = finalUrlSegment.replace('{{x}}', values.ipOutput);
-                } else if (['DRM', 'CaptureLogo', 'CaptureNoLogo'].includes(key)) {
+                } else if (['DRM', 'IPTV_4K', 'CaptureLogo', 'CaptureNoLogo'].includes(key)) {
                     const valueMap = ruleConfig.valueMap;
                     const lookupKey = String(values.ipOutput);
                     let mappedValue = lookupKey;
