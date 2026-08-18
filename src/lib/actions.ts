@@ -175,7 +175,8 @@ export async function generateJson(values: ConfiguratorValues): Promise<string> 
       for (const item of json) {
         if (!item) continue;
 
-        const codec = resolveCodecFromName(item?.Name || item?.Device?.Template?.Name);
+        const itemName = item?.Name || item?.Device?.Template?.Name || '';
+        const codec = resolveCodecFromName(itemName);
         const newName = `${values.site}_${templateNameWithoutExt}_${values.ipOutput}${codec ? `_${codec}` : ''}`;
 
         if (item.Name) item.Name = newName;
@@ -236,10 +237,10 @@ export async function generateJson(values: ConfiguratorValues): Promise<string> 
               }
             }
 
-            let { newUrl, newVlan } = processIpData(obj.Url, values, templateNameWithoutExt, ruleForProcessing, false);
+            let { newUrl, newVlan } = processIpData(obj.Url, values, itemName, ruleForProcessing, false);
 
             if (seenUrls.has(newUrl)) {
-              const alternativeResult = processIpData(obj.Url, values, templateNameWithoutExt, ruleForProcessing, true);
+              const alternativeResult = processIpData(obj.Url, values, itemName, ruleForProcessing, true);
               newUrl = alternativeResult.newUrl;
               newVlan = alternativeResult.newVlan;
             }
