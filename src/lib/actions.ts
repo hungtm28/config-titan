@@ -127,17 +127,28 @@ function processIpData(url: string, values: ConfiguratorValues, specificRule?: s
     return { newUrl: url };
 }
 
+function resolveCodecFromName(name?: string): 'H264' | 'H265' | '' {
+  const candidate = name || '';
+  const upper = candidate.toUpperCase();
+
+  if (upper.includes('H265')) return 'H265';
+  if (upper.includes('H264')) return 'H264';
+
+  return '';
+}
+
 export async function generateJson(values: ConfiguratorValues): Promise<string> {
   try {
     const json: TitanJson = await getTemplateContent(values.template);
     const templateNameWithoutExt = values.template.replace(/\.json/i, '');
-    const newName = `${values.site}_${templateNameWithoutExt}_${values.ipOutput}`;
-    
     const seenUrls = new Set<string>();
 
     if (Array.isArray(json)) {
       for (const item of json) {
         if (!item) continue;
+
+        const codec = resolveCodecFromName(item?.Name || item?.Device?.Template?.Name);
+        const newName = `${values.site}_${templateNameWithoutExt}_${values.ipOutput}${codec ? `_${codec}` : ''}`;
 
         if (item.Name) item.Name = newName;
 
