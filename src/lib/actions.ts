@@ -55,6 +55,12 @@ function resolveTemplateVariant(templateName?: string): 'A' | 'B' | '' {
   return '';
 }
 
+function isMergedTemplate(templateName?: string): boolean {
+  const candidate = templateName || '';
+  const upper = candidate.toUpperCase();
+  return upper.includes('4KA') || upper.includes('4KB');
+}
+
 function processIpData(url: string, values: ConfiguratorValues, templateName?: string, specificRule?: string, useAlternativeSite = false): { newUrl: string, newVlan?: string, appliedRule?: string } {
     if (!url || !url.startsWith('udp://')) return { newUrl: url };
 
@@ -69,6 +75,7 @@ function processIpData(url: string, values: ConfiguratorValues, templateName?: s
     const rules: any = ipMappingRules;
     const templateCodec = resolveCodecFromName(templateName);
     const templateVariant = resolveTemplateVariant(templateName);
+    const isMerged = isMergedTemplate(templateName);
 
     const ruleOrder = specificRule ? [specificRule] : ["IPTV_4K", "IPTV", "OTT", "DRM", "CaptureLogo", "CaptureNoLogo"];
 
@@ -96,12 +103,14 @@ function processIpData(url: string, values: ConfiguratorValues, templateName?: s
                 if (templateCodec !== ruleConfig.templatePattern) continue;
             }
 
-            // 4. Check templateCodec + templateVariant match (for CaptureLogo, CaptureNoLogo)
-            if (ruleConfig.templateCodec) {
-                if (templateCodec !== ruleConfig.templateCodec) continue;
-            }
-            if (ruleConfig.templateVariant) {
-                if (templateVariant !== ruleConfig.templateVariant) continue;
+            // 4. Check templateCodec + templateVariant match (for CaptureLogo, CaptureNoLogo on merged templates only)
+            if ((ruleConfig.templateCodec || ruleConfig.templateVariant) && isMerged) {
+                if (ruleConfig.templateCodec) {
+                    if (templateCodec !== ruleConfig.templateCodec) continue;
+                }
+                if (ruleConfig.templateVariant) {
+                    if (templateVariant !== ruleConfig.templateVariant) continue;
+                }
             }
 
             // 5. Apply rule with direct url field (new structure: DRM, CaptureLogo, CaptureNoLogo)
@@ -147,11 +156,13 @@ function processIpData(url: string, values: ConfiguratorValues, templateName?: s
                 
                 const newUrl = finalUrlSegment.includes(':') ? `udp://${finalUrlSegment}` : `udp://${finalUrlSegment}:${originalPort}`;
 
+                console.log('DEBUG: Applied rule output (legacy):', { newUrl, appliedRule: key });
                 return { newUrl, newVlan: outputVlan, appliedRule: key };
             }
         }
     }
 
+    console.log('DEBUG: No rule matched for URL', { url, templateCodec, templateVariant });
     return { newUrl: url };
 }
 
@@ -213,6 +224,9 @@ export async function generateJson(values: ConfiguratorValues): Promise<string> 
                 if (variantIndex !== undefined) {
                   const hasLogo = variantLogoStatus.get(variantIndex) ?? false;
                   urlToRuleMap.set(url, hasLogo ? 'CaptureLogo' : 'CaptureNoLogo');
+                } else {
+                  // If variant index not found, default to CaptureNoLogo
+                  urlToRuleMap.set(url, 'CaptureNoLogo');
                 }
               }
             });
@@ -229,10 +243,6 @@ export async function generateJson(values: ConfiguratorValues): Promise<string> 
               if (values.ipType === 'DRM') {
                 ruleForProcessing = urlToRuleMap.get(obj.Url);
               } else {
-                ruleForProcessing = 'CaptureNoLogo';
-              }
-              
-              if (!ruleForProcessing) {
                 ruleForProcessing = 'CaptureNoLogo';
               }
             }
