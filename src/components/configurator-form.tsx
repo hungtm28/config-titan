@@ -47,7 +47,7 @@ const ipTypes = [
 
 // Based on the user's image
 const ipOutputsNonDRM = [
-  '17', '18', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59'
+  '17', '18', '48', '49', '50', '51', '52', '53', '54', '55', '56', '57', '58', '59', '203', '204'
 ].map((ip) => ({ value: ip, label: ip }));
 
 // The rest of the IPs
