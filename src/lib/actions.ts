@@ -79,7 +79,7 @@ function processIpData(url: string, values: ConfiguratorValues, specificRule?: s
       }
     }
     
-    const ruleOrder = specificRule ? [specificRule] : ["IPTV", "OTT", "DRM", "CaptureLogo", "CaptureNoLogo"];
+    const ruleOrder = specificRule ? [specificRule] : ["IPTV_4K", "IPTV", "OTT", "DRM", "CaptureLogo", "CaptureNoLogo"];
 
     for (const key of ruleOrder) {
         if (!rules[key]) continue;
@@ -100,7 +100,7 @@ function processIpData(url: string, values: ConfiguratorValues, specificRule?: s
                 let finalUrlSegment = siteOutput.url;
                 const outputVlan = siteOutput.vlan;
                 
-                if ([ 'IPTV', 'OTT'].includes(key)) {
+                if ([ 'IPTV', 'IPTV_4K', 'OTT'].includes(key)) {
                     finalUrlSegment = finalUrlSegment.replace('{{x}}', values.ipOutput);
                 } else if (['DRM', 'CaptureLogo', 'CaptureNoLogo'].includes(key)) {
                     const valueMap = ruleConfig.valueMap;
