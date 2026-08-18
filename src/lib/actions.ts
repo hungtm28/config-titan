@@ -70,35 +70,13 @@ function processIpData(url: string, values: ConfiguratorValues, templateName?: s
     const templateCodec = resolveCodecFromName(templateName);
     const templateVariant = resolveTemplateVariant(templateName);
 
-    if (!useAlternativeSite) { 
-      if (values.ipType === 'DRM' && currentIp.startsWith('225.1.1.') && originalPort === '30120') {
-          const drmRuleConfig = rules.DRM?.rules[0];
-          const lookupKey = String(values.ipOutput);
-          let mappedValue = lookupKey;
-          if (drmRuleConfig && drmRuleConfig.valueMap && (lookupKey in drmRuleConfig.valueMap)) {
-              mappedValue = drmRuleConfig.valueMap[lookupKey];
-          }
-          const newUrl = `udp://225.5.5.${mappedValue}:8989`;
-          return { newUrl, newVlan: '300', appliedRule: 'DRM_Swap' };
-      }
-
-      if (values.ipType === 'NonDRM' && currentIp.startsWith('225.5.5.') && originalPort === '8989') {
-          const iptvRule = rules.IPTV.rules[0];
-          const targetSite = values.site;
-          const siteOutput = iptvRule.site_outputs[targetSite];
-          if (siteOutput) {
-            const newUrl = `udp://${siteOutput.url.replace('{{x}}', values.ipOutput)}`;
-            return { newUrl, newVlan: siteOutput.vlan, appliedRule: 'IPTV_Swap' };
-          } 
-      }
-    }
-    
     const ruleOrder = specificRule ? [specificRule] : ["IPTV_4K", "IPTV", "OTT", "DRM", "CaptureLogo", "CaptureNoLogo"];
 
     for (const key of ruleOrder) {
         if (!rules[key]) continue;
 
         for (const ruleConfig of rules[key].rules) {
+            // 1. Check IP pattern match
             const isMatch = (ruleConfig.input_patterns?.some((p: string) => currentIp.startsWith(p))) || 
                             (ruleConfig.input_pattern && currentIp.startsWith(ruleConfig.input_pattern)) ||
                             (ruleConfig.input_pattern_prefix && currentIp.startsWith(ruleConfig.input_pattern_prefix));
@@ -107,20 +85,18 @@ function processIpData(url: string, values: ConfiguratorValues, templateName?: s
 
             if (!isMatch || !portMatch) continue;
 
-            // Check site match (for DRM and new structure rules)
+            // 2. Check site match (if rule specifies a site)
             if (ruleConfig.site) {
                 const targetSite = useAlternativeSite ? (values.site === 'HN' ? 'HCM' : 'HN') : values.site;
                 if (ruleConfig.site !== targetSite) continue;
             }
 
-            // Check templatePattern match (for DRM)
+            // 3. Check templatePattern match (for DRM codec selection)
             if (ruleConfig.templatePattern) {
-                if (!templateCodec.includes(ruleConfig.templatePattern.replace('H', 'h'))) {
-                    if (templateCodec !== ruleConfig.templatePattern) continue;
-                }
+                if (templateCodec !== ruleConfig.templatePattern) continue;
             }
 
-            // Check templateCodec + templateVariant match (for CaptureLogo, CaptureNoLogo)
+            // 4. Check templateCodec + templateVariant match (for CaptureLogo, CaptureNoLogo)
             if (ruleConfig.templateCodec) {
                 if (templateCodec !== ruleConfig.templateCodec) continue;
             }
@@ -128,7 +104,7 @@ function processIpData(url: string, values: ConfiguratorValues, templateName?: s
                 if (templateVariant !== ruleConfig.templateVariant) continue;
             }
 
-            // Handle rules with direct url field (new DRM structure)
+            // 5. Apply rule with direct url field (new structure: DRM, CaptureLogo, CaptureNoLogo)
             if (ruleConfig.url && !ruleConfig.site_outputs) {
                 let finalUrlSegment = ruleConfig.url;
                 const outputVlan = ruleConfig.vlan;
@@ -146,7 +122,7 @@ function processIpData(url: string, values: ConfiguratorValues, templateName?: s
                 return { newUrl, newVlan: outputVlan, appliedRule: key };
             }
 
-            // Handle legacy rules with site_outputs
+            // 6. Apply rule with site_outputs (legacy structure: IPTV, OTT, IPTV_4K)
             if (ruleConfig.site_outputs) {
                 const targetSite = useAlternativeSite ? (values.site === 'HN' ? 'HCM' : 'HN') : values.site;
                 const siteOutput = ruleConfig.site_outputs[targetSite];
