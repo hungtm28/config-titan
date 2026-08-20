@@ -198,10 +198,18 @@ function resolveCodecFromName(name?: string): 'H264' | 'H265' | '' {
   return '';
 }
 
+function isEplTemplate(templateName?: string): boolean {
+  return (templateName || '').toUpperCase().startsWith('EPL_');
+}
+
+function buildGeneratedName(site: string, templateName: string, ipOutput: string, codec = ''): string {
+  const eplPrefix = isEplTemplate(templateName) ? 'EPL_' : '';
+  return `${eplPrefix}${site}_${templateName.replace(/\.json/i, '')}_${ipOutput}${codec ? `_${codec}` : ''}`;
+}
+
 export async function generateJson(values: ConfiguratorValues): Promise<string> {
   try {
     const json: TitanJson = await getTemplateContent(values.template);
-    const templateNameWithoutExt = values.template.replace(/\.json/i, '');
     const mergedTemplate = isMergedTemplate(values.template);
     const seenUrls = new Set<string>();
 
@@ -212,7 +220,7 @@ export async function generateJson(values: ConfiguratorValues): Promise<string> 
         const itemName = item?.Name || item?.Device?.Template?.Name || '';
         const inputListIps = getInputListIps(item);
         const codec = resolveCodecFromName(itemName);
-        const newName = `${values.site}_${templateNameWithoutExt}_${values.ipOutput}${codec ? `_${codec}` : ''}`;
+        const newName = buildGeneratedName(values.site, values.template, values.ipOutput, codec);
 
         if (item.Name) item.Name = newName;
 

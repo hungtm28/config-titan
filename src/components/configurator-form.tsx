@@ -139,12 +139,8 @@ export function ConfiguratorForm() {
       a.href = url;
       
       const templateNameWithoutExt = data.template.replace(/\.JSON/i, '');
-      let downloadName = `${templateNameWithoutExt}_${data.ipOutput}`;
-      if (data.logo === 'Fplay_TT_EPL.png') {
-          downloadName = `EPL_${data.site}_${templateNameWithoutExt}_${data.ipOutput}`;
-      } else {
-          downloadName = `${data.site}_${templateNameWithoutExt}_${data.ipOutput}`;
-      }
+      const eplPrefix = data.template.toUpperCase().startsWith('EPL_') ? 'EPL_' : '';
+      const downloadName = `${eplPrefix}${data.site}_${templateNameWithoutExt}_${data.ipOutput}`;
 
       a.download = `${downloadName}.json`;
       document.body.appendChild(a);
