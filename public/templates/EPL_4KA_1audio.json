@@ -2928,7 +2928,7 @@
 				"InputStreamCharacteristicsLegacy": {
 					"Bitdepth": "10",
 					"Bitrate": 100000000,
-					"Codec": "Auto",
+					"Codec": "HEVC",
 					"FrameRateParameters": {
 						"Denominator": 1,
 						"FrameRate": "50",
@@ -8595,7 +8595,7 @@
 				"InputStreamCharacteristicsLegacy": {
 					"Bitdepth": "10",
 					"Bitrate": 100000000,
-					"Codec": "Auto",
+					"Codec": "HEVC",
 					"FrameRateParameters": {
 						"Denominator": 1,
 						"FrameRate": "50",
