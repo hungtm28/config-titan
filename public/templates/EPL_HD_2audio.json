@@ -216,16 +216,7 @@
 										"TSBitrateValue": 0
 									},
 									"TracksMapping": {
-										"AudioTrackList": [
-											{
-												"TrackIdx": 0,
-												"VariantIdx": 0
-											},
-											{
-												"TrackIdx": 1,
-												"VariantIdx": 0
-											}
-										],
+										"AudioTrackList": [],
 										"DataTrackList": [],
 										"VideoTrackList": [
 											{
@@ -372,7 +363,7 @@
 				],
 				"GlobalConfiguration": {
 					"APIBlackout": {
-						"LocalFilename": "Chuongtrinh_Start.png",
+						"LocalFilename": "Chuongtrinh_End.png",
 						"MuteAudio": true,
 						"MuteData": false,
 						"UrlFilename": ""
@@ -413,7 +404,7 @@
 					"UseLegacyHEVCDecoder": false,
 					"UseLegacyHEVCEncoder": true
 				},
-				"Name": "EPL_HD_H265 IP38_2audio",
+				"Name": "H265 IP92_2audio V14",
 				"Static": false,
 				"Tracks": {
 					"AudioTracks": [
@@ -3093,7 +3084,7 @@
 						}
 					]
 				},
-				"UID": "11a9d412-1c1d-4e79-b9e5-481874f3caab"
+				"UID": "21c013a0-0d63-4893-b03f-105e32f70097"
 			}
 		},
 		"GlobalConfiguration": {
@@ -3165,7 +3156,7 @@
 						"MonitoredPids": "",
 						"Source": "0.0.0.0",
 						"Timeout": 250,
-						"Url": "udp://225.1.9.251:30120",
+						"Url": "udp://225.1.1.136:30120",
 						"UseFec": false,
 						"UseServiceClockAsPcr": false,
 						"UseSourceFiltering": false
@@ -3189,12 +3180,12 @@
 				},
 				"InputStreamCharacteristicsLegacy": {
 					"Bitdepth": "10",
-					"Bitrate": 50000000,
+					"Bitrate": 60000000,
 					"Codec": "MPEG-4",
 					"FrameRateParameters": {
 						"Denominator": 1,
-						"FrameRate": "25",
-						"Numerator": 25
+						"FrameRate": "50",
+						"Numerator": 50
 					},
 					"FrameSizeParameters": {
 						"Height": 1080,
@@ -3229,25 +3220,25 @@
 		],
 		"LoadMessage": "NA: Deinterlacer is Adaptive",
 		"LoadsMessage": "",
-		"Logos": 1786681508.0799978,
+		"Logos": 1792577249.7802298,
 		"Mapping": {
 			"PidMappingList": [
 				{
 					"AudioDecoder": [],
 					"AudioInputTrack": [
 						{
-							"ID": 201,
+							"ID": 2000,
 							"InputId": 0
 						},
 						{
-							"ID": 201,
+							"ID": 2001,
 							"InputId": 0
 						}
 					],
 					"DataInputTrack": [],
 					"VideoInputTrack": [
 						{
-							"ID": 101,
+							"ID": 1000,
 							"InputId": 0
 						}
 					]
@@ -3259,7 +3250,7 @@
 		"MultiInstancesSynchro": {
 			"Enable": false
 		},
-		"Name": "EPL_HD_H265 IP93_2audio",
+		"Name": "EPL_HD_H265 IP92_2audio V14",
 		"Outputs": [
 			[
 				{
@@ -3337,7 +3328,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.93:30134",
+							"Url": "udp://225.4.1.92:30134",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -3473,7 +3464,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.93:30135",
+							"Url": "udp://225.4.1.92:30135",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -3609,7 +3600,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.93:30136",
+							"Url": "udp://225.4.1.92:30136",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -3745,7 +3736,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.93:30137",
+							"Url": "udp://225.4.1.92:30137",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -3881,7 +3872,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.93:30138",
+							"Url": "udp://225.4.1.92:30138",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -4017,7 +4008,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.93:30144",
+							"Url": "udp://225.4.1.92:30144",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -4153,7 +4144,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.93:30145",
+							"Url": "udp://225.4.1.92:30145",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -4289,7 +4280,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.93:30146",
+							"Url": "udp://225.4.1.92:30146",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -4425,7 +4416,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.93:30147",
+							"Url": "udp://225.4.1.92:30147",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -4561,7 +4552,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.93:30148",
+							"Url": "udp://225.4.1.92:30148",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -4697,7 +4688,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.55.55.93:8989",
+							"Url": "udp://225.55.55.92:8989",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -4767,16 +4758,16 @@
 			"ActiveOutputIndexes": [],
 			"AudioLevels": [
 				[
-					-23.252262195714202,
-					-25.91482391184007,
-					-24.783808583916247,
-					-26.366965197213087
+					-16.716893988634414,
+					-17.60932345735563,
+					-18.30137647850113,
+					-15.561143171574553
 				],
 				[
-					-23.252262195714202,
-					-25.91482391184007,
-					-24.783808583916247,
-					-26.366965197213087
+					-14.785449834741476,
+					-15.598379503789076,
+					-18.427602731590767,
+					-13.800308702955157
 				]
 			],
 			"Blackout": false,
@@ -4784,7 +4775,7 @@
 				[
 					{
 						"ContinuityCountErrors": 0,
-						"ContinuityCountFailover": 60,
+						"ContinuityCountFailover": 7,
 						"PatCRCErrors": 0,
 						"PatMissingErrors": 0,
 						"PcrAccuracyErrors": 0,
@@ -4792,23 +4783,32 @@
 						"PidContinuityCounterErrors": [
 							{
 								"current": 0,
-								"id": 101,
-								"total": 12
+								"id": 1000,
+								"total": 2
 							},
 							{
 								"current": 0,
-								"id": 201,
-								"total": 12
+								"id": 2000,
+								"total": 2
+							},
+							{
+								"current": 0,
+								"id": 2001,
+								"total": 2
 							}
 						],
 						"PidErrors": [
 							{
 								"errors": 0,
-								"id": 101
+								"id": 1000
 							},
 							{
 								"errors": 0,
-								"id": 201
+								"id": 2000
+							},
+							{
+								"errors": 0,
+								"id": 2001
 							}
 						],
 						"PmtCRCErrors": 0,
@@ -4816,16 +4816,20 @@
 						"PtsRepetitionErrors": [
 							{
 								"errors": 0,
-								"id": 101
+								"id": 1000
 							},
 							{
 								"errors": 0,
-								"id": 201
+								"id": 2000
+							},
+							{
+								"errors": 0,
+								"id": 2001
 							}
 						],
 						"SyncByteLossErrors": 0,
-						"TSSyncLossErrors": 2,
-						"TotalContinuityCountErrors": 60,
+						"TSSyncLossErrors": 0,
+						"TotalContinuityCountErrors": 7,
 						"TransportErrorIndicator": 0
 					}
 				]
@@ -4864,69 +4868,69 @@
 					{
 						"IP": {
 							"InputProtocol": "UDP",
-							"TsBitrate": 19930282
+							"TsBitrate": 8204709
 						}
 					}
 				],
 				"OutputBitrates": {
 					"Audio": [
 						[
-							191595
+							191990
 						],
 						[
-							191600
+							192149
 						]
 					],
 					"Data": [],
 					"Muxers": [
 						[
 							{
-								"TsBitrate": 5339909
+								"TsBitrate": 5314318
 							},
 							{
-								"TsBitrate": 2715822
+								"TsBitrate": 3026676
 							},
 							{
-								"TsBitrate": 1827045
+								"TsBitrate": 1732947
 							},
 							{
-								"TsBitrate": 1037154
+								"TsBitrate": 1009649
 							},
 							{
-								"TsBitrate": 400501
+								"TsBitrate": 422438
 							},
 							{
-								"TsBitrate": 5063720
+								"TsBitrate": 4452101
 							},
 							{
-								"TsBitrate": 2815604
+								"TsBitrate": 2793229
 							},
 							{
-								"TsBitrate": 1826896
+								"TsBitrate": 1926515
 							},
 							{
-								"TsBitrate": 1037177
+								"TsBitrate": 1031089
 							},
 							{
-								"TsBitrate": 414291
+								"TsBitrate": 431475
 							},
 							{
-								"TsBitrate": 12000183
+								"TsBitrate": 12153926
 							}
 						]
 					],
 					"Video": [
-						4699131,
-						2715819,
-						1827042,
-						1037154,
-						400501,
-						4783243,
-						2815601,
-						1826895,
-						1038220,
-						414291,
-						11448478
+						5008887,
+						3026674,
+						1732948,
+						1009644,
+						422438,
+						4452089,
+						2848938,
+						1926515,
+						1031091,
+						431476,
+						11689955
 					]
 				}
 			},
@@ -4937,26 +4941,39 @@
 							{
 								"AudioESList": [
 									{
-										"Bitrate": 256819,
+										"Bitrate": 128312,
 										"ChannelList": [
 											"Front Left",
 											"Front Right"
 										],
-										"Codec": "MPEG Audio",
+										"Codec": "AAC",
+										"DualMono": false,
+										"Language": "vie",
+										"PID": 2000,
+										"SampleRate": 48000,
+										"Scrambled": false
+									},
+									{
+										"Bitrate": 128339,
+										"ChannelList": [
+											"Front Left",
+											"Front Right"
+										],
+										"Codec": "AAC",
 										"DualMono": false,
 										"Language": "eng",
-										"PID": 201,
+										"PID": 2001,
 										"SampleRate": 48000,
 										"Scrambled": false
 									}
 								],
 								"DataESList": [],
 								"ID": 1,
-								"Name": "CING-AX20-823 [Cingularity]",
+								"Name": "Program 1",
 								"VideoESList": [
 									{
 										"Bitdepth": 8,
-										"Bitrate": 15013569,
+										"Bitrate": 7499971,
 										"Codec": "MPEG-4 AVC",
 										"DisplayAspectRatio": {
 											"Denominator": 9,
@@ -4971,7 +4988,7 @@
 											"Width": 1920
 										},
 										"FrameType": "Interlaced",
-										"PID": 101,
+										"PID": 1000,
 										"Scrambled": false
 									}
 								]
@@ -4982,17 +4999,17 @@
 			},
 			"StreamingReady": true,
 			"VideoQualities": [
-				61,
-				51,
-				46,
-				29,
-				10,
-				61,
-				51,
-				46,
-				29,
-				10,
-				83
+				78,
+				70,
+				72,
+				48,
+				31,
+				79,
+				70,
+				72,
+				48,
+				31,
+				89
 			]
 		},
 		"Statmux": {
@@ -5005,7 +5022,7 @@
 		"TemplateParametersOverride": {
 			"/FormatConfigurations/0/TSMuxer/ConformanceDependent/DVB/ServiceName": "abr-full-hd-10"
 		},
-		"UID": "1e89c380-03aa-4f8b-9319-2a48e3243bf6"
+		"UID": "970fb3d8-e06a-4b24-9db6-c896293b4ea5"
 	},
 	{
 		"AlternateConfigurations": [],
@@ -5224,16 +5241,7 @@
 										"TSBitrateValue": 0
 									},
 									"TracksMapping": {
-										"AudioTrackList": [
-											{
-												"TrackIdx": 0,
-												"VariantIdx": 0
-											},
-											{
-												"TrackIdx": 1,
-												"VariantIdx": 0
-											}
-										],
+										"AudioTrackList": [],
 										"DataTrackList": [],
 										"VideoTrackList": [
 											{
@@ -5446,7 +5454,7 @@
 				],
 				"GlobalConfiguration": {
 					"APIBlackout": {
-						"LocalFilename": "Chuongtrinh_Start.png",
+						"LocalFilename": "Chuongtrinh_End.png",
 						"MuteAudio": true,
 						"MuteData": false,
 						"UrlFilename": ""
@@ -5487,7 +5495,7 @@
 					"UseLegacyHEVCDecoder": false,
 					"UseLegacyHEVCEncoder": true
 				},
-				"Name": "EPL_HD_H264_AB_2audio",
+				"Name": "H264 IP92_2audio V14",
 				"Static": false,
 				"Tracks": {
 					"AudioTracks": [
@@ -8358,7 +8366,7 @@
 						}
 					]
 				},
-				"UID": "bf166439-1c6f-4002-a4b1-800585970e29"
+				"UID": "0fad6286-6a82-49fb-b2b0-e3a63aeca5b5"
 			}
 		},
 		"GlobalConfiguration": {
@@ -8439,7 +8447,7 @@
 						"MonitoredPids": "",
 						"Source": "0.0.0.0",
 						"Timeout": 250,
-						"Url": "udp://225.1.9.251:30120",
+						"Url": "udp://225.1.1.136:30120",
 						"UseFec": false,
 						"UseServiceClockAsPcr": false,
 						"UseSourceFiltering": false
@@ -8463,12 +8471,12 @@
 				},
 				"InputStreamCharacteristicsLegacy": {
 					"Bitdepth": "10",
-					"Bitrate": 50000000,
+					"Bitrate": 60000000,
 					"Codec": "MPEG-4",
 					"FrameRateParameters": {
 						"Denominator": 1,
-						"FrameRate": "25",
-						"Numerator": 25
+						"FrameRate": "50",
+						"Numerator": 50
 					},
 					"FrameSizeParameters": {
 						"Height": 1080,
@@ -8503,25 +8511,25 @@
 		],
 		"LoadMessage": "NA: Deinterlacer is Adaptive",
 		"LoadsMessage": "",
-		"Logos": 1786681486.0821395,
+		"Logos": 1792577249.7824612,
 		"Mapping": {
 			"PidMappingList": [
 				{
 					"AudioDecoder": [],
 					"AudioInputTrack": [
 						{
-							"ID": 201,
+							"ID": 2000,
 							"InputId": 0
 						},
 						{
-							"ID": 201,
+							"ID": 2001,
 							"InputId": 0
 						}
 					],
 					"DataInputTrack": [],
 					"VideoInputTrack": [
 						{
-							"ID": 101,
+							"ID": 1000,
 							"InputId": 0
 						}
 					]
@@ -8533,7 +8541,7 @@
 		"MultiInstancesSynchro": {
 			"Enable": false
 		},
-		"Name": "EPL_HD_H264 IP93_2audio",
+		"Name": "EPL_HD_H264 IP92_2audio V14",
 		"Outputs": [
 			[
 				{
@@ -8611,7 +8619,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.93:30114",
+							"Url": "udp://225.4.1.92:30114",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -8687,7 +8695,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.1.9.100:30120",
+							"Url": "udp://225.1.9.99:30120",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -8823,7 +8831,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.93:30115",
+							"Url": "udp://225.4.1.92:30115",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -8959,7 +8967,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.93:30116",
+							"Url": "udp://225.4.1.92:30116",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -9095,7 +9103,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.93:30117",
+							"Url": "udp://225.4.1.92:30117",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -9231,7 +9239,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.93:30118",
+							"Url": "udp://225.4.1.92:30118",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -9367,7 +9375,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.93:30124",
+							"Url": "udp://225.4.1.92:30124",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -9503,7 +9511,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.93:30125",
+							"Url": "udp://225.4.1.92:30125",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -9639,7 +9647,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.93:30126",
+							"Url": "udp://225.4.1.92:30126",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -9775,7 +9783,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.93:30127",
+							"Url": "udp://225.4.1.92:30127",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -9911,7 +9919,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.93:30128",
+							"Url": "udp://225.4.1.92:30128",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -10047,7 +10055,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.1.9.57:30120",
+							"Url": "udp://225.1.9.56:30120",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -10183,7 +10191,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.5.5.93:8989",
+							"Url": "udp://225.5.5.92:8989",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -10319,7 +10327,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.1.9.57:6000",
+							"Url": "udp://225.1.9.56:6000",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -10389,16 +10397,16 @@
 			"ActiveOutputIndexes": [],
 			"AudioLevels": [
 				[
-					-23.583044312417147,
-					-24.12829265859478,
-					-26.599905696086825,
-					-24.605800279198395
+					-16.614487656705354,
+					-17.889810604322665,
+					-18.103404125279784,
+					-15.093247408184032
 				],
 				[
-					-23.583044312417147,
-					-24.12829265859478,
-					-26.599905696086825,
-					-24.605800279198395
+					-14.814132657213195,
+					-15.881574937120561,
+					-17.746710061470804,
+					-13.439353625750236
 				]
 			],
 			"Blackout": false,
@@ -10406,48 +10414,61 @@
 				[
 					{
 						"ContinuityCountErrors": 0,
-						"ContinuityCountFailover": 213,
+						"ContinuityCountFailover": 7,
 						"PatCRCErrors": 0,
-						"PatMissingErrors": 2,
+						"PatMissingErrors": 0,
 						"PcrAccuracyErrors": 0,
 						"PcrContinuityErrors": 0,
 						"PidContinuityCounterErrors": [
 							{
 								"current": 0,
-								"id": 101,
-								"total": 49
+								"id": 1000,
+								"total": 2
 							},
 							{
 								"current": 0,
-								"id": 201,
-								"total": 41
+								"id": 2000,
+								"total": 2
+							},
+							{
+								"current": 0,
+								"id": 2001,
+								"total": 2
 							}
 						],
 						"PidErrors": [
 							{
 								"errors": 0,
-								"id": 101
+								"id": 1000
 							},
 							{
 								"errors": 0,
-								"id": 201
+								"id": 2000
+							},
+							{
+								"errors": 0,
+								"id": 2001
 							}
 						],
 						"PmtCRCErrors": 0,
-						"PmtMissingErrors": 2,
+						"PmtMissingErrors": 0,
 						"PtsRepetitionErrors": [
 							{
 								"errors": 0,
-								"id": 101
+								"id": 1000
 							},
 							{
 								"errors": 0,
-								"id": 201
+								"id": 2000
+							},
+							{
+								"errors": 0,
+								"id": 2001
 							}
 						],
 						"SyncByteLossErrors": 0,
-						"TSSyncLossErrors": 15,
-						"TotalContinuityCountErrors": 224,
+						"TSSyncLossErrors": 0,
+						"TotalContinuityCountErrors": 7,
 						"TransportErrorIndicator": 0
 					}
 				]
@@ -10488,76 +10509,76 @@
 					{
 						"IP": {
 							"InputProtocol": "UDP",
-							"TsBitrate": 20005977
+							"TsBitrate": 8205003
 						}
 					}
 				],
 				"OutputBitrates": {
 					"Audio": [
 						[
-							191533
+							192151
 						],
 						[
-							191536
+							192144
 						]
 					],
 					"Data": [],
 					"Muxers": [
 						[
 							{
-								"TsBitrate": 5920025
+								"TsBitrate": 5987844
 							},
 							{
-								"TsBitrate": 2705187
+								"TsBitrate": 2835777
 							},
 							{
-								"TsBitrate": 1761408
+								"TsBitrate": 1899309
 							},
 							{
-								"TsBitrate": 1046351
+								"TsBitrate": 964135
 							},
 							{
-								"TsBitrate": 428259
+								"TsBitrate": 415307
 							},
 							{
-								"TsBitrate": 6011981
+								"TsBitrate": 5416928
 							},
 							{
-								"TsBitrate": 2847792
+								"TsBitrate": 2799557
 							},
 							{
-								"TsBitrate": 1824481
+								"TsBitrate": 1583233
 							},
 							{
-								"TsBitrate": 1010136
+								"TsBitrate": 1042830
 							},
 							{
-								"TsBitrate": 405890
+								"TsBitrate": 420012
 							},
 							{
-								"TsBitrate": 11610564
+								"TsBitrate": 12411766
 							},
 							{
-								"TsBitrate": 11758731
+								"TsBitrate": 11766852
 							},
 							{
-								"TsBitrate": 792969
+								"TsBitrate": 786581
 							}
 						]
 					],
 					"Video": [
-						5637140,
-						2705182,
-						1761406,
-						1046351,
-						394031,
-						5570077,
-						2847789,
-						1824482,
-						1010137,
-						405890,
-						12010982,
-						11270326
+						4951724,
+						2835784,
+						1899309,
+						964139,
+						415306,
+						5416924,
+						2799557,
+						1583234,
+						1042830,
+						420012,
+						11991268,
+						11243942
 					]
 				}
 			},
@@ -10568,26 +10589,39 @@
 							{
 								"AudioESList": [
 									{
-										"Bitrate": 256819,
+										"Bitrate": 128312,
 										"ChannelList": [
 											"Front Left",
 											"Front Right"
 										],
-										"Codec": "MPEG Audio",
+										"Codec": "AAC",
+										"DualMono": false,
+										"Language": "vie",
+										"PID": 2000,
+										"SampleRate": 48000,
+										"Scrambled": false
+									},
+									{
+										"Bitrate": 128339,
+										"ChannelList": [
+											"Front Left",
+											"Front Right"
+										],
+										"Codec": "AAC",
 										"DualMono": false,
 										"Language": "eng",
-										"PID": 201,
+										"PID": 2001,
 										"SampleRate": 48000,
 										"Scrambled": false
 									}
 								],
 								"DataESList": [],
 								"ID": 1,
-								"Name": "CING-AX20-823 [Cingularity]",
+								"Name": "Program 1",
 								"VideoESList": [
 									{
 										"Bitdepth": 8,
-										"Bitrate": 15013569,
+										"Bitrate": 7499971,
 										"Codec": "MPEG-4 AVC",
 										"DisplayAspectRatio": {
 											"Denominator": 9,
@@ -10602,7 +10636,7 @@
 											"Width": 1920
 										},
 										"FrameType": "Interlaced",
-										"PID": 101,
+										"PID": 1000,
 										"Scrambled": false
 									}
 								]
@@ -10613,18 +10647,18 @@
 			},
 			"StreamingReady": true,
 			"VideoQualities": [
-				45,
-				36,
-				35,
-				13,
-				6,
-				45,
-				36,
-				35,
-				13,
-				6,
-				86,
-				85
+				78,
+				57,
+				63,
+				39,
+				21,
+				78,
+				57,
+				63,
+				39,
+				22,
+				91,
+				90
 			]
 		},
 		"Statmux": {
@@ -10637,6 +10671,6 @@
 		"TemplateParametersOverride": {
 			"/FormatConfigurations/0/TSMuxer/ConformanceDependent/DVB/ServiceName": "abr-full-hd-10"
 		},
-		"UID": "afd12179-7a25-4488-a885-d8e810673f9f"
+		"UID": "bf077063-9498-4ddf-ba46-4b31cde587c9"
 	}
 ]
