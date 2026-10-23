@@ -18,8 +18,8 @@ import Link from 'next/link';
 import { Files, Settings, ClipboardIcon } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Ateme Titan Configurator V13',
-  description: 'Mail của Huân ngày 17/08/2026',
+  title: 'Ateme Titan Configurator V14',
+  description: 'Mail của Huân ngày 22/10/2026',
 };
 
 export default function RootLayout({

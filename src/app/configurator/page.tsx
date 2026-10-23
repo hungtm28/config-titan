@@ -20,10 +20,10 @@ export default function ConfiguratorPage() {
               </div>
               <div className="flex-grow">
                 <CardTitle className="text-3xl font-headline">
-                  Ateme Titan Configurator V13
+                  Ateme Titan Configurator V14
                 </CardTitle>
                 <CardDescription className="mt-1">
-                  Mail của Huân ngày 17/08/2026.
+                  Mail của Huân ngày 22/10/2026.
                 </CardDescription>
               </div>
             </div>
