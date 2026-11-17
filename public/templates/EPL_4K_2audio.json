@@ -7534,7 +7534,7 @@
 									"receiver_id": null,
 									"transport_params": [
 										{
-											"destination_ip": "225.11.9.59",
+											"destination_ip": "225.1.9.59",
 											"destination_port": "30120",
 											"rtp_enabled": true,
 											"source_ip": "auto"
@@ -7602,7 +7602,7 @@
 							"TTL": 255,
 							"Type": "Live",
 							"Uid": "510c9a60-cba4-4a75-9055-f62959762513",
-							"Url": "udp://225.11.9.59:30120",
+							"Url": "udp://225.1.9.59:30120",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -11849,7 +11849,7 @@
 									"receiver_id": null,
 									"transport_params": [
 										{
-											"destination_ip": "225.11.9.102",
+											"destination_ip": "225.1.9.102",
 											"destination_port": "30120",
 											"rtp_enabled": true,
 											"source_ip": "auto"
@@ -11917,7 +11917,7 @@
 							"TTL": 255,
 							"Type": "Live",
 							"Uid": "e8050bce-27ba-444e-8f81-98cdb8acb524",
-							"Url": "udp://225.11.9.102:30120",
+							"Url": "udp://225.1.9.102:30120",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -13862,7 +13862,7 @@
 									"receiver_id": null,
 									"transport_params": [
 										{
-											"destination_ip": "225.11.9.102",
+											"destination_ip": "225.1.9.102",
 											"destination_port": "6000",
 											"rtp_enabled": true,
 											"source_ip": "auto"
@@ -13930,7 +13930,7 @@
 							"TTL": 255,
 							"Type": "Live",
 							"Uid": "05a836d7-5441-4eef-91bc-6dfebabc8225",
-							"Url": "udp://225.11.9.102:6000",
+							"Url": "udp://225.1.9.102:6000",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
