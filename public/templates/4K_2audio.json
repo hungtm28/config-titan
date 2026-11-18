@@ -560,7 +560,7 @@
 					"UseLegacyHEVCDecoder": false,
 					"UseLegacyHEVCEncoder": true
 				},
-				"Name": "Event_01_18_4K_IP19_1 Audio V13",
+				"Name": "Event_01_18_4K_IP19_1 Audio V13_TTDQ",
 				"Static": false,
 				"Tracks": {
 					"AudioTracks": [
@@ -2561,7 +2561,7 @@
 											"Level": "Auto",
 											"Profile": "High"
 										},
-										"Bitrate": 12600000,
+										"Bitrate": 10500000,
 										"Codec": "HEVC",
 										"ContentAdaptative": {
 											"CQRMode": "None"
@@ -2743,7 +2743,7 @@
 											"Level": "Auto",
 											"Profile": "High"
 										},
-										"Bitrate": 10600000,
+										"Bitrate": 7000000,
 										"Codec": "HEVC",
 										"ContentAdaptative": {
 											"CQRMode": "None"
@@ -2925,7 +2925,7 @@
 											"Level": "Auto",
 											"Profile": "High"
 										},
-										"Bitrate": 7600000,
+										"Bitrate": 4500000,
 										"Codec": "HEVC",
 										"ContentAdaptative": {
 											"CQRMode": "None"
@@ -3107,7 +3107,7 @@
 											"Level": "Auto",
 											"Profile": "High"
 										},
-										"Bitrate": 3800000,
+										"Bitrate": 3000000,
 										"Codec": "HEVC",
 										"ContentAdaptative": {
 											"CQRMode": "None"
@@ -3289,7 +3289,7 @@
 											"Level": "Auto",
 											"Profile": "High"
 										},
-										"Bitrate": 2600000,
+										"Bitrate": 2000000,
 										"Codec": "HEVC",
 										"ContentAdaptative": {
 											"CQRMode": "None"
@@ -3471,7 +3471,7 @@
 											"Level": "Auto",
 											"Profile": "Main"
 										},
-										"Bitrate": 1200000,
+										"Bitrate": 1300000,
 										"Codec": "HEVC",
 										"ContentAdaptative": {
 											"CQRMode": "None"
@@ -3881,7 +3881,7 @@
 												"Numerator": 16
 											},
 											"Enable": false,
-											"FileName": "Fplay_TT.png",
+											"FileName": "Fplay_4K_TT.png",
 											"Left": 830,
 											"LogoSizeReference": "Width",
 											"PositionUnit": "Permillage",
@@ -4188,7 +4188,7 @@
 						}
 					]
 				},
-				"UID": "399564b1-5324-4096-8612-4ca9704dad99"
+				"UID": "d78da9a4-13d3-4b49-b647-4352b37b4344"
 			}
 		},
 		"GlobalConfiguration": {
@@ -4224,69 +4224,36 @@
 		},
 		"Input": [
 			{
-				"ActiveInputIndex": 0,
-				"BackupInputMonitoring": false,
-				"ChannelName": "",
+				"BackupInputMonitoring": true,
 				"ETR101290": {
 					"AutoSwitchBack": {
-						"Delay": 30
+						"Delay": 3,
+						"Enable": true
 					},
-					"ContinuityCountErrors": null,
-					"EnableBackupMonitoring": false,
-					"EnableLevel2": false,
 					"PATErrors": {
 						"MaximumInterval": 500
 					},
 					"PIDErrors": {
-						"Enable": false,
 						"MaximumInterval": 500
 					},
 					"PMTErrors": {
 						"MaximumInterval": 500
-					},
-					"PatCrcErrors": false,
-					"PcrAccuracyErrors": false,
-					"PcrContinuityErrors": false,
-					"PmtCrcErrors": false,
-					"PtsRepetitionErrors": false,
-					"SyncByteErrors": false,
-					"TSSyncLossErrors": null,
-					"TransportErrors": false
+					}
 				},
 				"IPInputList": [
 					{
-						"CustomPcrPids": [],
 						"Interface": "vlan62",
 						"Label": "",
-						"MonitoredPids": "",
 						"Source": "0.0.0.0",
-						"Timeout": 250,
-						"Url": "udp://225.1.10.246:30120",
+						"Url": "udp://225.1.9.246:30120",
 						"UseFec": false,
-						"UseServiceClockAsPcr": false,
 						"UseSourceFiltering": false
 					}
 				],
-				"InputStreamCharacteristics": {
-					"Bitdepth": "8",
-					"Bitrate": 5000000,
-					"Codec": "MPEG-2",
-					"FrameRateParameters": {
-						"Denominator": 1,
-						"FrameRate": "25",
-						"Numerator": 25
-					},
-					"FrameSizeParameters": {
-						"Height": 576,
-						"Resolution": "720x576",
-						"Width": 720
-					},
-					"FrameType": "Progressive"
-				},
 				"InputStreamCharacteristicsLegacy": {
 					"Bitdepth": "10",
-					"Bitrate": 100000000,
-					"Codec": "Auto",
+					"Bitrate": 110000000,
+					"Codec": "HEVC",
 					"FrameRateParameters": {
 						"Denominator": 1,
 						"FrameRate": "50",
@@ -4299,33 +4266,17 @@
 					},
 					"Mode": "Manual"
 				},
-				"InvidiAdChannel": false,
-				"InvidiAdapter": "",
-				"InvidiDualRegistration": false,
-				"InvidiSpliceIDR": {
-					"Enable": false,
-					"EndIDRDuration": 0,
-					"StartIDRDuration": 0
-				},
-				"Label": "",
 				"Redundancy": "None",
-				"RedundancyLatency": 20,
 				"ReshuffledAudioTracks": [],
-				"SCTE30Version": "SCTE30 2009",
-				"SplicerName": "",
-				"SplicerTolerance": 1,
-				"Splicing": false,
-				"SwitchScrambled": false,
 				"TSInputSmoothing": {
-					"Enable": false,
+					"Enable": true,
 					"InputSmoothingDelay": 0
 				},
 				"Type": "IP"
 			}
 		],
-		"LoadMessage": "NA: Deinterlacer is Adaptive",
 		"LoadsMessage": "",
-		"Logos": 1786679302.1684375,
+		"Logos": 1792725590.2462022,
 		"Mapping": {
 			"PidMappingList": [
 				{
@@ -4355,7 +4306,7 @@
 		"MultiInstancesSynchro": {
 			"Enable": false
 		},
-		"Name": "Event_01_18_4K_IP19_2 Audio V13",
+		"Name": "Event4K_New_2audio",
 		"Outputs": [
 			[
 				{
@@ -4393,7 +4344,7 @@
 								"OverrideSourceAddress": false,
 								"SourceAddress": "0.0.0.0"
 							},
-							"Interface": "vlan182",
+							"Interface": "vlan180",
 							"MasterPlaylists": [],
 							"Mp4": false,
 							"RecordingTriggerSource": "None",
@@ -4433,7 +4384,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.19:30124",
+							"Url": "udp://225.3.1.19:30124",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -4529,7 +4480,7 @@
 								"OverrideSourceAddress": false,
 								"SourceAddress": "0.0.0.0"
 							},
-							"Interface": "vlan182",
+							"Interface": "vlan180",
 							"MasterPlaylists": [],
 							"Mp4": false,
 							"RecordingTriggerSource": "None",
@@ -4569,7 +4520,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.19:30125",
+							"Url": "udp://225.3.1.19:30125",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -4665,7 +4616,7 @@
 								"OverrideSourceAddress": false,
 								"SourceAddress": "0.0.0.0"
 							},
-							"Interface": "vlan182",
+							"Interface": "vlan180",
 							"MasterPlaylists": [],
 							"Mp4": false,
 							"RecordingTriggerSource": "None",
@@ -4705,7 +4656,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.19:30126",
+							"Url": "udp://225.3.1.19:30126",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -4801,7 +4752,7 @@
 								"OverrideSourceAddress": false,
 								"SourceAddress": "0.0.0.0"
 							},
-							"Interface": "vlan182",
+							"Interface": "vlan180",
 							"MasterPlaylists": [],
 							"Mp4": false,
 							"RecordingTriggerSource": "None",
@@ -4841,7 +4792,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.19:30127",
+							"Url": "udp://225.3.1.19:30127",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -4937,7 +4888,7 @@
 								"OverrideSourceAddress": false,
 								"SourceAddress": "0.0.0.0"
 							},
-							"Interface": "vlan182",
+							"Interface": "vlan180",
 							"MasterPlaylists": [],
 							"Mp4": false,
 							"RecordingTriggerSource": "None",
@@ -4977,7 +4928,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.19:30128",
+							"Url": "udp://225.3.1.19:30128",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -5073,7 +5024,7 @@
 								"OverrideSourceAddress": false,
 								"SourceAddress": "0.0.0.0"
 							},
-							"Interface": "vlan182",
+							"Interface": "vlan180",
 							"MasterPlaylists": [],
 							"Mp4": false,
 							"RecordingTriggerSource": "None",
@@ -5113,7 +5064,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.19:30129",
+							"Url": "udp://225.3.1.19:30129",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -5209,7 +5160,7 @@
 								"OverrideSourceAddress": false,
 								"SourceAddress": "0.0.0.0"
 							},
-							"Interface": "vlan182",
+							"Interface": "vlan180",
 							"MasterPlaylists": [],
 							"Mp4": false,
 							"RecordingTriggerSource": "None",
@@ -5249,7 +5200,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.19:30130",
+							"Url": "udp://225.3.1.19:30130",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -5345,7 +5296,7 @@
 								"OverrideSourceAddress": false,
 								"SourceAddress": "0.0.0.0"
 							},
-							"Interface": "vlan182",
+							"Interface": "vlan180",
 							"MasterPlaylists": [],
 							"Mp4": false,
 							"RecordingTriggerSource": "None",
@@ -5385,7 +5336,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.19:30131",
+							"Url": "udp://225.3.1.19:30131",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -5481,7 +5432,7 @@
 								"OverrideSourceAddress": false,
 								"SourceAddress": "0.0.0.0"
 							},
-							"Interface": "vlan182",
+							"Interface": "vlan180",
 							"MasterPlaylists": [],
 							"Mp4": false,
 							"RecordingTriggerSource": "None",
@@ -5521,7 +5472,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.19:30132",
+							"Url": "udp://225.3.1.19:30132",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -5617,7 +5568,7 @@
 								"OverrideSourceAddress": false,
 								"SourceAddress": "0.0.0.0"
 							},
-							"Interface": "vlan182",
+							"Interface": "vlan180",
 							"MasterPlaylists": [],
 							"Mp4": false,
 							"RecordingTriggerSource": "None",
@@ -5657,7 +5608,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.19:30133",
+							"Url": "udp://225.3.1.19:30133",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -5753,7 +5704,7 @@
 								"OverrideSourceAddress": false,
 								"SourceAddress": "0.0.0.0"
 							},
-							"Interface": "vlan182",
+							"Interface": "vlan180",
 							"MasterPlaylists": [],
 							"Mp4": false,
 							"RecordingTriggerSource": "None",
@@ -5793,7 +5744,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.19:30134",
+							"Url": "udp://225.3.1.19:30134",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -5889,7 +5840,7 @@
 								"OverrideSourceAddress": false,
 								"SourceAddress": "0.0.0.0"
 							},
-							"Interface": "vlan182",
+							"Interface": "vlan180",
 							"MasterPlaylists": [],
 							"Mp4": false,
 							"RecordingTriggerSource": "None",
@@ -5929,7 +5880,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.4.1.19:30135",
+							"Url": "udp://225.3.1.19:30135",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -6025,7 +5976,7 @@
 								"OverrideSourceAddress": false,
 								"SourceAddress": "0.0.0.0"
 							},
-							"Interface": "vlan73",
+							"Interface": "vlan72",
 							"MasterPlaylists": [],
 							"Mp4": false,
 							"RecordingTriggerSource": "None",
@@ -6065,7 +6016,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.1.1.19:30120",
+							"Url": "udp://225.11.11.19:30120",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -6161,7 +6112,7 @@
 								"OverrideSourceAddress": false,
 								"SourceAddress": "0.0.0.0"
 							},
-							"Interface": "vlan73",
+							"Interface": "vlan72",
 							"MasterPlaylists": [],
 							"Mp4": false,
 							"RecordingTriggerSource": "None",
@@ -6201,7 +6152,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.1.9.47:30120",
+							"Url": "udp://225.11.9.47:30120",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -6297,7 +6248,7 @@
 								"OverrideSourceAddress": false,
 								"SourceAddress": "0.0.0.0"
 							},
-							"Interface": "vlan73",
+							"Interface": "vlan72",
 							"MasterPlaylists": [],
 							"Mp4": false,
 							"RecordingTriggerSource": "None",
@@ -6337,7 +6288,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.1.9.47:5000",
+							"Url": "udp://225.11.9.47:5000",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -6433,7 +6384,7 @@
 								"OverrideSourceAddress": false,
 								"SourceAddress": "0.0.0.0"
 							},
-							"Interface": "vlan73",
+							"Interface": "vlan72",
 							"MasterPlaylists": [],
 							"Mp4": false,
 							"RecordingTriggerSource": "None",
@@ -6473,7 +6424,7 @@
 							"TOS": 0,
 							"TTL": 255,
 							"Type": "Live",
-							"Url": "udp://225.1.2.152:30120",
+							"Url": "udp://225.11.2.152:30120",
 							"UrlStreamB": "",
 							"Zixi": false,
 							"ZixiAdaptive": false,
@@ -6547,7 +6498,7 @@
 				[
 					{
 						"ContinuityCountErrors": 0,
-						"ContinuityCountFailover": 0,
+						"ContinuityCountFailover": 6884,
 						"PatCRCErrors": 0,
 						"PatMissingErrors": 0,
 						"PcrAccuracyErrors": 0,
@@ -6556,22 +6507,17 @@
 							{
 								"current": 0,
 								"id": 110,
-								"total": 0
+								"total": 6167
 							},
 							{
 								"current": 0,
 								"id": 111,
-								"total": 0
+								"total": 171
 							},
 							{
 								"current": 0,
 								"id": 112,
-								"total": 0
-							},
-							{
-								"current": 0,
-								"id": 115,
-								"total": 0
+								"total": 176
 							}
 						],
 						"PidErrors": [
@@ -6586,10 +6532,6 @@
 							{
 								"errors": 0,
 								"id": 112
-							},
-							{
-								"errors": 0,
-								"id": 115
 							}
 						],
 						"PmtCRCErrors": 0,
@@ -6606,15 +6548,11 @@
 							{
 								"errors": 0,
 								"id": 112
-							},
-							{
-								"errors": 0,
-								"id": 115
 							}
 						],
 						"SyncByteLossErrors": 0,
-						"TSSyncLossErrors": 0,
-						"TotalContinuityCountErrors": 0,
+						"TSSyncLossErrors": 1,
+						"TotalContinuityCountErrors": 6887,
 						"TransportErrorIndicator": 0
 					}
 				]
@@ -6678,19 +6616,6 @@
 										"PID": 112,
 										"SampleRate": 48000,
 										"Scrambled": false
-									},
-									{
-										"Bitrate": 192614,
-										"ChannelList": [
-											"Front Left",
-											"Front Right"
-										],
-										"Codec": "MPEG Audio",
-										"DualMono": false,
-										"Language": "eng",
-										"PID": 115,
-										"SampleRate": 48000,
-										"Scrambled": false
 									}
 								],
 								"DataESList": [],
@@ -6699,7 +6624,7 @@
 								"VideoESList": [
 									{
 										"Bitdepth": 8,
-										"Bitrate": 3600624,
+										"Bitrate": 3602472,
 										"Codec": "MPEG-4 AVC",
 										"DisplayAspectRatio": {
 											"Denominator": 9,
@@ -6734,6 +6659,6 @@
 		"TemplateParametersOverride": {
 			"/FormatConfigurations/0/TSMuxer/ConformanceDependent/DVB/ServiceName": "abr-full-hd-10"
 		},
-		"UID": "71637482-3aec-4d46-ab80-fb90ac7df7cd"
+		"UID": "9299d90c-1348-4074-aa38-013288b17852"
 	}
 ]
