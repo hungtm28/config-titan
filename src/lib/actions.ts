@@ -44,7 +44,7 @@ function isCaptureIp(url: string): boolean {
 }
 
 function isDrmIpTvSource(url: string): boolean {
-  return /^udp:\/\/225\.1\.1\.\d+:30120$/.test(url);
+  return /^udp:\/\/225\.1\.[12]\.\d+:30120$/.test(url);
 }
 
 function resolveTemplateVariant(templateName?: string): 'A' | 'B' | '' {
