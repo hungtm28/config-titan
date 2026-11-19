@@ -43,6 +43,10 @@ function isCaptureIp(url: string): boolean {
   return captureIpPrefixes.some(prefix => url.startsWith(prefix));
 }
 
+function isDrmIpTvSource(url: string): boolean {
+  return /^udp:\/\/225\.1\.1\.\d+:30120$/.test(url);
+}
+
 function resolveTemplateVariant(templateName?: string): 'A' | 'B' | '' {
   const candidate = templateName || '';
   const upper = candidate.toUpperCase();
@@ -269,9 +273,11 @@ export async function generateJson(values: ConfiguratorValues): Promise<string> 
           if (!obj || typeof obj !== 'object') return;
 
           if (obj.Url && typeof obj.Url === 'string') {
-            let ruleForProcessing: 'CaptureLogo' | 'CaptureNoLogo' | undefined = undefined;
+            let ruleForProcessing: 'DRM' | 'CaptureLogo' | 'CaptureNoLogo' | undefined = undefined;
 
-            if (isCaptureIp(obj.Url)) {
+            if (values.ipType === 'DRM' && isDrmIpTvSource(obj.Url)) {
+              ruleForProcessing = 'DRM';
+            } else if (isCaptureIp(obj.Url)) {
               if (values.ipType === 'DRM') {
                 ruleForProcessing = urlToRuleMap.get(obj.Url);
               } else {
