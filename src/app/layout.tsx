@@ -15,7 +15,7 @@ import {
 } from '@/components/ui/sidebar';
 import { AtomIcon } from '@/components/icons';
 import Link from 'next/link';
-import { Files, Settings, ClipboardIcon } from 'lucide-react';
+import { Files, Settings, ClipboardIcon, Sheet } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Ateme Titan Configurator V14',
@@ -71,6 +71,18 @@ export default function RootLayout({
                       Audit Profile
                     </SidebarMenuButton>
                   </Link>
+                </SidebarMenuItem>
+                <SidebarMenuItem>
+                  <SidebarMenuButton asChild tooltip="Tạo Checklist">
+                    <a
+                      href="https://docs.google.com/spreadsheets/d/1Mo2DWSS1_Av0M-4y6fEiuJW28_rEhL8stT5RWJCDN18/edit?gid=113131217#gid=113131217"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Sheet />
+                      Tạo Checklist
+                    </a>
+                  </SidebarMenuButton>
                 </SidebarMenuItem>
               </SidebarMenu>
             </SidebarContent>
